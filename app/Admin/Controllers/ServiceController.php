@@ -27,12 +27,12 @@ class ServiceController extends AdminController
         $grid = new Grid(new Service());
 
         $grid->column('ServiceID', __('ServiceID'));
-        $grid->column('Sv_name', __('Sv name'));
-        $grid->column('Sv_detail', __('Sv detail'));
-        $grid->column('Sv_date', __('Sv date'));
-        $grid->column('Sv_Image', __('Sv Image'));
-        $grid->column('Sv_price', __('Sv price'));
-        $grid->column('Sv_terms', __('Sv terms'));
+        $grid->column('Sv_name', __('name'));
+        $grid->column('Sv_detail', __('detail'));
+        $grid->column('Sv_date', __('date'));
+        $grid->column('Sv_Image', __('Image'));
+        $grid->column('Sv_price', __('price'));
+        $grid->column('Sv_terms', __('terms'));
 
         return $grid;
     }
@@ -48,12 +48,12 @@ class ServiceController extends AdminController
         $show = new Show(Service::findOrFail($id));
 
         $show->field('ServiceID', __('ServiceID'));
-        $show->field('Sv_name', __('Sv name'));
-        $show->field('Sv_detail', __('Sv detail'));
-        $show->field('Sv_date', __('Sv date'));
-        $show->field('Sv_Image', __('Sv Image'));
-        $show->field('Sv_price', __('Sv price'));
-        $show->field('Sv_terms', __('Sv terms'));
+        $show->field('Sv_name', __('name'));
+        $show->field('Sv_detail', __('detail'));
+        $show->field('Sv_date', __('date'));
+        $show->field('Sv_Image', __('Image'));
+        $show->field('Sv_price', __('price'));
+        $show->field('Sv_terms', __('terms'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 

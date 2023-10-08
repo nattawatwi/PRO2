@@ -13,7 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Frontend
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
+});
+Route::get('/pages/customer', function () {
+    return view('frontend.pages.customer');
+});
+Route::get('/pages/news', function () {
+    return view('frontend.pages.news');
+});
+Route::get('/pages/news-trend', function () {
+    return view('frontend.pages.news-trend');
+});
+Route::get('/pages/promotion', function () {
+    return view('frontend.pages.promotion');
+});
+Route::get('/pages/service', function () {
+    return view('frontend.pages.service');
+});
+Route::get('/pages/contact', function () {
+    return view('frontend.pages.contact');
 });
 

@@ -30,10 +30,10 @@ class ServiceCTController extends AdminController
         $grid = new Grid(new ServiceCT());
 
         $grid->column('ServiceCenterID', __('ServiceCenterID'));
-        $grid->column('Sc_name', __('Sc name'));
-        $grid->column('Sc_address', __('Sc address'));
-        $grid->column('Sc_phone', __('Sc phone'));
-        $grid->column('Sc_email', __('Sc email'));
+        $grid->column('Sc_name', __('name'));
+        $grid->column('Sc_address', __('address'));
+        $grid->column('Sc_phone', __('phone'));
+        $grid->column('Sc_email', __('email'));
         $grid->column('MapID', __('MapID'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
@@ -52,10 +52,10 @@ class ServiceCTController extends AdminController
         $show = new Show(ServiceCT::findOrFail($id));
 
         $show->field('ServiceCenterID', __('ServiceCenterID'));
-        $show->field('Sc_name', __('Sc name'));
-        $show->field('Sc_address', __('Sc address'));
-        $show->field('Sc_phone', __('Sc phone'));
-        $show->field('Sc_email', __('Sc email'));
+        $show->field('Sc_name', __('name'));
+        $show->field('Sc_address', __('address'));
+        $show->field('Sc_phone', __('phone'));
+        $show->field('Sc_email', __('email'));
         $show->field('MapID', __('MapID'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
@@ -77,11 +77,12 @@ class ServiceCTController extends AdminController
         $form->text('Sc_address', __('address'));
         $form->text('Sc_phone', __('phone'));
         $form->text('Sc_email', __('email'));
-        
-        $form->select('MapID', __('MapID'))->options(
-            \DB::table('maps') // แทนที่ your_table_name ด้วยชื่อตารางของคุณ
-                ->pluck('Mp_address') // แทนที่ map_id_column ด้วยคอลัมน์ที่คุณต้องการใช้เป็นค่า value และ text ใน dropdown
-        );
+        $form->text('MapID', __('Map(URL)'));
+
+        //$form->select('MapID', __('MapID'))->options(
+        //    \DB::table('maps') // แทนที่ your_table_name ด้วยชื่อตารางของคุณ
+        //        ->pluck('Mp_address','Mp_address') // แทนที่ map_id_column ด้วยคอลัมน์ที่คุณต้องการใช้เป็นค่า value และ text ใน dropdown
+        //);
 
         return $form;
     }

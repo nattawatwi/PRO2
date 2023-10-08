@@ -13,10 +13,12 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
     
+    $router->resource('person', PersonController::class);
+    $router->resource('organizations', OrganizationController::class);
+        $router->resource('types', TypeController::class);
 
     $router->resource('services',ServiceController::class);
     $router->resource('service-c-ts',ServiceCTController::class);
-    $router->resource('maps', MapsController::class);
     $router->resource('promotions', PromotionController::class);
     $router->resource('trends', TrendController::class);
     $router->resource('news', NewsController::class);

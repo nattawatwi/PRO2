@@ -2,20 +2,20 @@
 
 namespace App\Admin\Controllers;
 
-use \App\Models\Maps;
 use OpenAdmin\Admin\Controllers\AdminController;
 use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Show;
+use \App\Models\Type;
 
-class MapsController extends AdminController
+class TypeController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'Maps';
+    protected $title = 'Type';
 
     /**
      * Make a grid builder.
@@ -24,12 +24,10 @@ class MapsController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new Maps());
+        $grid = new Grid(new Type());
 
-        $grid->column('MapsID', __('MapsID'));
-        $grid->column('Mp_address', __('address'));
-        $grid->column('Mp_latitude', __('latitude'));
-        $grid->column('Mp_longitude', __('longitude'));
+        $grid->column('TypeID', __('TypeID'));
+        $grid->column('name', __('Name'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -44,12 +42,10 @@ class MapsController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(Maps::findOrFail($id));
+        $show = new Show(Type::findOrFail($id));
 
-        $show->field('MapsID', __('MapsID'));
-        $show->field('Mp_address', __('address'));
-        $show->field('Mp_latitude', __('latitude'));
-        $show->field('Mp_longitude', __('longitude'));
+        $show->field('TypeID', __('TypeID'));
+        $show->field('name', __('Name'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -63,11 +59,9 @@ class MapsController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new Maps());
+        $form = new Form(new Type());
 
-        $form->text('Mp_address', __('address'));
-        $form->text('Mp_latitude', __('latitude'));
-        $form->text('Mp_longitude', __('longitude'));
+        $form->text('name', __('Name'));
 
         return $form;
     }

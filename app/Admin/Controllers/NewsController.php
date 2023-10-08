@@ -27,12 +27,12 @@ class NewsController extends AdminController
         $grid = new Grid(new News());
 
         $grid->column('NewsID', __('NewsID'));
-        $grid->column('Nw_title', __('Nw title'));
-        $grid->column('Nw_content', __('Nw content'));
-        $grid->column('Nw_category', __('Nw category'));
-        $grid->column('Nw_date', __('Nw date'));
-        $grid->column('Nw_views', __('Nw views'));
-        $grid->column('Nw_image', __('Nw image'));
+        $grid->column('Nw_title', __('title'));
+        $grid->column('Nw_content', __('content'));
+        $grid->column('Nw_category', __('category'));
+        $grid->column('Nw_date', __('date'));
+        $grid->column('Nw_views', __('views'));
+        $grid->column('Nw_image', __('image'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -50,12 +50,12 @@ class NewsController extends AdminController
         $show = new Show(News::findOrFail($id));
 
         $show->field('NewsID', __('NewsID'));
-        $show->field('Nw_title', __('Nw title'));
-        $show->field('Nw_content', __('Nw content'));
-        $show->field('Nw_category', __('Nw category'));
-        $show->field('Nw_date', __('Nw date'));
-        $show->field('Nw_views', __('Nw views'));
-        $show->field('Nw_image', __('Nw image'));
+        $show->field('Nw_title', __('title'));
+        $show->field('Nw_content', __('content'));
+        $show->field('Nw_category', __('category'));
+        $show->field('Nw_date', __('date'));
+        $show->field('Nw_views', __('views'));
+        $show->field('Nw_image', __('image'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -71,15 +71,15 @@ class NewsController extends AdminController
     {
         $form = new Form(new News());
 
-        $form->text('Nw_title', __('Nw title'));
-        $form->text('Nw_content', __('Nw content'));
+        $form->text('Nw_title', __('title'));
+        $form->text('Nw_content', __('content'));
         $form->select('CTID', __('CTID'))->options(
             \DB::table('category') 
-                ->pluck('name') 
+                ->pluck('name','name') 
         );
-        $form->date('Nw_date', __('Nw date'));
-        $form->text('Nw_views', __('Nw views'));
-        $form->image('Nw_image', __('Nw image'));
+        $form->date('Nw_date', __('date'));
+        $form->display('Nw_views', __('views'));
+        $form->image('Nw_image', __('image'));
 
         return $form;
     }
