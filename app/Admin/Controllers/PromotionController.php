@@ -81,3 +81,15 @@ class PromotionController extends AdminController
         return $form;
     }
 }
+
+class PromotionController extends Controller
+{
+    public function index()
+    {
+        // ดึงข้อมูลโปรโมชั่นจากฐานข้อมูล
+        $promotions = Promotion::all(); // คุณสามารถปรับแต่งคิวรีนี้ตามที่คุณต้องการ
+
+        // ส่งข้อมูลไปยังวิว
+        return view('frontend.your-blade-view', compact('promotions'));
+    }
+}
