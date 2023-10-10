@@ -26,29 +26,16 @@
     </div>
     <!-- Full Screen Search End -->
 
-    <section class="promotion-section">
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach ($promotions as $promotion)
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="{{ asset('uploads/' . $promotion->Pn_Image) }}" class="card-img-top" alt="{{ $promotion->Pm_name }}" style="height: 220px;">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ $promotion->Pm_name }}</h5>
-                            <p class="card-text">{{ $promotion->Pn_detail }}</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="{{ route('detail-promotion', ['id' => $promotion->PromotionID]) }}">ดูรายละเอียด</a>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">{{ $promotion->created_at }}</small>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>{{ $promotion->Pm_name }}</h2>
+            <img src="{{ asset('uploads/images/' . $promotion->Pn_Image) }}" alt="{{ $promotion->Pm_name }}" class="img-fluid">
+            <p>{{ $promotion->Pn_detail }}</p>
+            <!-- อื่น ๆ ตามที่คุณต้องการแสดงเพิ่มเติม -->
         </div>
     </div>
-    </section>
+    </div>
 
 
     <!-- Back to Top -->

@@ -2,11 +2,12 @@
 
 namespace App\Admin\Controllers;
 
-use \App\Models\Promotion;
+use App\Models\Promotion;
 use OpenAdmin\Admin\Controllers\AdminController;
 use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Show;
+use OpenAdmin\Admin\Layout\Content;
 
 class PromotionController extends AdminController
 {
@@ -17,6 +18,16 @@ class PromotionController extends AdminController
      */
     protected $title = 'Promotion';
 
+    public function index(Content $content)
+    {
+        $promotions = Promotion::all();
+    
+        return $content
+            ->header('Promotions')
+            ->description('List of promotions')
+            ->body($this->grid($promotions)); // ส่งข้อมูลโปรโมชั่นไปยังเมธอด grid()
+    }
+    
     /**
      * Make a grid builder.
      *
@@ -80,16 +91,5 @@ class PromotionController extends AdminController
 
         return $form;
     }
-}
 
-class PromotionController extends Controller
-{
-    public function index()
-    {
-        // ดึงข้อมูลโปรโมชั่นจากฐานข้อมูล
-        $promotions = Promotion::all(); // คุณสามารถปรับแต่งคิวรีนี้ตามที่คุณต้องการ
-
-        // ส่งข้อมูลไปยังวิว
-        return view('frontend.your-blade-view', compact('promotions'));
-    }
 }

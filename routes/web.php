@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FrontendController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,4 +35,8 @@ Route::get('/pages/service', function () {
 Route::get('/pages/contact', function () {
     return view('frontend.pages.contact');
 });
+
+//Promotion
+Route::get('/pages/promotion', [FrontendController::class, 'showPromotions']);
+Route::get('/pages/promotion/detail-promotion/{id}', [FrontendController::class, 'detailPromotion'])->name('detail-promotion');
 
