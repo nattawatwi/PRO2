@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Promotion;
 use App\Models\News;
-
+use App\Models\service;
 class FrontendController extends Controller
 {
     //
@@ -71,7 +71,25 @@ class FrontendController extends Controller
     
         return view('frontend.pages.detail-news', compact('news'));
     }
-    
+
+    //start News
+    public function showServices()
+    {
+        $services = Service::all();
+        return view('frontend.pages.service', compact('services'));
+    }
+
+
+    public function detailService($id)
+    {
+        $service = Service::find($id); // เปลี่ยนจาก New เป็น Service
+
+        if (!$service) {
+            abort(404); // หากไม่พบข้อมูลโปรโมชั่นให้แสดงหน้า 404 Not Found
+        }
+
+        return view('frontend.pages.detail-service', compact('service'));
+    }
 
 
 }

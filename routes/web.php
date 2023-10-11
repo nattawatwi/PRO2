@@ -40,6 +40,6 @@ Route::get('/pages/contact', function () {
 Route::get('/pages/promotion', [FrontendController::class, 'showPromotions']);
 Route::get('/pages/promotion/detail-promotion/{id}', [FrontendController::class, 'detailPromotion'])->name('detail-promotion');
 
+Route::get('/pages/service', [FrontendController::class, 'showServices']);
+Route::get('/pages/service/service-detail/{id}', [FrontendController::class, 'detailService'])->name('service-detail');
 
-Route::get('/pages/news', [FrontendController::class, 'showNews']);
-Route::get('/pages/news/news-detail/{id}', [FrontendController::class, 'detailNews'])->name('news-detail');

@@ -24,25 +24,22 @@
     </div>
     <!-- Full Screen Search End -->
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h1>{{ $news->Nw_title }}</h1>
-                <p>{{ $news->Nw_content }}</p>
-                <p>Category: {{ $news->CTID }}</p>
-                <p>Date: {{ $news->Nw_date }}</p>
-                <p>Views: {{ $news->Nw_views }}</p>
-                <!-- You can add more details as needed -->
-            </div>
-        </div>
-    </div>
 
-   
+
+    
+
+
+
+
+
+
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!-- Template Javascript -->
+    <script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
 
 </html>
