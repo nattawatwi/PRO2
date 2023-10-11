@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Promotion;
-
+use App\Models\News;
 
 class FrontendController extends Controller
 {
@@ -49,6 +49,27 @@ class FrontendController extends Controller
         }
 
         return view('frontend.pages.detail-promotion', compact('promotion'));
+
+        //end Promotion
+    }
+
+
+    //start News
+    public function showNews()
+    {
+        $news = News::all();
+        return view('frontend.pages.news', compact('news'));
+    }
+
+    public function detailNews($id)
+    {
+        $news = News::find($id);
+
+        if (!$news) {
+            abort(404); // หากไม่พบข้อมูลโปรโมชั่นให้แสดงหน้า 404 Not Found
+        }
+
+        return view('frontend.pages.detail-news', compact('new'));
 
         //end Promotion
     }
