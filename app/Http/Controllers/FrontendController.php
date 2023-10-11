@@ -57,21 +57,21 @@ class FrontendController extends Controller
     //start News
     public function showNews()
     {
-        $news = News::all();
+        $news = News::all(); // เปลี่ยนจาก New เป็น News
         return view('frontend.pages.news', compact('news'));
     }
 
     public function detailNews($id)
     {
         $news = News::find($id);
-
+    
         if (!$news) {
             abort(404); // หากไม่พบข้อมูลโปรโมชั่นให้แสดงหน้า 404 Not Found
         }
-
-        return view('frontend.pages.detail-news', compact('new'));
-
-        //end Promotion
+    
+        return view('frontend.pages.detail-news', compact('news'));
     }
+    
+
 
 }
