@@ -30,7 +30,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h2>{{ $promotion->Pm_name }}</h2>
-            <img src="{{ asset('uploads/images/' . $promotion->Pn_Image) }}" alt="{{ $promotion->Pm_name }}" class="img-fluid">
+            <img src="{{ asset('uploads/' . $promotion->Pn_Image) }}" alt="{{ $promotion->Pm_name }}" class="img-fluid">
             <p>{{ $promotion->Pn_detail }}</p>
             <!-- อื่น ๆ ตามที่คุณต้องการแสดงเพิ่มเติม -->
         </div>
