@@ -12,6 +12,100 @@
     object-fit: cover; /* ใช้เพื่อปรับขนาดรูปภาพให้พอดีกับส่วนที่กำหนดไว้ */
 }
 
+
+/*css*/
+/*Page Detail-Promotion
+/* Existing CSS */
+
+.main-promotion-image img {
+    position: sticky;
+    top: 100px;
+}
+
+.promotion-main-image {
+    aspect-ratio: 1.3;
+    border-radius: 25px;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffffff;
+    line-height: 1.6; /* Adjusted line-height for better readability */
+    margin: 0;
+    text-align: left;
+}
+
+section {
+    padding-top: 25px;
+}
+
+.page-section .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+/* Additional CSS for card styling */
+
+.card {
+    border: none; /* Remove border from cards */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+    margin-top: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+/* Styles for the specific section */
+.page-detail {
+    font-family: "NT";
+    font-size: 16px; /* Adjusted font size for better readability */
+    line-height: 1.8; /* Adjusted line-height for better readability */
+    margin-bottom: 20px; /* Adjusted margin-bottom for spacing */
+}
+
+/* Add the rest of your existing CSS below this point */
+/*สมัครเลย*/
+.round-filled-button {
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; /* เพิ่มระยะห่างทางขวา */
+}
+
+.round-filled-button:hover {
+    background-color: #d6d5d5;
+    color: #000;
+}
+
+  /*ย้อนกลับ*/
+  .back-button {
+    display: flex;
+    align-items: center; /* ตรงกลางตามแนวดิ่ง */
+    text-decoration: none;
+    color: #323232; /* เปลี่ยนสีตามที่คุณต้องการ */
+    padding: 25px; /* ปรับขนาดการเว้นระยะห่าง */
+  }
+  
+  .back-button i {
+    margin-right: 2px; /* ปรับระยะห่างระหว่างไอคอนกับข้อความ */
+    color: #adb814;
+  }
+  
+
 /*** Spinner ***/
 .spinner {
     width: 40px;
