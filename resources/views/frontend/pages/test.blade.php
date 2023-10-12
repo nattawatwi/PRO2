@@ -94,7 +94,7 @@
 
 body {
     min-height: 100%;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     line-height: 1.6; /* Adjusted line-height for better readability */
     margin: 0;
     text-align: left;
@@ -104,7 +104,7 @@ section {
     padding-top: 25px;
 }
 
-.row {
+.page-section .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -134,13 +134,6 @@ section {
     font-size: 16px; /* Adjusted font size for better readability */
     line-height: 1.8; /* Adjusted line-height for better readability */
     margin-bottom: 20px; /* Adjusted margin-bottom for spacing */
-}
-
-/* Style the "สมัครเลย" button */
-.round-filled-button {
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 18px; /* Adjust font size as needed */
-    border-radius: 10px; /* Adjust border radius for rounded corners */
 }
 
 /* Add the rest of your existing CSS below this point */
@@ -175,3 +168,5 @@ section {
     margin-right: 2px; /* ปรับระยะห่างระหว่างไอคอนกับข้อความ */
     color: #adb814;
   }
+  
+
