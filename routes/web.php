@@ -23,8 +23,8 @@ Route::get('/pages/customer', function () {
 Route::get('/pages/news', function () {
     return view('frontend.pages.news');
 });
-Route::get('/pages/news-trend', function () {
-    return view('frontend.pages.news-trend');
+Route::get('/pages/trend', function () {
+    return view('frontend.pages.trend');
 });
 Route::get('/pages/promotion', function () {
     return view('frontend.pages.promotion');
@@ -45,3 +45,10 @@ Route::get('/pages/service/service-detail/{id}', [FrontendController::class, 'de
 
 Route::get('/pages/news', [FrontendController::class, 'showNews']);
 Route::get('/pages/news/news-detail/{id}', [FrontendController::class, 'detailNews'])->name('news-detail');
+
+Route::get('/pages/trend', [FrontendController::class, 'showTrend']);
+Route::get('/pages/trend/trend-detail/{id}', [FrontendController::class, 'detailTrend'])->name('trend-detail');
+
+Route::get('/contact', [FrontendController::class, 'showForm']);
+Route::post('/contact', [FrontendController::class, 'submitForm']);
+

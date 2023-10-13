@@ -23,4 +23,5 @@ Route::group([
     $router->resource('trends', TrendController::class);
     $router->resource('news', NewsController::class);
     $router->resource('categories', CategoryController::class);
+    $router->resource('contacts', ContactController::class);
 });

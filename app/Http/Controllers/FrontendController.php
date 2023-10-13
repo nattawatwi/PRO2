@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Promotion;
 use App\Models\News;
-use App\Models\service;
+use App\Models\Service;
+use App\Models\Trend;
+use App\Models\Contact;
+
 class FrontendController extends Controller
 {
     //
@@ -75,8 +78,8 @@ class FrontendController extends Controller
     //start Trend
     public function showTrend()
     {
-        $trend = Trend::all(); // เปลี่ยนจาก New เป็น News
-        return view('frontend.pages.trend', compact('trend'));
+        $trends = Trend::all();
+        return view('frontend.pages.trend', compact('trends'));
     }
 
     public function detailTrend($id)
@@ -89,6 +92,7 @@ class FrontendController extends Controller
 
         return view('frontend.pages.detail-trend', compact('trend'));
     }
+
 
 
 
@@ -111,5 +115,30 @@ class FrontendController extends Controller
         return view('frontend.pages.detail-service', compact('service'));
     }
 
+
+    public function showForm()
+    {
+        return view('/pages/contact');
+    }
+
+    public function submitForm(Request $request)
+    {
+        $request->validate([
+            'Ct_username' => 'required',
+            'Ct_email' => 'required|email',
+            'Ct_title' => 'required',
+            'Ct_detail' => 'required',
+        ]);
+
+        Contact::create([
+            'Ct_username' => $request->input('Ct_username'),
+            'Ct_email' => $request->input('Ct_email'),
+            'Ct_title' => $request->input('Ct_title'),
+            'Ct_detail' => $request->input('Ct_detail'),
+            'Ct_date' => now(),
+        ]);
+
+        return redirect('/pages/contact')->with('success', 'ข้อความของคุณถูกส่งเรียบร้อยแล้ว!');
+    }
 
 }

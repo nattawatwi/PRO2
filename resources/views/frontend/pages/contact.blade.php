@@ -69,25 +69,26 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                            </div>
+                <form method="POST" action="/contact">
+                    @csrf
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" name="Ct_username" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px">
                         </div>
-                    </form>
+                        <div class="col-md-6">
+                            <input type="email" name="Ct_email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="Ct_title" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px">
+                        </div>
+                        <div class="col-12">
+                            <textarea name="Ct_detail" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </form>
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
