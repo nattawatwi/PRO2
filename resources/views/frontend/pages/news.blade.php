@@ -30,8 +30,9 @@
             <div class="row g-5">
                 <!-- Blog list Start -->
                 <div class="col-lg-8">
-                    <div class="row g-5">
-                    @foreach ($news as $index => $new)
+                    <div class="row g-5"> 
+                    @isset($news)
+                    @foreach ($news as $new)
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                         <div class="blog-item bg-light rounded overflow-hidden">
                             <div class="blog-img position-relative overflow-hidden">
@@ -50,6 +51,7 @@
                         </div>
                     </div>
                     @endforeach
+                    @endisset
                         <div class="col-12 wow slideInUp" data-wow-delay="0.1s">
                             <nav aria-label="Page navigation">
                                 <ul class="pagination pagination-lg m-0">

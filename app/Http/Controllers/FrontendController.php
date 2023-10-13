@@ -72,7 +72,8 @@ class FrontendController extends Controller
         return view('frontend.pages.detail-news', compact('news'));
     }
 
-    //start News
+
+    //start Service
     public function showServices()
     {
         $services = Service::all();
