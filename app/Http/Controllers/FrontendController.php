@@ -64,13 +64,32 @@ class FrontendController extends Controller
     public function detailNews($id)
     {
         $news = News::find($id);
-    
+
         if (!$news) {
             abort(404); // หากไม่พบข้อมูลโปรโมชั่นให้แสดงหน้า 404 Not Found
         }
-    
+
         return view('frontend.pages.detail-news', compact('news'));
     }
+
+    //start Trend
+    public function showTrend()
+    {
+        $trend = Trend::all(); // เปลี่ยนจาก New เป็น News
+        return view('frontend.pages.trend', compact('trend'));
+    }
+
+    public function detailTrend($id)
+    {
+        $trend = Trend::find($id);
+
+        if (!$trend) {
+            abort(404); // หากไม่พบข้อมูลโปรโมชั่นให้แสดงหน้า 404 Not Found
+        }
+
+        return view('frontend.pages.detail-trend', compact('trend'));
+    }
+
 
 
     //start Service
