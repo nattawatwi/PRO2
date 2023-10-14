@@ -39,7 +39,7 @@
                         <a href="#" class="nav-link dropdown-toggle {{ Request::is('pages/news*') ? 'active' : '' }}" data-bs-toggle="dropdown">ข่าวสาร</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{ url('pages/news') }}" class="dropdown-item {{ Request::is('pages/news') ? 'active' : '' }}">ข่าวสารอัปเดต</a>
-                            <a href="{{ url('pages/trend') }}" class="dropdown-item {{ Request::is('pages/trend') ? 'active' : '' }}">เทรนด์ดิจิทัล</a>
+                            <a href="{{ url('pages/news-trend') }}" class="dropdown-item {{ Request::is('pages/news-trend') ? 'active' : '' }}">เทรนด์ดิจิทัล</a>
                         </div>
                     </div>
                         <a href="{{ url('pages/promotion') }}" class="nav-item nav-link {{ Request::is('pages/promotion') ? 'active' : '' }}">โปรโมชั่น</a>
@@ -55,7 +55,7 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="frontend/img/carousel-1.jpg" alt="Image">
+                        <img class="auto" src="frontend/img/Bg1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                        </div>
+                        <div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    @else
+                    @elseif(Request::is('pages/contact'))
                     <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
                         <!-- เนื้อหาของ Container ที่จะแสดงบนหน้าอื่น ๆ -->
                         <div class="row py-5">
@@ -161,9 +161,15 @@
                             </div>
                         </div>
                     </div>
+                    @else
+                    <div class="container-fluid bg-primary py-5">
+                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้าอื่น ๆ -->
+                    </div>
                 @endif
             </div>
         </div>
     </div>
 </header>
+
+
 
