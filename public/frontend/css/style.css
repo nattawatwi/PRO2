@@ -106,6 +106,171 @@ section {
   }
   
 
+  /*start news details */
+/* Main Carousel */
+section {
+    margin: 20px 0; /* Add margin as needed */
+}
+
+.main-carousel-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease; /* Add a smooth transition for sliding effect */
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+/* Slide Content Styles */
+.slide-content {
+    position: relative;
+    text-align: center; /* or adjust as needed */
+}
+
+.carousel-content {
+    padding: 20px; /* Add padding as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+}
+
+.carousel-tag button {
+    background-color: #3498db; /* Add your preferred color */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.carousel-title {
+    font-size: 24px; /* or adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.news-detail-date {
+    font-size: 14px; /* or adjust as needed */
+    color: #777;
+}
+
+.carousel-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add border-radius as needed */
+    margin-top: 10px; /* Adjust as needed */
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    background-color: #bbb; /* Add your preferred color */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3498db; /* Add your preferred active color */
+}
+
+/* Swiper Navigation Styles (if needed) */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    background-color: #3498db; /* Add your preferred color */
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Disable navigation buttons on disabled state */
+.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+/* Page News Styles */
+.page-section {
+    padding: 40px 0; /* Add padding as needed */
+    background-color: rgb(255, 255, 255); /* Add your preferred background color */
+}
+
+.section-author {
+    text-align: left; /* or adjust as needed */
+}
+
+/* Author Styles */
+.author {
+    margin-bottom: 20px; /* Add margin as needed */
+}
+
+.author-avatar {
+    width: 50px; /* Add your preferred size */
+    height: 50px; /* Add your preferred size */
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px; /* Add margin as needed */
+}
+
+.author-name {
+    font-weight: bold; /* or adjust as needed */
+}
+
+/* Horizontal Line Styles */
+hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Add your preferred color */
+    margin: 20px 0; /* Add margin as needed */
+}
+
+/* Blog Tags Styles */
+.blog-detail-tags {
+    margin-bottom: 20px; /* Add margin as needed */
+}
+
+.blog-tags {
+    display: inline-block; /* Align tags horizontally */
+}
+
+.blog-tag {
+    background-color: #3498db; /* Add your preferred color */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+.blog-tag a {
+    color: #fff; /* Set tag link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.blog-tag a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+  /*end news details */
+ 
+
 /*** Spinner ***/
 .spinner {
     width: 40px;
