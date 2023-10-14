@@ -1,4 +1,5 @@
 <?php
+use OpenAdmin\Admin\Facades\Admin;
 /**
  * Open-admin - admin builder based on Laravel.
  * @author z-song <https://github.com/z-song>
@@ -18,3 +19,5 @@
  */
 
 OpenAdmin\Admin\Form::forget(['editor']);
+
+Admin::js('/vendor/chartjs/dist/Chart.min.js');

@@ -72,7 +72,7 @@ class NewsController extends AdminController
         $form = new Form(new News());
 
         $form->text('Nw_title', __('title'));
-        $form->text('Nw_content', __('content'));
+        $form->textarea('Nw_content', __('content'));
         $form->select('CTID', __('CTID'))->options(
             \DB::table('category') 
                 ->pluck('name','name') 
