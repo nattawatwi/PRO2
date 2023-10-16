@@ -29,12 +29,12 @@
     <div class="section-indicator no-overlap filled-red">
 
     </div>
-    <section class="page-section section-right mt-0">
-        <div class="section-content">
-            <div>
-                <div class="container">
-                    <p>&nbsp;</p>
-                    <div style="text-align: justify">
+    <section <div class="page-section section-right mt-0">
+    <div class="section-content">
+        <div>
+            <div class="container">
+                <p>&nbsp;</p>
+                <div style="text-align: justify">
                     <p style="text-indent: 5%"><b></b><img src="{{ asset('uploads/' . $trend->Tn_Image) }}" style="width: 65%; display: block; margin-left: auto; margin-right: auto" alt="{{ $trend->Tn_title }}"></p>
                     <p style="text-indent: 5%"><b>&nbsp;</b></p>
                     <h1 class="carousel-title">
@@ -42,13 +42,14 @@
                     </h1>
                     <small class="news-detail-date">เผยแพร่ | {{ $trend->Tn_date }}</small>
                     <p>&nbsp;</p>
-                    <p style="text-indent: 5%"><b>{{ $trend->Tn_content }}&nbsp; &nbsp;</b></p>
+                    <p style="text-indent: 5%"><b>{!! $trend->Tn_content !!}&nbsp; &nbsp;</b></p>
                     <p style="text-indent: 5%">&nbsp;</p>
-                    <p style="text-indent: 5%">โดย บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน) หรือ NT ได้รับความไว้วางใจจาก โทรทัศน์รวมการเฉพาะกิจแห่งประเทศไทย ให้เป็นผู้ดำเนินการเชื่อมโยงสัญญาณถ่ายทอดสดจากเมืองหางโจว ประเทศจีน ผ่านดาวเทียม AsiaSat 5 มายังสถานีดาวเทียมนนทบุรี เพื่อส่งต่อไปศูนย์ถ่ายทอดสดและรายงานข่าวการแข่งขันกีฬาและกิจกรรมที่สำคัญของประเทศไทย (สำนักงาน กสทช. ภาค 1) จากนั้นส่งสัญญาณผ่านโครงข่ายไฟเบอร์ออปติก ไปยังสถานีโทรทัศน์ช่องต่าง ๆ ทั้ง 11 ช่อง อาทิ ช่อง ThaiPBS, ช่อง NBT2HD, ช่อง TV5HD, ช่อง T Sports 7, ช่อง 7HD, ช่อง MCOT30HD, ช่อง PPTV36HD, ช่อง Workpoint, ช่อง True4U, ช่อง GMM25 และช่อง JKN18</p>
-                    <p style="text-indent: 5%">NT เชื่อมโยงสัญญาณถ่ายทอดสดเอเชียนเกมส์ ครั้งที่ 19 จากเมืองหางโจว ประเทศจีน เชิญชวนแฟน ๆ กีฬาชาวไทยรับชมการแข่งขันกีฬาเอเชียนเกมส์ ครั้งที่ 19 ระหว่างวันที่ 23 กันยายน จนถึง 8 ตุลาคม 2566 โดย บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน) หรือ NT ได้รับความไว้วางใจจาก โทรทัศน์รวมการเฉพาะกิจแห่งประเทศไทย ให้เป็นผู้ดำเนินการเชื่อมโยงสัญญาณถ่ายทอดสดจากเมืองหางโจว ประเทศจีน ผ่านดาวเทียม AsiaSat 5 มายังสถานีดาวเทียมนนทบุรี เพื่อส่งต่อไปศูนย์ถ่ายทอดสดและรายงานข่าวการแข่งขันกีฬาและกิจกรรมที่สำคัญของประเทศไทย (สำนักงาน กสทช. ภาค 1) จากนั้นส่งสัญญาณผ่านโครงข่ายไฟเบอร์ออปติก ไปยังสถานีโทรทัศน์ช่องต่าง ๆ ทั้ง 11 ช่อง อาทิ ช่อง ThaiPBS, ช่อง NBT2HD, ช่อง TV5HD, ช่อง T Sports 7, ช่อง 7HD, ช่อง MCOT30HD, ช่อง PPTV36HD, ช่อง Workpoint, ช่อง True4U, ช่อง GMM25 และช่อง JKN18</p>
-                </div>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+
         </div>
     </section>
     <!-- End-Promotion Section --> 

@@ -40,7 +40,8 @@ class PromotionController extends AdminController
         $grid->column('PromotionID', __('PromotionID'));
         $grid->column('Pm_name', __('Name'));
         $grid->column('Pn_detail', __('Detail'));
-        $grid->column('Pn_date', __('Date'));
+        $grid->column('Pn_St_date', __('Start Date'));
+        $grid->column('Pn_EP_date', __('End Date'));
         $grid->column('Pn_price', __('Price'));
         $grid->column('Pn_terms', __('Terms'));
         $grid->column('Pn_Image', __('Image'));
@@ -63,7 +64,8 @@ class PromotionController extends AdminController
         $show->field('PromotionID', __('PromotionID'));
         $show->field('Pm_name', __('Name'));
         $show->field('Pn_detail', __('Detail'));
-        $show->field('Pn_date', __('Date'));
+        $show->field('Pn_St_date', __('Start Date'));
+        $show->field('Pn_EP_date', __('End Date'));
         $show->field('Pn_price', __('Price'));
         $show->field('Pn_terms', __('Terms'));
         $show->field('Pn_Image', __('Image'));
@@ -84,7 +86,7 @@ class PromotionController extends AdminController
 
         $form->text('Pm_name', __('Name'));
         $form->text('Pn_detail', __('Detail'));
-        $form->date('Pn_date', __('Date'));
+        $form->date('Pn_St_date', __('Start Date')); $form->date('Pn_EP_date', __('End Date'));
         $form->text('Pn_price', __('Price'));
         $form->text('Pn_terms', __('Terms'));
         $form->image('Pn_Image', __('Image'));

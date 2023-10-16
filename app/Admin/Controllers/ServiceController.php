@@ -70,7 +70,7 @@ class ServiceController extends AdminController
         $form = new Form(new Service());
 
         $form->text('Sv_name', __('name'));
-        $form->text('Sv_detail', __('detail'));
+        $form->textarea('Sv_detail', __('detail'));
         $form->date('Sv_date', __('date'));
         $form->image('Sv_Image', __('Image'));
         $form->text('Sv_price', __('price'));

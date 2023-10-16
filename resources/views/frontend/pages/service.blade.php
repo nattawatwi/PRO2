@@ -45,8 +45,6 @@
                             </div>
                             <div class="text-center py-4">
                                 <h4 class="text-primary">{{ $service->Sv_name }}</h4>
-                                <p class="text-uppercase m-0">{{ $service->Sv_detail }}</p>
-                                <p class="text-uppercase m-0">Price: {{ $service->Sv_price }}</p>
                                 <!-- เพิ่มข้อมูลเพิ่มเติมเช่นรายละเอียดเพิ่มเติมหรือลิงค์ -->
                             </div>
                         </div>

@@ -72,7 +72,7 @@ class TrendController extends AdminController
         $form = new Form(new Trend());
 
         $form->text('Tn_title', __('title'));
-        $form->text('Tn_content', __('content'));
+        $form->textarea('Tn_content', __('content'));
         $form->select('CTID', __('Category'))->options(
             \DB::table('category')->pluck('name', 'name')
         );
