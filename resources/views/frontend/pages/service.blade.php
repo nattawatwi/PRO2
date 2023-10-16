@@ -34,6 +34,19 @@
                 <h1 class="mb-0">Professional Services to Help Your Business</h1>
             </div>
             <div class="row g-5">
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">บริการ VPN</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="{{ url('pages/detail-service') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
                 @foreach ($services as $service)
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded overflow-hidden">
