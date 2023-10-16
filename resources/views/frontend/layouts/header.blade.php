@@ -55,7 +55,7 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="frontend/img/Bg1.jpg" alt="Image">
+                        <img class="auto" src="frontend/img/carousel-1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>

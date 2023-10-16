@@ -42,7 +42,7 @@
                         </div>
                         <h4 class="mb-3">บริการ VPN {{ $service->Sv_name }}</h4>
                         <p class="m-0">{{ $service->description }}</p>
-                        <a class="btn btn-lg btn-primary rounded" href="{{ url('pages/detail-service/' . $service->id) }}">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('service-detail', ['id' => $service->ServiceID]) }}">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>

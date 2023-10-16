@@ -22,31 +22,43 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
+
     
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <img src="frontend/img/user.png" class="card-img-top" alt="Person Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">ลูกค้าส่วนบุคคล</h5>
-                        <p class="card-text">Some information about a person.</p>
-                        <a href="#" class="btn btn-primary">ค้นหาข้อมูลสำหรับบุคคล</a>
-                    </div>
+    <!-- Customer Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    <a href="{{ url('pages/detail-customer') }}" class="text-decoration-none text-dark">
+                        <div class="team-item bg-light rounded overflow-hidden">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="https://mpics.mgronline.com/pics/Images/564000011915904.JPEG" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h2 class="text-primary">Person</h2>
+                                <p class="text-uppercase m-0">ลูกค้าบุคคล</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <img src="frontend/img/organization.png" class="card-img-top" alt="Organization Image">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">ลูกค้าส่วนองค์กร</h5>
-                        <p class="card-text">Some information about an organization.</p>
-                        <a href="#" class="btn btn-primary">ค้นหาข้อมูลสำหรับองค์กร</a>
-                    </div>
+    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                    <a href="{{ url('pages/detail-customer') }}" class="text-decoration-none text-dark">
+                        <div class="team-item bg-light rounded overflow-hidden">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="https://lh5.googleusercontent.com/wZymo9NpgmNC9HaFY12OZQiAkaPIOXgZLUxcBNZ_B4aHcEqWyVzNQ5Tabw_qd_gSL6DR_IYbCDkGGPLHg38ydL6K2JAKwJmzaEKaZIoPzKOXXJAYPqqb34fJH8XZrMEyeIwZrSoh" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <h2 class="text-primary">Organization</h2>
+                                <p class="text-uppercase m-0">ลูกค้าองค์กร</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Customer End -->
+
 </body>
 </html>
 @endsection

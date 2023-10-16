@@ -32,7 +32,7 @@
             @foreach ($promotions as $promotion)
                 <div class="col">
                     <div class="card h-100">
-                        <img src="{{ asset('uploads/' . $promotion->Pn_Image) }}" class="card-img-top" alt="{{ $promotion->Pm_name }}" style="height: 220px;">
+                        <img src="{{ asset('uploads/' . $promotion->Pn_Image) }}" class="card-img-top" alt="{{ $promotion->Pm_name }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $promotion->Pm_name }}</h5>
                             <p class="card-text">{{ $promotion->Pn_detail }}</p>

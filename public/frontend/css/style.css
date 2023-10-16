@@ -271,6 +271,12 @@ hr {
   /*end news details */
  
 
+/* Add this CSS to your stylesheet or within a style tag */
+.floating-content-wrapper img {
+    width: 100%; 
+    display: block; 
+}
+
 /*** Spinner ***/
 .spinner {
     width: 40px;
