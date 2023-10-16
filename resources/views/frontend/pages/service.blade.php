@@ -34,34 +34,22 @@
                 <h1 class="mb-0">Professional Services to Help Your Business</h1>
             </div>
             <div class="row g-5">
-                @foreach ($services as $service)
-                    <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                        <div class="team-item bg-light rounded overflow-hidden">
-                            <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="{{ asset('uploads/' . $service->Sv_Image) }}" alt="{{ $service->Sv_name }}">
-                                <div class="team-social">
-                                    <!-- เพิ่มลิงค์โซเชียลมีเดียที่นี่ (ตามที่คุณต้องการ) -->
-                                </div>
-                            </div>
-                            <div class="text-center py-4">
-                                <h4 class="text-primary">{{ $service->Sv_name }}</h4>
-                                <!-- เพิ่มข้อมูลเพิ่มเติมเช่นรายละเอียดเพิ่มเติมหรือลิงค์ -->
-                            </div>
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
                         </div>
+                        <h4 class="mb-3">บริการ VPN</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="{{ url('pages/detail-service') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
-                @endforeach
+                </div>
             </div>
         </div>
     </div>
     <!-- Service End -->
-
-
-
-
-
-
-
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>

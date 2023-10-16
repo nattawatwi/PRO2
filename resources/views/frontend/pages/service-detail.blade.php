@@ -23,62 +23,55 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
+    
 
-    <section class="page-section section-container mt-0 main-promotion-detail container">
+<section class="page-section section-bg-light section-right" style="margin-bottom: 100px;">
     <div class="section-content">
-    <a href="/promotions" class="back-button"><i class="bi bi-chevron-left"></i><span>ย้อนกลับ</span></a>
-            <div class="row">
-                <div class="col-12 col-md-6 main-promotion-image">
-                    <img class="promotion-main-image" src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?sfvrsn=f27ba9d1_1">
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="mt-3 mb-2">
-                    วันนี้ – 31 ส.ค.67</div>
-                    <h1>เม้าท์สนุก...... ได้ทุกเครือข่ายกับโปรเสริม Big Mouth Topping
-                        <h4>เม้าท์สนุก...... ได้ทุกเครือข่าย กับโปรเสริม Big Mouth Topping 240 นาที เพียง 95 บาท</h4>
-                    </h1>
-                    <a href="https://www.ntmobile.in.th/th/Prepaid/221.aspx" class="round-filled-button filled-black" target="_blank">สมัครเลย</a>
-                        <div id="promotion-terms-accordion" class="accordion">
-                            <div class="card">
-                                <div class="card-header active" id="headingOne">
-                                    <h5 class="m-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            รายละเอียดและเงื่อนไขการให้บริการ
-                                        </button>
-                                    </h5>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p><b><u>ระยะเวลาส่งเสริมการขาย</u></b><b> </b><b>: ตั้งแต่วันที่ 25 สิงหาคม 2566 - วันที่ 31 สิงหาคม 2567</b></p><p><b>เงื่อนไขรายการส่งเสริมการขาย&nbsp;</b>
-                                        <br></p><ol dir="ltr"><li>สำหรับผู้ใช้บริการโทรศัพท์เคลื่อนที่ NT Mobile ระบบเติมเงิน สามารถสมัครรายการส่งเสริมการขายนี้ได้ผ่านช่องทาง ดังนี้
-                                        <ul><li>1.1 บริการด่วนพิเศษ กด USSD ตามด้วยรหัสแพ็กเกจที่ต้องการสมัคร </li><li>1.2 บริการผ่านเว็บไซต์ โดยเข้าไปที่ www.ntmobile.in.th </li><li>1.3 บริการผ่าน Application NT Mobile </li></ul></li><li>สำหรับผู้ใช้บริการโทรศัพท์เคลื่อนที่ NT Mobile ระบบเติมเงิน ทุกซิมสามารถสมัครใช้รายการส่งเสริมการขายเสริม
-                                        ชุด Big Mouth Topping นี้ได้ </li><li>สำหรับผู้ใช้บริการที่สมัครรายการส่งเสริมการขายเสริม ชุด Big Mouth Topping สามารถโทรจากโครงข่าย NT Mobile ไปยังปลายทางที่เป็นเลขหมายโทรศัพท์พื้นฐานและเลขหมายโทรศัพท์เคลื่อนที่ทุกโครงข่าย ด้วยแพ็กเกจที่ต้องการสมัคร ดังนี้ จำนวน 60 นาที ค่าบริการ 35 บาท จำนวน 120 นาที ค่าบริการ 55 บาท และจำนวน 240 นาที ค่าบริการ 95 บาท (ค่าบริการดังกล่าวรวมภาษีมูลค่าเพิ่มแล้ว) </li><li>เมื่อหน้าจอจับสัญญาณ NT Mobile ระบบจะคิดค่าบริการจากกระเป๋ากลุ่มโบนัสก่อนเสมอ หลังจากนั้นจึงทำการหักค่าบริการจากยอดเงินหลัก (กระเป๋าเมน) แต่ถ้าหน้าจอจับสัญญาณ Roaming ระบบจะคิดค่าบริการจากยอดเงินหลัก (กระเป๋าเมน) เท่านั้น</li><li>ผู้ใช้บริการสมัครรายการส่งเสริมการขายเสริม NT Mobile ระบบเติมเงิน ชุด Big Mouth Topping แล้ว ไม่สามารถเปลี่ยนหรือคืนเป็นเงินได้ </li><li>ผู้ใช้บริการที่ต้องการสมัครรายการส่งเสริมการขายดังกล่าวต้องมีจำนวนเงินคงเหลือในกระเป๋าหลักเพียงพอต่อการสมัครในแต่ละครั้ง </li><li>กรณีผู้ใช้บริการไม่มีระยะเวลาสะสมคงเหลือ (ไม่มีวันคงเหลือ) หากสมัครใช้บริการรายการส่งเสริมการขายเสริม ชุด Big Mouth Topping จะไม่สามารถใช้งานการโทรได้ จนกว่าลูกค้าจะซื้อวันเพิ่มเพื่อใช้งานต่อเนื่อง </li><li>ผู้ใช้บริการที่สมัครรายการส่งเสริมการขายเสริม ชุด Topping อยู่แล้ว สามารถสมัครรายการส่งเสริมการขาย ชุด Big Mouth Topping เพิ่มได้ </li><li>ผู้ใช้บริการควรศึกษาเงื่อนไขการใช้งาน อัตราค่าบริการ วิธีการตั้งค่าการใช้งาน พื้นที่การให้บริการ อัตราความเร็วของอินเทอร์เน็ต NT Mobile เป็นอัตราความเร็วที่วัดจากระบบในห้องปฏิบัติการอัตราความเร็ว ในการใช้งานจริงจะขึ้นอยู่กับช่วงระยะเวลา สภาพอากาศ ความหนาแน่นของผู้ใช้บริการ ปริมาณการรับ-ส่งข้อมูล และคุณภาพในการรับ-ส่งสัญญาณของอุปกรณ์เชื่อมต่อของผู้ใช้บริการ บริษัทไม่รับผิดชอบต่อความเร็วที่ได้รับและผลที่เกิดขึ้นจากการไม่สามารถเชื่อมต่ออินเทอร์เน็ต </li><li>NT Mobile สงวนสิทธิ์ที่จะระงับ เปลี่ยนแปลง หรือยกเลิกบริการหากพบว่าผู้ใช้บริการมีเจตนาไม่สุจริตผิดกฎหมาย หรือ ขัดกับประกาศของทางราชการ </li><li>NT Mobile สงวนสิทธิ์เปลี่ยนแปลงเงื่อนไขรายการส่งเสริมการขายเสริม ชุด Big Mouth Topping โดยไม่ต้องแจ้งให้ทราบล่วงหน้า </li><li>ผู้ใช้บริการสามารถตรวจสอบปริมาณการใช้งาน โดยกดรหัส *153*2# หรือผ่านทาง www.ntmobile.in.th และ Application NT Mobile ทั้งนี้สามารถศึกษาข้อกำหนดและเงื่อนไขเพิ่มเติมได้ที่ NT Mobile Contact Center 1888 </li></ol>
-                                    </div>
-                                </div>
+        <div class="section-fiber-services-content">
+            <div class="container ">
+                <h1>คุณสมบัติ</h1>
+                <ul>
+                    <li>ให้บริการผ่านโครงข่าย MPLS/VPN (L2) ที่ครอบคลุมพื้นที่ให้บริการทั่วประเทศและเชื่อมโยงไปยัง PoP (Point of Presence ) ของ NT ในต่างประเทศที่เป็นศูนย์กลางโทรคมนาคมของโลก</li>
+                    <li>ให้บริการไปได้ทั่วโลกโดยร่วมมือกับพันธมิตรระดับชั้นนําของโลก ทําให้สามารถตอบสนองทุกความต้องการของลูกค้าด้วยคุณภาพระดับสากล</li>
+                    <li>ให้บริการเชื่อมต่อ Interface แบบ RJ-45 และ Optical</li><li>รองรับการสื่อสารข้อมูลแบบ IP Protocol ทําให้สามารถรับสองได้ทั้งข้อมูลภาพ เสียงและวีดีโอ</li></ul>
+                    <div class="row floating-content-wrapper">
+                        <div class="col-xs-12 col-sm-6">
+                            <img src="https://www.ntplc.co.th/images/default-source/nt-products/ip-vpn-international/ip-vpn55f0dac9-f7cd-4471-9e86-d87e289a5400.webp?sfvrsn=252b0ed2_1">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="floating-content">
+                                <h3>รายละเอียดบริการ</h3>
+                                <ul><li>บริการสื่อสารข้อมูลความเร็วสูงแบบจุดต่อจุด จุดต่อหลายจุด หรือหลายจุดต่อหลายจุด จากโครงข่าย IP ภายในประเทศไปยังจุดหมายปลายทางในต่างประเทศ ครอบคลุมภูมิภาคต่างๆ ทั่วโลก มีขนาดวงจรให้เลือกใช้ตั้งแต่ 64 Kbps. เป็นต้นไป เหมาะสำหรับกลุ่มลูกค้าองค์กรธุรกิจ บริษัทขนาดใหญ่ และบริษัทข้ามชาติ ให้สามารถเชื่อมโยงการรับ-ส่งข้อมูลระหว่างสาขาได้อย่างมีประสิทธิภาพ รวดเร็ว และปลอดภัย</li></ul>
+                            </div>
+                            <div class="floating-content">
+                                <h3>ประโยชน์<br></h3>
+                                <ul><li>การรับ-ส่งข้อมูลมีความปลอดภัยสูง และรวดเร็ว</li>
+                                <li>ประหยัดค่าใช้จ่าย และง่ายต่อการเชื่อมต่อ</li>
+                                <li>รองรับความต้องการของลูกค้าได้หลายระดับ (Class of service)</li></ul>
+                            </div>
+                            <div class="floating-content">
+                                <h3>รูปแบบบริการ</h3>
+                                <ul><li>บริการแบบ PE-to-PE : NT เป็นผู้ให้บริการเฉพาะโครงข่ายหลักเท่านั้น โดยผู้ใช้บริการจัดหาอุปกรณ์และโครงข่ายปลายทางเอง</li>
+                                <li>บริการแบบ End-to-End : NT ให้บริการโครงข่ายหลัก และโครงข่ายปลายทางไปยังอุปกรณ์ของผู้ใช้บริการ โดยผู้ใช้บริการเป็นผู้จัดหาอุปกรณ์ปลายทางเอง</li>
+                                <li>บริการแบบ CE-to-CE : NT เป็นผู้ให้บริการจัดหาอุปกรณ์และโครงข่าย รวมทั้งบำรุง รักษาอุปกรณ์ปลายทางทั้งหมด (Managed service)</li></ul>
+                            </div>
+                            <div class="floating-content">
+                                <h3>สนใจติดต่อได้ที่ Contact Center:&nbsp;<a data-sf-ec-immutable="">1888</a><a style="font-size: var(--font-size-h3); text-align: inherit; text-transform: inherit; white-space: inherit; word-spacing: normal" data-sf-ec-immutable=""></a></h3>
                             </div>
                         </div>
+                        <div class="fiber-services">
+                            <div class="deco deco-signal" style="transform: translateX(0px) translateY(2.47372px);">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    
-
+    </div>
+</section>
 
 
 
-
-
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-    <!-- Template Javascript -->
-    <script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
-
 </html>
 @endsection
 
