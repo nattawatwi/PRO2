@@ -36,6 +36,11 @@ Route::get('/pages/contact', function () {
     return view('frontend.pages.contact');
 });
 
+
+Route::get('/pages/login', function () {
+    return view('frontend.pages.login');
+});
+
 //Promotion
 Route::get('/pages/promotion', [FrontendController::class, 'showPromotions']);
 Route::get('/pages/promotion/detail-promotion/{id}', [FrontendController::class, 'detailPromotion'])->name('detail-promotion');
