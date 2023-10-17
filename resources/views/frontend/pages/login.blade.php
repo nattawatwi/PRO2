@@ -25,6 +25,7 @@
     </div>
     <!-- Full Screen Search End -->
 
+<<<<<<< Updated upstream
     <!-- Login Form Start -->
     <div class="container py-5">
         <div class="row justify-content-center">
@@ -80,6 +81,9 @@
         </div>
     </div>
     <!-- Login Form End -->
+=======
+
+>>>>>>> Stashed changes
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>

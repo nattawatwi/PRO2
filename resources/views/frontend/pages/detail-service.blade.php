@@ -23,9 +23,14 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
+<<<<<<< Updated upstream
     
 
 <section class="page-section section-bg-light section-right" style="margin-bottom: 100px;">
+=======
+
+    <section class="page-section section-container mt-0 main-promotion-detail container">
+>>>>>>> Stashed changes
     <div class="section-content">
         <div class="section-fiber-services-content">
             <div class="container ">
@@ -59,6 +64,7 @@
                                 <h3>สนใจติดต่อได้ที่ Contact Center:&nbsp;<a data-sf-ec-immutable="">1888</a><a style="font-size: var(--font-size-h3); text-align: inherit; text-transform: inherit; white-space: inherit; word-spacing: normal" data-sf-ec-immutable=""></a></h3>
                             </div>
                         </div>
+<<<<<<< Updated upstream
                         <div class="fiber-services">
                             <div class="deco deco-signal" style="transform: translateX(0px) translateY(2.47372px);">
                         </div>
@@ -72,6 +78,29 @@
 
 
 </body>
+=======
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Template Javascript -->
+    <script src="{{asset('frontend/js/main.js')}}"></script>
+</body>
+
+>>>>>>> Stashed changes
 </html>
 @endsection
 
