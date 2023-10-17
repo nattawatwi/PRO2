@@ -25,9 +25,4 @@ Route::group([
     $router->resource('categories', CategoryController::class);
     $router->resource('contacts', ContactController::class);
 
-    Route::get('organizations', OrganizationController::class . '@index')
-    ->middleware('org.login');
-
-    Route::get('persons', PersonController::class . '@index')
-    ->middleware('person.login');
 });

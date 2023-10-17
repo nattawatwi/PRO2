@@ -29,6 +29,7 @@ class OrganizationController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('OgnID', __('OgnID'));
         $grid->column('Password', __('Password'));
+        $grid->column('type', __('Type'));
         $grid->column('Ogn_name', __('Ogn name'));
         $grid->column('Ong_type', __('Ong type'));
         $grid->column('Ong_phone', __('Ong phone'));
@@ -57,6 +58,7 @@ class OrganizationController extends AdminController
         $show->field('id', __('Id'));
         $show->field('OgnID', __('OgnID'));
         $show->field('Password', __('Password'));
+        $show->field('type', __('Type'));
         $show->field('Ogn_name', __('Ogn name'));
         $show->field('Ong_type', __('Ong type'));
         $show->field('Ong_phone', __('Ong phone'));
@@ -83,6 +85,11 @@ class OrganizationController extends AdminController
 
         $form->text('OgnID', __('OgnID'));
         $form->password('Password', __('Password'));
+        $form->select('type', __('Type'))->options([
+            'option1' => 'Option 1',
+            'option2' => 'Option 2'
+            // เพิ่มตัวเลือกตามที่คุณต้องการ
+        ]);
         $form->text('Ogn_name', __('Ogn name'));
 
         // เปลี่ยนฟิลด์ Ong_type เป็นแบบเลือก (dropdown)
@@ -92,7 +99,6 @@ class OrganizationController extends AdminController
             'option3' => 'Option 3',
             // เพิ่มตัวเลือกตามที่คุณต้องการ
         ]);
-
         $form->text('Ong_phone', __('Ong phone'));
         $form->text('Ong_email', __('Ong email'));
         $form->text('Ong_address', __('Ong address'));

@@ -27,6 +27,7 @@ class PersonController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('PersonID', __('PersonID'));
+        $grid->column('type', __('Type'));
         $grid->column('Ps_name', __('Ps name'));
         $grid->column('Ps_IDnumber', __('Ps IDnumber'));
         $grid->column('Ps_phone', __('Ps phone'));
@@ -54,7 +55,8 @@ class PersonController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('PersonID', __('PersonID'));
-        $show->field('Password', __('Password'));
+        $show->field('password', __('Password'));
+        $show->field('type', __('type'));
         $show->field('Ps_name', __('Ps name'));
         $show->field('Ps_IDnumber', __('Ps IDnumber'));
         $show->field('Ps_phone', __('Ps phone'));
@@ -80,7 +82,12 @@ class PersonController extends AdminController
         $form = new Form(new Person());
 
         $form->text('PersonID', __('PersonID'));
-        $form->password('Password', __('Password'));
+        $form->password('password', __('Password'));
+        $form->select('type', __('Type'))->options([
+            'option1' => 'Option 1',
+            'option2' => 'Option 2'
+            // เพิ่มตัวเลือกตามที่คุณต้องการ
+        ]);
         $form->text('Ps_name', __('Ps name'));
         $form->text('Ps_IDnumber', __('Ps IDnumber'));
         $form->text('Ps_phone', __('Ps phone'));

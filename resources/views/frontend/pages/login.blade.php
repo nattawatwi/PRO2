@@ -27,7 +27,7 @@
     
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    
     <!-- Template Javascript -->
     <script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
