@@ -16,8 +16,6 @@ class OrganizationController extends AdminController
      * @var string
      */
     protected $title = 'Organization';
-    
-    protected $middleware = ['org.login'];
 
     /**
      * Make a grid builder.

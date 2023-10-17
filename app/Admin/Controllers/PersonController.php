@@ -16,7 +16,6 @@ class PersonController extends AdminController
      * @var string
      */
     protected $title = 'Person';
-    protected $middleware = ['person.login'];
     /**
      * Make a grid builder.
      *
