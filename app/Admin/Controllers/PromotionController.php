@@ -85,10 +85,10 @@ class PromotionController extends AdminController
         $form = new Form(new Promotion());
 
         $form->text('Pm_name', __('Name'));
-        $form->text('Pn_detail', __('Detail'));
+        $form->textarea('Pn_detail', __('Detail'));
         $form->date('Pn_St_date', __('Start Date')); $form->date('Pn_EP_date', __('End Date'));
         $form->text('Pn_price', __('Price'));
-        $form->text('Pn_terms', __('Terms'));
+        $form->textarea('Pn_terms', __('Terms'));
         $form->image('Pn_Image', __('Image'));
 
         return $form;

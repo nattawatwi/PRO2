@@ -1,0 +1,98 @@
+<?php
+
+namespace App\Admin\Controllers;
+
+use OpenAdmin\Admin\Controllers\AdminController;
+use OpenAdmin\Admin\Form;
+use OpenAdmin\Admin\Grid;
+use OpenAdmin\Admin\Show;
+use \App\Models\Organization;
+
+class OrganizationController extends AdminController
+{
+    /**
+     * Title for current resource.
+     *
+     * @var string
+     */
+    protected $title = 'Organization';
+
+    /**
+     * Make a grid builder.
+     *
+     * @return Grid
+     */
+    protected function grid()
+    {
+        $grid = new Grid(new Organization());
+
+        $grid->column('id', __('Id'));
+        $grid->column('OgnID', __('OgnID'));
+        $grid->column('Password', __('Password'));
+        $grid->column('Ogn_name', __('Ogn name'));
+        $grid->column('Ong_type', __('Ong type'));
+        $grid->column('Ong_phone', __('Ong phone'));
+        $grid->column('Ong_email', __('Ong email'));
+        $grid->column('Ong_address', __('Ong address'));
+        $grid->column('MapURL', __('MapURL'));
+        $grid->column('ServiceID', __('ServiceID'));
+        $grid->column('ServiceCenterID', __('ServiceCenterID'));
+        $grid->column('PromotionID', __('PromotionID'));
+        $grid->column('created_at', __('Created at'));
+        $grid->column('updated_at', __('Updated at'));
+
+        return $grid;
+    }
+
+    /**
+     * Make a show builder.
+     *
+     * @param mixed $id
+     * @return Show
+     */
+    protected function detail($id)
+    {
+        $show = new Show(Organization::findOrFail($id));
+
+        $show->field('id', __('Id'));
+        $show->field('OgnID', __('OgnID'));
+        $show->field('Password', __('Password'));
+        $show->field('Ogn_name', __('Ogn name'));
+        $show->field('Ong_type', __('Ong type'));
+        $show->field('Ong_phone', __('Ong phone'));
+        $show->field('Ong_email', __('Ong email'));
+        $show->field('Ong_address', __('Ong address'));
+        $show->field('MapURL', __('MapURL'));
+        $show->field('ServiceID', __('ServiceID'));
+        $show->field('ServiceCenterID', __('ServiceCenterID'));
+        $show->field('PromotionID', __('PromotionID'));
+        $show->field('created_at', __('Created at'));
+        $show->field('updated_at', __('Updated at'));
+
+        return $show;
+    }
+
+    /**
+     * Make a form builder.
+     *
+     * @return Form
+     */
+    protected function form()
+    {
+        $form = new Form(new Organization());
+
+        $form->text('OgnID', __('OgnID'));
+        $form->password('Password', __('Password'));
+        $form->text('Ogn_name', __('Ogn name'));
+        $form->text('Ong_type', __('Ong type'));
+        $form->text('Ong_phone', __('Ong phone'));
+        $form->text('Ong_email', __('Ong email'));
+        $form->text('Ong_address', __('Ong address'));
+        $form->text('MapURL', __('MapURL'));
+        $form->text('ServiceID', __('ServiceID'));
+        $form->text('ServiceCenterID', __('ServiceCenterID'));
+        $form->text('PromotionID', __('PromotionID'));
+
+        return $form;
+    }
+}
