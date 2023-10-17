@@ -16,6 +16,8 @@ class OrganizationController extends AdminController
      * @var string
      */
     protected $title = 'Organization';
+    
+    protected $middleware = ['org.login'];
 
     /**
      * Make a grid builder.
@@ -84,15 +86,31 @@ class OrganizationController extends AdminController
         $form->text('OgnID', __('OgnID'));
         $form->password('Password', __('Password'));
         $form->text('Ogn_name', __('Ogn name'));
-        $form->text('Ong_type', __('Ong type'));
+
+        // เปลี่ยนฟิลด์ Ong_type เป็นแบบเลือก (dropdown)
+        $form->select('Ong_type', __('Ong type'))->options([
+            'option1' => 'Option 1',
+            'option2' => 'Option 2',
+            'option3' => 'Option 3',
+            // เพิ่มตัวเลือกตามที่คุณต้องการ
+        ]);
+
         $form->text('Ong_phone', __('Ong phone'));
         $form->text('Ong_email', __('Ong email'));
         $form->text('Ong_address', __('Ong address'));
         $form->text('MapURL', __('MapURL'));
-        $form->text('ServiceID', __('ServiceID'));
-        $form->text('ServiceCenterID', __('ServiceCenterID'));
-        $form->text('PromotionID', __('PromotionID'));
+        $form->select('ServiceID', __('Service'))->options(
+            \DB::table('service')->pluck('Sv_name', 'Sv_name')
+        );
+        $form->select('ServiceCenterID', __('Service Center'))->options(
+            \DB::table('servicect')->pluck('Sc_name', 'Sc_name')
+        );
+        $form->select('PromotionID', __('Promotion'))->options(
+            \DB::table('promotion')->pluck('Pm_name', 'Pm_name')
+        );
 
         return $form;
+
     }
+
 }

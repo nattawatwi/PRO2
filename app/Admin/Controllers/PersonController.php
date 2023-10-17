@@ -16,7 +16,7 @@ class PersonController extends AdminController
      * @var string
      */
     protected $title = 'Person';
-
+    protected $middleware = ['person.login'];
     /**
      * Make a grid builder.
      *
@@ -29,8 +29,6 @@ class PersonController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('PersonID', __('PersonID'));
         $grid->column('Ps_name', __('Ps name'));
-        $grid->column('Ps_sex', __('Ps sex'));
-        $grid->column('Ps_birthday', __('Ps birthday'));
         $grid->column('Ps_IDnumber', __('Ps IDnumber'));
         $grid->column('Ps_phone', __('Ps phone'));
         $grid->column('Ps_email', __('Ps email'));
@@ -59,8 +57,6 @@ class PersonController extends AdminController
         $show->field('PersonID', __('PersonID'));
         $show->field('Password', __('Password'));
         $show->field('Ps_name', __('Ps name'));
-        $show->field('Ps_sex', __('Ps sex'));
-        $show->field('Ps_birthday', __('Ps birthday'));
         $show->field('Ps_IDnumber', __('Ps IDnumber'));
         $show->field('Ps_phone', __('Ps phone'));
         $show->field('Ps_email', __('Ps email'));
@@ -87,16 +83,20 @@ class PersonController extends AdminController
         $form->text('PersonID', __('PersonID'));
         $form->password('Password', __('Password'));
         $form->text('Ps_name', __('Ps name'));
-        $form->text('Ps_sex', __('Ps sex'));
-        $form->text('Ps_birthday', __('Ps birthday'));
         $form->text('Ps_IDnumber', __('Ps IDnumber'));
         $form->text('Ps_phone', __('Ps phone'));
         $form->text('Ps_email', __('Ps email'));
         $form->text('Ps_address', __('Ps address'));
         $form->text('MapURL', __('MapURL'));
-        $form->text('ServiceID', __('ServiceID'));
-        $form->text('ServiceCenterID', __('ServiceCenterID'));
-        $form->text('PromotionID', __('PromotionID'));
+        $form->select('ServiceID', __('Service'))->options(
+            \DB::table('service')->pluck('Sv_name', 'Sv_name')
+        );
+        $form->select('ServiceCenterID', __('Service Center'))->options(
+            \DB::table('servicect')->pluck('Sc_name', 'Sc_name')
+        );
+        $form->select('PromotionID', __('Promotion'))->options(
+            \DB::table('promotion')->pluck('Pm_name', 'Pm_name')
+        );
 
         return $form;
     }

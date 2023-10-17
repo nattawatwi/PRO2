@@ -39,12 +39,12 @@ class PromotionController extends AdminController
 
         $grid->column('PromotionID', __('PromotionID'));
         $grid->column('Pm_name', __('Name'));
-        $grid->column('Pn_detail', __('Detail'));
-        $grid->column('Pn_St_date', __('Start Date'));
-        $grid->column('Pn_EP_date', __('End Date'));
-        $grid->column('Pn_price', __('Price'));
-        $grid->column('Pn_terms', __('Terms'));
-        $grid->column('Pn_Image', __('Image'));
+        $grid->column('Pm_detail', __('Detail'));
+        $grid->column('Pm_St_date', __('Start Date'));
+        $grid->column('Pm_EP_date', __('End Date'));
+        $grid->column('Pm_price', __('Price'));
+        $grid->column('Pm_terms', __('Terms'));
+        $grid->column('Pm_Image', __('Image'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -63,12 +63,12 @@ class PromotionController extends AdminController
 
         $show->field('PromotionID', __('PromotionID'));
         $show->field('Pm_name', __('Name'));
-        $show->field('Pn_detail', __('Detail'));
-        $show->field('Pn_St_date', __('Start Date'));
-        $show->field('Pn_EP_date', __('End Date'));
-        $show->field('Pn_price', __('Price'));
-        $show->field('Pn_terms', __('Terms'));
-        $show->field('Pn_Image', __('Image'));
+        $show->field('Pm_detail', __('Detail'));
+        $show->field('Pm_St_date', __('Start Date'));
+        $show->field('Pm_EP_date', __('End Date'));
+        $show->field('Pm_price', __('Price'));
+        $show->field('Pm_terms', __('Terms'));
+        $show->field('Pm_Image', __('Image'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -85,11 +85,12 @@ class PromotionController extends AdminController
         $form = new Form(new Promotion());
 
         $form->text('Pm_name', __('Name'));
-        $form->textarea('Pn_detail', __('Detail'));
-        $form->date('Pn_St_date', __('Start Date')); $form->date('Pn_EP_date', __('End Date'));
-        $form->text('Pn_price', __('Price'));
-        $form->textarea('Pn_terms', __('Terms'));
-        $form->image('Pn_Image', __('Image'));
+        $form->textarea('Pm_detail', __('Detail'));
+        $form->date('Pm_St_date', __('Start Date')); 
+        $form->date('Pm_EP_date', __('End Date'));
+        $form->text('Pm_price', __('Price'));
+        $form->textarea('Pm_terms', __('Terms'));
+        $form->image('Pm_Image', __('Image'));
 
         return $form;
     }

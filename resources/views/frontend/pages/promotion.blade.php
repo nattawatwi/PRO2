@@ -32,10 +32,10 @@
             @foreach ($promotions as $promotion)
                 <div class="col">
                     <div class="card h-100">
-                        <img src="{{ asset('uploads/' . $promotion->Pn_Image) }}" class="card-img-top" alt="{{ $promotion->Pm_name }}">
+                        <img src="{{ asset('uploads/' . $promotion->Pm_Image) }}" class="card-img-top" alt="{{ $promotion->Pm_name }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $promotion->Pm_name }}</h5>
-                            <p class="card-text">{{ $promotion->Pn_detail }}</p>
+                            <p class="card-text">{{ $promotion->Pm_detail }}</p>
                         </div>
                         <div class="card-footer">
                             <a href="{{ route('detail-promotion', ['id' => $promotion->PromotionID]) }}">ดูรายละเอียด</a>
