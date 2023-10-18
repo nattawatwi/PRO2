@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,5 +57,4 @@ Route::get('/pages/trend/trend-detail/{id}', [FrontendController::class, 'detail
 
 Route::get('/contact', [FrontendController::class, 'showForm']);
 Route::post('/contact', [FrontendController::class, 'submitForm']);
-
 
