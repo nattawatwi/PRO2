@@ -84,8 +84,8 @@ class PersonController extends AdminController
         $form->text('PersonID', __('PersonID'));
         $form->password('password', __('Password'));
         $form->select('type', __('Type'))->options([
-            'option1' => 'Option 1',
-            'option2' => 'Option 2'
+            'personal' => 'personal',
+            'organization' => 'organization'
             // เพิ่มตัวเลือกตามที่คุณต้องการ
         ]);
         $form->text('Ps_name', __('Ps name'));

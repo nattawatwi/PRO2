@@ -86,8 +86,8 @@ class OrganizationController extends AdminController
         $form->text('OgnID', __('OgnID'));
         $form->password('Password', __('Password'));
         $form->select('type', __('Type'))->options([
-            'option1' => 'Option 1',
-            'option2' => 'Option 2'
+            'personal' => 'personal',
+            'organization' => 'organization'
             // เพิ่มตัวเลือกตามที่คุณต้องการ
         ]);
         $form->text('Ogn_name', __('Ogn name'));
