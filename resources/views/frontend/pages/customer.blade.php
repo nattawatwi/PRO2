@@ -27,7 +27,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <a href="{{ url('pages/login') }}" class="text-decoration-none text-dark">
+                    <a href="{{ url('pages/search-person') }}" class="text-decoration-none text-dark">
                         <div class="team-item bg-light rounded overflow-hidden">
                             <div class="team-img position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="https://mpics.mgronline.com/pics/Images/564000011915904.JPEG" alt="">
@@ -40,7 +40,7 @@
                     </a>
                 </div>
     <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    <a href="{{ url('pages/login') }}" class="text-decoration-none text-dark">
+                    <a href="{{ url('pages/search-organization') }}" class="text-decoration-none text-dark">
                         <div class="team-item bg-light rounded overflow-hidden">
                             <div class="team-img position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="https://lh5.googleusercontent.com/wZymo9NpgmNC9HaFY12OZQiAkaPIOXgZLUxcBNZ_B4aHcEqWyVzNQ5Tabw_qd_gSL6DR_IYbCDkGGPLHg38ydL6K2JAKwJmzaEKaZIoPzKOXXJAYPqqb34fJH8XZrMEyeIwZrSoh" alt="">

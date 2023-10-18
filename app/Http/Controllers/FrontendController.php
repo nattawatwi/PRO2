@@ -141,4 +141,17 @@ class FrontendController extends Controller
         return redirect('/pages/contact')->with('success', 'ข้อความของคุณถูกส่งเรียบร้อยแล้ว!');
     }
 
+    public function searchCustomer(Request $request)
+    {
+        $PersonID = $request->input('PersonID');
+        $customer = Customer::where('PersonID', $PersonID)->first();
+
+        if ($customer) {
+            return view('frontend.pages.search-person', ['customer' => $customer]);
+        } else {
+            return view('frontend.pages.search-person', ['error' => 'Customer not found']);
+        }
+    }
+
+
 }

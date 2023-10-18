@@ -42,6 +42,15 @@ Route::get('/pages/login', function () {
     return view('frontend.pages.login');
 });
 
+Route::get('/pages/search-person', function () {
+    return view('frontend.pages.search-person');
+});
+
+Route::get('/pages/search-organization', function () {
+    return view('frontend.pages.search-organization');
+});
+
+
 //Promotion
 Route::get('/pages/promotion', [FrontendController::class, 'showPromotions']);
 Route::get('/pages/promotion/detail-promotion/{id}', [FrontendController::class, 'detailPromotion'])->name('detail-promotion');
@@ -58,3 +67,5 @@ Route::get('/pages/trend/trend-detail/{id}', [FrontendController::class, 'detail
 Route::get('/contact', [FrontendController::class, 'showForm']);
 Route::post('/contact', [FrontendController::class, 'submitForm']);
 
+
+Route::get('/search/customer', 'FrontendController@searchCustomer')->name('searchCustomer');
