@@ -35,8 +35,8 @@
                             @csrf
 
                             <div class="form-group">
-                                <label for="PersonID">Person ID</label>
-                                <input type="text" name="PersonID" class="form-control" required>
+                                <label for="personID">Person ID</label>
+                                <input type="text" name="personID" class="form-control" required>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Search</button>
@@ -44,21 +44,12 @@
 
                         @if (isset($person))
                             <div class="mt-4">
-                                <strong>Person Name:</strong> {{ $person->Ps_name }}
-                                <br>
-                                <strong>Type:</strong> {{ $person->type }}
-                                <br>
-                                <strong>Email:</strong> {{ $person->Ps_email }}
-                                <br>
-                                <strong>Adress:</strong> {{ $person->Ps_address }}
-                                <br>
-                                <strong>Service:</strong> {{ $person->ServiceID }}
-                                <br>
-                                <strong>Promotion:</strong> {{ $person->PromotionID }}
-                                <br>
-                                <strong>Map:</strong> {{ $person->MapURL }}
-                                
+                                <strong>Person Name:</strong> {{ $person->name }}
                                 <!-- Display other person information as needed -->
+                            </div>
+                            <!-- ตัวอย่าง: แสดงอีเมล -->
+                            <div>
+                                <strong>Email:</strong> {{ $person->email }}
                             </div>
                         @endif
 

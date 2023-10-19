@@ -8,6 +8,7 @@ use App\Models\News;
 use App\Models\Service;
 use App\Models\Trend;
 use App\Models\Contact;
+use App\Models\Person;
 
 class FrontendController extends Controller
 {
@@ -144,14 +145,15 @@ class FrontendController extends Controller
     public function searchCustomer(Request $request)
     {
         $PersonID = $request->input('PersonID');
-        $customer = Customer::where('PersonID', $PersonID)->first();
+        $person = Person::where('PersonID', $PersonID)->first();
 
-        if ($customer) {
-            return view('frontend.pages.search-person', ['customer' => $customer]);
+        if ($person) {
+            return view('frontend.pages.search-person', ['person' => $person]);
         } else {
-            return view('frontend.pages.search-person', ['error' => 'Customer not found']);
+            return view('frontend.pages.search-person', ['error' => 'Person not found']);
         }
     }
+
 
 
 }
