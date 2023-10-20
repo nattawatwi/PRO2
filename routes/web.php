@@ -75,5 +75,5 @@ Route::get('/pages/trend/trend-detail/{id}', [FrontendController::class, 'detail
 Route::get('/contact', [FrontendController::class, 'showForm']);
 Route::post('/contact', [FrontendController::class, 'submitForm']);
 
-Route::post('/pages/detail-person', [FrontendController::class, 'searchCustomer'])->name('searchCustomer');
-
+Route::post('/pages/detail-person', [FrontendController::class, 'searchPerson'])->name('searchPerson');
+Route::post('/pages/detail-organization', [FrontendController::class, 'searchOrganization'])->name('searchOrganization');

@@ -9,6 +9,7 @@ use App\Models\Service;
 use App\Models\Trend;
 use App\Models\Contact;
 use App\Models\Person;
+use App\Models\Organization;
 
 class FrontendController extends Controller
 {
@@ -122,7 +123,7 @@ class FrontendController extends Controller
         return view('/pages/contact');
     }
 
-    public function submitForm(Request $request)
+    public function submit .Form(Request $request)
     {
         $request->validate([
             'Ct_username' => 'required',
@@ -142,7 +143,7 @@ class FrontendController extends Controller
         return redirect('/pages/contact')->with('success', 'ข้อความของคุณถูกส่งเรียบร้อยแล้ว!');
     }
 
-    public function searchCustomer(Request $request)
+    public function searchPerson(Request $request)
     {
         $PersonID = $request->input('PersonID');
         $person = Person::where('PersonID', $PersonID)->first();
@@ -151,6 +152,18 @@ class FrontendController extends Controller
             return view('frontend.pages.search-person', ['person' => $person]);
         } else {
             return view('frontend.pages.search-person', ['error' => 'Person not found']);
+        }
+    }
+
+    public function searchOrganization(Request $request)
+    {
+        $OgnID = $request->input('OgnID');
+        $organization = Organization::where('OgnID', $OgnID)->first();
+
+        if ($organization) {
+            return view('frontend.pages.search-Organization', ['person' => $organization]);
+        } else {
+            return view('frontend.pages.search-Organization', ['error' => 'Organization not found']);
         }
     }
 

@@ -28,37 +28,28 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Search Person by PersonID</div>
+                    <div class="card-header">Search Organization by OgnID</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('searchPerson') }}">
+                        <form method="POST" action="{{ route('searchCustomer') }}">
                             @csrf
 
                             <div class="form-group">
-                                <label for="PersonID">Person ID</label>
-                                <input type="text" name="PersonID" class="form-control" required>
+                                <label for="OgnID">Organization ID</label>
+                                <input type="text" name="OgnID" class="form-control" required>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Search</button>
                         </form>
 
-                        @if (isset($person))
+                        @if (isset($organization))
                             <div class="mt-4">
-                                <strong>Person Name:</strong> {{ $person->Ps_name }}
-                                <br>
-                                <strong>Type:</strong> {{ $person->type }}
-                                <br>
-                                <strong>Email:</strong> {{ $person->Ps_email }}
-                                <br>
-                                <strong>Adress:</strong> {{ $person->Ps_address }}
-                                <br>
-                                <strong>Service:</strong> {{ $person->ServiceID }}
-                                <br>
-                                <strong>Promotion:</strong> {{ $person->PromotionID }}
-                                <br>
-                                <strong>Map:</strong> {{ $person->MapURL }}
-                                
+                                <strong>Organization Name:</strong> {{ $organization->Ong_name }}
                                 <!-- Display other person information as needed -->
+                            </div>
+                            <!-- ตัวอย่าง: แสดงอีเมล -->
+                            <div>
+                                <strong>Email:</strong> {{ $organization->Ong_email }}
                             </div>
                         @endif
 
