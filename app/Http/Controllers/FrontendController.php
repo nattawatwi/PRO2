@@ -123,7 +123,7 @@ class FrontendController extends Controller
         return view('/pages/contact');
     }
 
-    public function submit .Form(Request $request)
+    public function submitForm(Request $request)
     {
         $request->validate([
             'Ct_username' => 'required',
@@ -159,13 +159,14 @@ class FrontendController extends Controller
     {
         $OgnID = $request->input('OgnID');
         $organization = Organization::where('OgnID', $OgnID)->first();
-
+    
         if ($organization) {
-            return view('frontend.pages.search-Organization', ['person' => $organization]);
+            return view('frontend.pages.search-Organization', ['organization' => $organization]);
         } else {
             return view('frontend.pages.search-Organization', ['error' => 'Organization not found']);
         }
     }
+
 
 
 
