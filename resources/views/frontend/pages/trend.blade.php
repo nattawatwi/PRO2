@@ -51,26 +51,7 @@
                         </div>
                     </div>
                     @endforeach
-                    @endisset
-                        <div class="col-12 wow slideInUp" data-wow-delay="0.1s">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination pagination-lg m-0">
-                                    <li class="page-item disabled">
-                                        <a class="page-link rounded-0" href="#" aria-label="Previous">
-                                            <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class a="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link rounded-0" href="#" aria-label="Next">
-                                            <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                    @endisset    
                     </div>
                 </div>
                 <!-- Blog list End -->

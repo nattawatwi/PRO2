@@ -108,7 +108,7 @@
                         </div>
                         @foreach ($news as $index => $new)
                             <div class="d-flex rounded overflow-hidden mb-3">
-                                <img class="img-fluid" src="{{ asset('img/blog-' . ($index % 3 + 1) . '.jpg') }}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                                <img class="img-fluid" src="{{ asset('uploads/' . $new->Nw_image) }}" style="width: 100px; height: 100px; object-fit: cover;" alt="">
                                 <a href="#" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">{{ $new->Nw_title }}</a>
                             </div>
                         @endforeach
