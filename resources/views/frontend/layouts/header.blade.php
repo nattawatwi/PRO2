@@ -39,7 +39,7 @@
                         <a href="#" class="nav-link dropdown-toggle {{ Request::is('pages/news*') ? 'active' : '' }}" data-bs-toggle="dropdown">ข่าวสาร</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{ url('pages/news') }}" class="dropdown-item {{ Request::is('pages/news') ? 'active' : '' }}">ข่าวสารอัปเดต</a>
-                            <a href="{{ url('pages/trend') }}" class="dropdown-item {{ Request::is('pages/trend') ? 'active' : '' }}">เทรนด์ดิจิทัล</a>
+                            <a href="{{ url('pages/news-trend') }}" class="dropdown-item {{ Request::is('pages/news-trend') ? 'active' : '' }}">เทรนด์ดิจิทัล</a>
                         </div>
                     </div>
                         <a href="{{ url('pages/promotion') }}" class="nav-item nav-link {{ Request::is('pages/promotion') ? 'active' : '' }}">โปรโมชั่น</a>
@@ -55,7 +55,7 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="frontend/img/carousel-1.jpg" alt="Image">
+                        <img class="auto" src="frontend/img/Bg1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -101,66 +101,6 @@
                             </div>
                         </div>
                     </div>
-                    @elseif(Request::is('pages/login'))
-                    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า Customer -->
-                        <div class="row py-5">
-                            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                                <h1 class="display-4 text-white animated zoomIn">Customer</h1>
-                                <a href="" class="h5 text-white">Home</a>
-                                <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Login</a>
-                            </div>
-                        </div>
-                    </div>
-                    @elseif(Request::is('pages/search-person'))
-                    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า Customer -->
-                        <div class="row py-5">
-                            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                                <h1 class="display-4 text-white animated zoomIn">Person</h1>
-                                <a href="" class="h5 text-white">Home</a>
-                                <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Search</a>
-                            </div>
-                        </div>
-                    </div>
-                    @elseif(Request::is('pages/detail-person'))
-                    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า Customer -->
-                        <div class="row py-5">
-                            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                                <h1 class="display-4 text-white animated zoomIn">Person</h1>
-                                <a href="" class="h5 text-white">Home</a>
-                                <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Search</a>
-                            </div>
-                        </div>
-                    </div>
-                    @elseif(Request::is('pages/search-organization'))
-                    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า Customer -->
-                        <div class="row py-5">
-                            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                                <h1 class="display-4 text-white animated zoomIn">Organization</h1>
-                                <a href="" class="h5 text-white">Home</a>
-                                <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Search</a>
-                            </div>
-                        </div>
-                    </div>
-                    @elseif(Request::is('pages/detail-organization'))
-                    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า Customer -->
-                        <div class="row py-5">
-                            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                                <h1 class="display-4 text-white animated zoomIn">Organization</h1>
-                                <a href="" class="h5 text-white">Home</a>
-                                <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Search</a>
-                            </div>
-                        </div>
-                    </div>
                     @elseif(Request::is('pages/news'))
                     <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
                         <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า News -->
@@ -173,15 +113,15 @@
                             </div>
                         </div>
                     </div>
-                    @elseif(Request::is('pages/trend'))
+                    @elseif(Request::is('pages/news-trend'))
                     <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
                         <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า News-trend -->
                         <div class="row py-5">
                             <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                                <h1 class="display-4 text-white animated zoomIn">trend</h1>
+                                <h1 class="display-4 text-white animated zoomIn">News-trend</h1>
                                 <a href="" class="h5 text-white">Home</a>
                                 <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">trend</a>
+                                <a href="" class="h5 text-white">News-trend</a>
                             </div>
                         </div>
                     </div>
