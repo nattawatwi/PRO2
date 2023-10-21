@@ -37,6 +37,7 @@
                     <div style="text-align: justify">
                     <p style="text-indent: 5%"><b></b><img src="{{ asset('uploads/' . $news->Nw_image) }}" style="width: 65%; display: block; margin-left: auto; margin-right: auto" alt="{{ $news->Nw_title }}"></p>
                     <p style="text-indent: 5%"><b>&nbsp;</b></p>
+                    <a href="/pages/news">กลับไปยังหน้าข่าวสาร</a>
                     <h1 class="carousel-title">
                         {{ $news->Nw_title }}
                     </h1>
@@ -44,8 +45,7 @@
                     <p>&nbsp;</p>
                     <p style="text-indent: 5%"><b>{{ $news->Nw_content }}&nbsp; &nbsp;</b></p>
                     <p style="text-indent: 5%">&nbsp;</p>
-                    <p style="text-indent: 5%">โดย บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน) หรือ NT ได้รับความไว้วางใจจาก โทรทัศน์รวมการเฉพาะกิจแห่งประเทศไทย ให้เป็นผู้ดำเนินการเชื่อมโยงสัญญาณถ่ายทอดสดจากเมืองหางโจว ประเทศจีน ผ่านดาวเทียม AsiaSat 5 มายังสถานีดาวเทียมนนทบุรี เพื่อส่งต่อไปศูนย์ถ่ายทอดสดและรายงานข่าวการแข่งขันกีฬาและกิจกรรมที่สำคัญของประเทศไทย (สำนักงาน กสทช. ภาค 1) จากนั้นส่งสัญญาณผ่านโครงข่ายไฟเบอร์ออปติก ไปยังสถานีโทรทัศน์ช่องต่าง ๆ ทั้ง 11 ช่อง อาทิ ช่อง ThaiPBS, ช่อง NBT2HD, ช่อง TV5HD, ช่อง T Sports 7, ช่อง 7HD, ช่อง MCOT30HD, ช่อง PPTV36HD, ช่อง Workpoint, ช่อง True4U, ช่อง GMM25 และช่อง JKN18</p>
-                    <p style="text-indent: 5%">NT เชื่อมโยงสัญญาณถ่ายทอดสดเอเชียนเกมส์ ครั้งที่ 19 จากเมืองหางโจว ประเทศจีน เชิญชวนแฟน ๆ กีฬาชาวไทยรับชมการแข่งขันกีฬาเอเชียนเกมส์ ครั้งที่ 19 ระหว่างวันที่ 23 กันยายน จนถึง 8 ตุลาคม 2566 โดย บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน) หรือ NT ได้รับความไว้วางใจจาก โทรทัศน์รวมการเฉพาะกิจแห่งประเทศไทย ให้เป็นผู้ดำเนินการเชื่อมโยงสัญญาณถ่ายทอดสดจากเมืองหางโจว ประเทศจีน ผ่านดาวเทียม AsiaSat 5 มายังสถานีดาวเทียมนนทบุรี เพื่อส่งต่อไปศูนย์ถ่ายทอดสดและรายงานข่าวการแข่งขันกีฬาและกิจกรรมที่สำคัญของประเทศไทย (สำนักงาน กสทช. ภาค 1) จากนั้นส่งสัญญาณผ่านโครงข่ายไฟเบอร์ออปติก ไปยังสถานีโทรทัศน์ช่องต่าง ๆ ทั้ง 11 ช่อง อาทิ ช่อง ThaiPBS, ช่อง NBT2HD, ช่อง TV5HD, ช่อง T Sports 7, ช่อง 7HD, ช่อง MCOT30HD, ช่อง PPTV36HD, ช่อง Workpoint, ช่อง True4U, ช่อง GMM25 และช่อง JKN18</p>
+                    <!-- Add Back Button -->
                 </div>
                 </div>
             </div>
@@ -54,6 +54,7 @@
     <!-- End-Promotion Section --> 
     <section class="page-section section-author  mt-4 mb-4">
         <div class="container">
+                <a href="/pages/news">กลับไปยังหน้าข่าวสาร</a>
                 <div class="author">      
                     ผู้เขียน : <img class="author-avatar" src="https://www.ntplc.co.th/images/default-source/banners/nt.jpeg?Status=Master&amp;sfvrsn=a7991732_3"> <span class="author-name">NT</span>
                 </div>
@@ -67,7 +68,6 @@
         </div>
     </section>
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -75,4 +75,3 @@
 
 </html>
 @endsection
-
