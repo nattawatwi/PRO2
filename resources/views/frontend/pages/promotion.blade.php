@@ -54,8 +54,122 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="{{asset('frontend/js/main.js')}}"></script>
+
+    <div class="container">
+        <div id="Contentplaceholder_C004_Col00" class="sf_colsIn" data-sf-element="ListHeadTextContainer" data-placeholder-label="ListHeadTextContainer">
+            <h1 class="promotion-heading">โปรโมชั่นพิเศษเพื่อคุณ<span>Special Promotion for you</span></h1>
+        </div><br>
+
+        <div class="row g-3">
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="card promotion-card" style="--clr: #009688;">
+                    <div class="img-box">
+                        <img src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?Status=Master&sfvrsn=f27ba9d1_1">
+                    </div>
+                    <div class="content">
+                        <h2>Leafs</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe
+                            doloribus
+                            corrupti repellat quisquam alias doloremque! 10
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="card promotion-card" style="--clr: #009688;">
+                    <div class="img-box">
+                        <img src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?Status=Master&sfvrsn=f27ba9d1_1">
+                    </div>
+                    <div class="content">
+                        <h2>Leafs</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe
+                            doloribus
+                            corrupti repellat quisquam alias doloremque! 10
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="card promotion-card" style="--clr: #009688;">
+                    <div class="img-box">
+                        <img src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?Status=Master&sfvrsn=f27ba9d1_1">
+                    </div>
+                    <div class="content">
+                        <h2>Leafs</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe
+                            doloribus
+                            corrupti repellat quisquam alias doloremque! 10
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="card promotion-card" style="--clr: #009688;">
+                    <div class="img-box">
+                        <img src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?Status=Master&sfvrsn=f27ba9d1_1">
+                    </div>
+                    <div class="content">
+                        <h2>Leafs</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe
+                            doloribus
+                            corrupti repellat quisquam alias doloremque! 10
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="card promotion-card" style="--clr: #009688;">
+                    <div class="img-box">
+                        <img src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?Status=Master&sfvrsn=f27ba9d1_1">
+                    </div>
+                    <div class="content">
+                        <h2>Leafs</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe
+                            doloribus
+                            corrupti repellat quisquam alias doloremque! 10
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="card promotion-card" style="--clr: #009688;">
+                    <div class="img-box">
+                        <img src="https://www.ntplc.co.th/images/default-source/promotions/bigmouthtopping/thumbnail.jpg?Status=Master&sfvrsn=f27ba9d1_1">
+                    </div>
+                    <div class="content">
+                        <h2>Leafs</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, hic? Magnam eum error saepe
+                            doloribus
+                            corrupti repellat quisquam alias doloremque! 10
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat the above promotion card structure for other cards -->
+
+        </div>
+    </div>
+
+
+    
 </body>
 
 </html>
