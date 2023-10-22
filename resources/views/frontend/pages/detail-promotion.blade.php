@@ -31,7 +31,7 @@
     <a href="/pages/promotion" class="back-button"><i class="bi bi-chevron-left"></i><span>ย้อนกลับ</span></a>
             <div class="row">
                 <div class="col-12 col-md-6 main-promotion-image">
-                    <img class="promotion-main-image" src="{{ asset('uploads/' . $promotion->Pn_Image) }}" alt="{{ $promotion->Pm_name }}" class="img-fluid">
+                    <img class="promotion-main-image" src="{{ asset('uploads/' . $promotion->Pm_Image) }}" alt="{{ $promotion->Pm_name }}" class="img-fluid">
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="mt-3 mb-2">

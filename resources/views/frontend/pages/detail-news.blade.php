@@ -33,11 +33,11 @@
         <div class="section-content">
             <div>
                 <div class="container">
+                    <a href="/pages/news" class="back-button"><i class="bi bi-chevron-left"></i><span>ย้อนกลับ</span></a>
                     <p>&nbsp;</p>
                     <div style="text-align: justify">
                     <p style="text-indent: 5%"><b></b><img src="{{ asset('uploads/' . $news->Nw_image) }}" style="width: 65%; display: block; margin-left: auto; margin-right: auto" alt="{{ $news->Nw_title }}"></p>
                     <p style="text-indent: 5%"><b>&nbsp;</b></p>
-                    <a href="/pages/news">กลับไปยังหน้าข่าวสาร</a>
                     <h1 class="carousel-title">
                         {{ $news->Nw_title }}
                     </h1>
