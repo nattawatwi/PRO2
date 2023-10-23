@@ -895,18 +895,6 @@ h6,
     transform: scale(1.15);
 }
 
-/* public/css/styles.css */
-
-.card {
-    width: 18rem; /* ปรับขนาดตามที่ต้องการ */
-    margin-bottom: 20px;
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-}
-
 /*** Miscellaneous ***/
 @media (min-width: 991.98px) {
     .facts {
