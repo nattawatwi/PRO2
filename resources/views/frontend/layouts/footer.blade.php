@@ -121,5 +121,6 @@
 
     <!-- Template Javascript -->
     <script src="frontend/js/main.js"></script>
+    <script src="{{ asset('frontend/js/nav.js') }}"></script>
 
 	
