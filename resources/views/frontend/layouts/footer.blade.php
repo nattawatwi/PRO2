@@ -120,7 +120,7 @@
     <script src="frontend/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="frontend/js/main.js"></script>
+    <script src="{{ asset('frontend/js/main.js') }}"></script>
     <script src="{{ asset('frontend/js/nav.js') }}"></script>
 
 	
