@@ -54,6 +54,8 @@
                                 <br>
                                 <strong>Service:</strong> {{ $person->ServiceID }}
                                 <br>
+                                <strong>Service Center:</strong> {{ $person->ServiceCenterID }}
+                                <br>
                                 <strong>Promotion:</strong> {{ $person->PromotionID }}
                                 <br>
                                 <strong>Map:</strong> {{ $person->MapURL }}
