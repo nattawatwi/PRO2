@@ -2,9 +2,10 @@
 @section('main-content')
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
+    
     <meta charset="utf-8">
-    <title>Startup - Startup Website Template</title>
+    <title>NT NongKhai</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -47,8 +48,8 @@
                             <i class="fa fa-users text-primary"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h5 class="text-white mb-0">NT ทั่วประเทศ</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">105</h1>
                         </div>
                     </div>
                 </div>
@@ -58,8 +59,8 @@
                             <i class="fa fa-check text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
+                            <h5 class="text-primary mb-0">ลูกค้ารวมทั้งหมด</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">123</h1>
                         </div>
                     </div>
                 </div>
@@ -69,8 +70,8 @@
                             <i class="fa fa-award text-primary"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white mb-0">Win Awards</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h5 class="text-white mb-0">โปรโมชั่นและบริการรวม</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">45</h1>
                         </div>
                     </div>
                 </div>
@@ -86,34 +87,25 @@
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                        <h5 class="fw-bold text-primary text-uppercase">เกี่ยวกับเรา</h5>
+                        <h1 class="mb-0">National Telecom Public Company Limited Nong Khai บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน) หนองคาย</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <p class="mb-4">เราคือผู้ให้บริการโทรคมนาคม และดิจิทัลชั้นนำของประเทศ
+                    เรามุ่งมั่น สร้างสรรค์นวัตกรรมใหม่ๆ ให้ก้าวทันในโลกของเทคโนโลยีที่กำลังเติบโตในทุกวัน เพื่อคุณภาพชีวิตที่ดีกว่าของคนไทยในยุคดิจิทัล</p>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>ผู้ให้บริการมากที่สุดในหนองคาย</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>ดูแลคุณอย่างใกล้ชิด</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>ทีมงานช่าง ที่รวดเร็ว</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>สอบถามข้อมูล 24 ชม.</h5>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
-                        </div>
-                    </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="frontend/img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/357410152_754474596685177_5401665352238113114_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGUca2Fe6lI4MDpI2RdsafBBP_ioZRdKWUE_-KhlF0pZfc_J1J2-V1vIh6r72sTzJ6vooPtKjXX3sza6ImOFohg&_nc_ohc=p5JK0rABtLoAX_pditw&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfCj9Y1HbfC1B-4w9uPFXOcXKQLn9uWsh4xx9OlFNAjg8Q&oe=653A910D" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -122,12 +114,71 @@
     <!-- About End -->
 
 
+    <!-- Promotion Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Special Promotions For You</h5>
+                <h2 class="mb-0">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/334042856_199260569448249_1672859990183331025_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEo7H-z3ZTaSRamYSuwMlqYbF1Ifq1GoFVsXUh-rUagVfXvsPcz-jXJJKVmuP4RQr5TgFCnxPcFScAMCWOVbMMD&_nc_ohc=nTtWTWZC91IAX-3SfzL&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfAGe15iREHB6WTkSpCbMZaESTO91-FMCWc9WYNT7WkRNA&oe=653B2028" alt="">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/335071747_522649853382472_8703747449785475169_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFR2ARLz15ojwjNBbrIb7o4PrJqK_pcwE8-smor-lzAT6RA1S-Daaut9qN5XqPRiMtdA3TDVFopL_OCcGx65xdf&_nc_ohc=Zwbl2jP15lwAX85Q78G&_nc_oc=AQmfBFTBLXUb7CsK7f7WFX3-k0GPnJrz0Ir5lp9VXa4HpFcfjZDZK66Bt46nY5TTe6k&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfAwAIiYSxmR2LQtAMXcrJ7iUuKUSXvic-RdBQS5BW_whA&oe=653A13F2" alt="">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/334521876_569304351916110_2423303290000722393_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEk07zTkDloCYE718f1WW-ulp7FblxKq1mWnsVuXEqrWSMtLyh1a9XfgBf2zUz5wGJJh1vptri6UxUASd3uEjVP&_nc_ohc=Hw0FusvGEb4AX82O3_E&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfBfe2prmuvUVSt6--c6K0BfFvJ_pH--mfZre8A3gAYRpg&oe=6539E77F" alt="">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Start -->
+
+
     <!-- Features Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-                <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+                <h5 class="fw-bold text-primary text-uppercase">ทำไมถึงต้องเลือกพวกเรา</h5>
+                <h1 class="mb-0">ให้เราเป็นหนึ่งตัวช่วยในการท่องโลกอินเทอร์เน็ตของคุณ</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4">
@@ -136,21 +187,21 @@
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-cubes text-white"></i>
                             </div>
-                            <h4>Best In Industry</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <h4>โปรโมชั่นและบริการที่หลากหลาย</h4>
+                            <p class="mb-0">เพราะเราเข้าใจความหลากหลายของลูกค้า ดังนั้นเรามีโปรโมชั่นและบริการที่หลากหลายเพื่อตอบสนองความต้องการของทุกคน</p>
                         </div>
                         <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-award text-white"></i>
                             </div>
-                            <h4>Award Winning</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <h4>ทีมงานช่างที่มีประสบการณ์</h4>
+                            <p class="mb-0">ทีมงานของเรามีประสบการณ์ที่สร้างสรรค์และมีความเชี่ยวชาญในงาน</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="frontend/img/feature.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/324410926_700762531674623_7334447022226793565_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGxr0TfCGlbksSSgcuQ-dgsOrP0DLF1C1c6s_QMsXULV5vwIfj-a4bzKozIu4K0cKPRqBoODdJYYa7195c0gbXJ&_nc_ohc=_4W7AriM5CoAX__0qvK&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfA4lYHAIc-lhRxtqG5te1vohO8F6vKh54t1D8ynUrForw&oe=653BABAF" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -159,15 +210,15 @@
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-users-cog text-white"></i>
                             </div>
-                            <h4>Professional Staff</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <h4>พนักงานที่มีประสิทธิภาพ</h4>
+                            <p class="mb-0">ทีมงานของเรามีประสบการณ์ที่สร้างสรรค์และมีความเชี่ยวชาญในงาน</p>
                         </div>
                         <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
                             <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-phone-alt text-white"></i>
                             </div>
-                            <h4>24/7 Support</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <h4>ติดต่อสอบถามได้ทุกเวลา</h4>
+                            <p class="mb-0">เราให้บริการความสะดวกสบายตลอดเวลา ทำให้คุณสามารถติดต่อสอบถามหรือแจ้งปัญหาได้ทุกเวลาที่คุณต้องการ</p>
                         </div>
                     </div>
                 </div>
@@ -181,8 +232,8 @@
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                <h5 class="fw-bold text-primary text-uppercase">บริการของเรา</h5>
+                <h2 class="mb-0">บริการที่ดี มีประสิทธิภาพ ส่งเสริมการทำงาน เพื่อความสะดวกของคุณ</h2>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -190,7 +241,7 @@
                         <div class="service-icon">
                             <i class="fa fa-shield-alt text-white"></i>
                         </div>
-                        <h4 class="mb-3">Cyber Security</h4>
+                        <h4 class="mb-3">บริการ VPN</h4>
                         <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -202,7 +253,7 @@
                         <div class="service-icon">
                             <i class="fa fa-chart-pie text-white"></i>
                         </div>
-                        <h4 class="mb-3">Data Analytics</h4>
+                        <h4 class="mb-3">บริการ IP Phone</h4>
                         <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -214,7 +265,7 @@
                         <div class="service-icon">
                             <i class="fa fa-code text-white"></i>
                         </div>
-                        <h4 class="mb-3">Web Development</h4>
+                        <h4 class="mb-3">บริการ CCTV</h4>
                         <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -226,7 +277,7 @@
                         <div class="service-icon">
                             <i class="fab fa-android text-white"></i>
                         </div>
-                        <h4 class="mb-3">Apps Development</h4>
+                        <h4 class="mb-3">บริการ FTTX</h4>
                         <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -238,7 +289,7 @@
                         <div class="service-icon">
                             <i class="fa fa-search text-white"></i>
                         </div>
-                        <h4 class="mb-3">SEO Optimization</h4>
+                        <h4 class="mb-3">บริการ Wifi</h4>
                         <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -256,139 +307,6 @@
         </div>
     </div>
     <!-- Service End -->
-
-
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
-                <h1 class="mb-0">We are Offering Competitive Prices for Our Clients</h1>
-            </div>
-            <div class="row g-0">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="bg-light rounded">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Basic Plan</h4>
-                            <small class="text-uppercase">For Small Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>49.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Standard Plan</h4>
-                            <small class="text-uppercase">For Medium Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="bg-light rounded">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Advanced Plan</h4>
-                            <small class="text-uppercase">For Large Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Plan End -->
-
-
-    <!-- Quote Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
-                    </div>
-                    <div class="row gx-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
-                        </div>
-                    </div>
-                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
 
 
     <!-- Testimonial Start -->
@@ -453,162 +371,18 @@
     <!-- Testimonial End -->
 
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="frontend/img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="frontend/img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="frontend/img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Blog Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
-                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="frontend/img/blog-1.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="frontend/img/blog-2.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="frontend/img/blog-3.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog Start -->
-
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="frontend/img/vendor-1.jpg" alt="">
-                    <img src="frontend/img/vendor-2.jpg" alt="">
-                    <img src="frontend/img/vendor-3.jpg" alt="">
-                    <img src="frontend/img/vendor-4.jpg" alt="">
-                    <img src="frontend/img/vendor-5.jpg" alt="">
-                    <img src="frontend/img/vendor-6.jpg" alt="">
-                    <img src="frontend/img/vendor-7.jpg" alt="">
-                    <img src="frontend/img/vendor-8.jpg" alt="">
-                    <img src="frontend/img/vendor-9.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-</body>
+    <!-- resources/views/horizontal-card.blade.php -->
 
+    <div class="card-photo">
+        <img src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/357757415_754474733351830_7906854616099992940_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHO6-TG-UpmArUJS2cj_oi4x28xQ5Vp6C7HbzFDlWnoLo7Y09l6nyYnW5eZtjI4KC2tMMZv-K9sbyqShbG-U3A7&_nc_ohc=sFnJkpE-tvgAX-76mT5&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfBPH1WWYG688yYJU-xS9EEOQbDR9ZnYy3VY6rKTgP4X_w&oe=653BAC63" alt="Image" class="card-img-top">
+        <div class="card-body">
+        </div>
+    </div>
+
+</body>
 </html>
 @endsection
 

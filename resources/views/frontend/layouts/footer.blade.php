@@ -23,7 +23,7 @@
                     <div class="row gx-5">
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
+                                <h3 class="text-light mb-0">ข้อมูลติดต่อ</h3>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
@@ -49,13 +49,27 @@
                                 <h3 class="text-light mb-0">Quick Links</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>หน้าแรก</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ลูกค้า</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ข่าวสาร</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ข่าวเทรนด์</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>โปรโมชัน</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>บริการ</a>
-                                <a class="text-light" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ติดต่อ</a>
+                                <a href="/" class="text-light mb-2 {{ Request::is('/') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>หน้าแรก
+                                </a>
+                                <a href="{{ url('pages/customer') }}" class="text-light mb-2 {{ Request::is('pages/customer') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ลูกค้า
+                                </a>
+                                <a href="{{ url('pages/news') }}" class="text-light mb-2 {{ Request::is('pages/news') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ข่าวสาร
+                                </a>
+                                <a href="{{ url('pages/news-trend') }}" class="text-light mb-2 {{ Request::is('pages/news-trend') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ข่าวเทรนด์
+                                </a>
+                                <a href="{{ url('pages/promotion') }}" class="text-light mb-2 {{ Request::is('pages/promotion') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>โปรโมชัน
+                                </a>
+                                <a href="{{ url('pages/service') }}" class="text-light mb-2 {{ Request::is('pages/service') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>บริการ
+                                </a>
+                                <a href="{{ url('pages/contact') }}" class="text-light {{ Request::is('pages/contact') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ติดต่อ
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -63,13 +77,18 @@
                                 <h3 class="text-light mb-0">Popular Links</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>หน้าแรก</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ลูกค้า</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ข่าวสาร</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ข่าวเทรนด์</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>โปรโมชัน</a>
-                                <a class="text-light mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>บริการ</a>
-                                <a class="text-light" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>ติดต่อ</a>
+                                <a href="{{ url('pages/customer') }}" class="text-light mb-2 {{ Request::is('pages/customer') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ลูกค้า
+                                </a>
+                                <a href="{{ url('pages/news-trend') }}" class="text-light mb-2 {{ Request::is('pages/news-trend') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ข่าวเทรนด์
+                                </a>
+                                <a href="{{ url('pages/promotion') }}" class="text-light mb-2 {{ Request::is('pages/promotion') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>โปรโมชัน
+                                </a>
+                                <a href="{{ url('pages/contact') }}" class="text-light {{ Request::is('pages/contact') ? 'active' : '' }}">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ติดต่อ
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -90,5 +109,17 @@
     <!-- Footer End -->
 	</footer>
 	<!-- /End Footer Area -->
+ 
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend/lib/wow/wow.min.js"></script>
+    <script src="frontend/lib/easing/easing.min.js"></script>
+    <script src="frontend/lib/waypoints/waypoints.min.js"></script>
+    <script src="frontend/lib/counterup/counterup.min.js"></script>
+    <script src="frontend/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="frontend/js/main.js"></script>
 
 	
