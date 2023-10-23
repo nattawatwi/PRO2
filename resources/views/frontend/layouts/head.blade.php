@@ -59,39 +59,3 @@
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
 </head>
 @endif
-
-	<!-- JavaScript Libraries -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="frontend/lib/wow/wow.min.js"></script>
-    <script src="frontend/lib/easing/easing.min.js"></script>
-    <script src="frontend/lib/waypoints/waypoints.min.js"></script>
-    <script src="frontend/lib/counterup/counterup.min.js"></script>
-    <script src="frontend/lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="frontend/js/main.js"></script>
-
-    <!-- Add this to the head section of your Blade file -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>
-
-<!-- Add this just before </body> tag -->
-<script>
-    function initMap() {
-        // Specify the coordinates for your map
-        var myLatLng = {lat: 17.87700446513725, lng: 102.73855200847159}; // Example coordinates
-            
-        // Create a map object and specify the DOM element for display
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            zoom: 15 // Adjust the zoom level as needed
-        });
-
-        // Add a marker to the map
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Your Location'
-        });
-    }
-</script>

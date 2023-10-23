@@ -100,6 +100,30 @@
     </div>
     <!-- Contact End -->
 
+    
+    <!-- Add this to the head section of your Blade file -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>
+
+    <!-- Add this just before </body> tag -->
+    <script>
+        function initMap() {
+            // Specify the coordinates for your map
+            var myLatLng = {lat: 17.87700446513725, lng: 102.73855200847159}; // Example coordinates
+
+            // Create a map object and specify the DOM element for display
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 15 // Adjust the zoom level as needed
+            });
+
+            // Add a marker to the map
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Your Location'
+            });
+        }
+    </script>
 
 </body>
 </html>

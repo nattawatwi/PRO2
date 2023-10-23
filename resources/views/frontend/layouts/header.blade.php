@@ -1,3 +1,11 @@
+<head>
+    <meta charset="utf-8">
+    <title>NT NongKhai</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+</head>
+
 <header class="header shop">
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
