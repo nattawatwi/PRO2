@@ -15,7 +15,9 @@ class FrontendController extends Controller
 {
     //
     public function index(Request $request){
-        return redirect()->route($request->user()->role);
+    
+        $promotions = Promotion::all(); // ดึงข้อมูลโปรโมชั่น
+        return view('frontend.index', compact('promotions'));
     }
     public function home(){
         return view('frontend.index');
@@ -166,6 +168,8 @@ class FrontendController extends Controller
             return view('frontend.pages.search-Organization', ['error' => 'Organization not found']);
         }
     }
+
+
 
 
 

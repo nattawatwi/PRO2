@@ -121,56 +121,42 @@
                 <h5 class="fw-bold text-primary text-uppercase">Special Promotions For You</h5>
                 <h2 class="mb-0">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/334042856_199260569448249_1672859990183331025_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEo7H-z3ZTaSRamYSuwMlqYbF1Ifq1GoFVsXUh-rUagVfXvsPcz-jXJJKVmuP4RQr5TgFCnxPcFScAMCWOVbMMD&_nc_ohc=nTtWTWZC91IAX-3SfzL&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfAGe15iREHB6WTkSpCbMZaESTO91-FMCWc9WYNT7WkRNA&oe=653B2028" alt="">
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+            @if(isset($promotions) && count($promotions) > 0)
+                <div class="row g-5">
+                    @php
+                        $count = 0;
+                    @endphp
+            
+                    @foreach ($promotions as $promotion)
+                        @if ($count < 3)
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                                <div class="blog-item bg-light rounded overflow-hidden">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="{{ asset('uploads/' . $promotion->Pm_Image) }}" alt="">
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small><i class="far fa-calendar-alt text-primary me-2"></i>{{ $promotion->Pm_St_date }} - {{ $promotion->Pm_EP_date }}</small>
+                                        </div>
+                                        <h4 class="mb-3">{{ $promotion->Pm_name }}</h4>
+                                        <p>{{ Str::limit($promotion->Pm_detail, 80) }}</p>
+                                        <a class="text-uppercase" href="{{ route('detail-promotion', ['id' => $promotion->PromotionID]) }}">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+            
+                            @php
+                                $count++;
+                            @endphp
+                        @endif
+                    @endforeach
                 </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/335071747_522649853382472_8703747449785475169_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFR2ARLz15ojwjNBbrIb7o4PrJqK_pcwE8-smor-lzAT6RA1S-Daaut9qN5XqPRiMtdA3TDVFopL_OCcGx65xdf&_nc_ohc=Zwbl2jP15lwAX85Q78G&_nc_oc=AQmfBFTBLXUb7CsK7f7WFX3-k0GPnJrz0Ir5lp9VXa4HpFcfjZDZK66Bt46nY5TTe6k&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfAwAIiYSxmR2LQtAMXcrJ7iUuKUSXvic-RdBQS5BW_whA&oe=653A13F2" alt="">
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/334521876_569304351916110_2423303290000722393_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEk07zTkDloCYE718f1WW-ulp7FblxKq1mWnsVuXEqrWSMtLyh1a9XfgBf2zUz5wGJJh1vptri6UxUASd3uEjVP&_nc_ohc=Hw0FusvGEb4AX82O3_E&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfBfe2prmuvUVSt6--c6K0BfFvJ_pH--mfZre8A3gAYRpg&oe=6539E77F" alt="">
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @else
+                <p>No promotions available.</p>
+            @endif
         </div>
     </div>
-    <!-- Blog Start -->
+    <!-- Promotion End -->
 
 
     <!-- Features Start -->
