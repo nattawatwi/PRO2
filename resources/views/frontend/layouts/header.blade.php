@@ -68,8 +68,7 @@
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
                                 <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">ศูนย์การขาย & ศูนย์วิศวกรรมบริการ</h5>
-                                <a href="{{ url('pages/about') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">เกี่ยวกับ NT</a>
-                                <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">ติดต่อเรา</a>
+                                <a href="https://www.ntplc.co.th/home" class="btn btn-primary2 py-md-3 px-md-5 me-3 animated slideInLeft">เกี่ยวกับ NT</a>
                             </div>
                         </div>
                     </div>

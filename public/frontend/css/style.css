@@ -528,7 +528,7 @@ h6,
 
 .btn-primary,
 .btn-secondary {
-    color: #444444;
+    color: #ffffff;
     box-shadow: inset 0 0 0 50px transparent;
 }
 
@@ -563,6 +563,19 @@ h6,
     text-align: center;
 }
 
+.btn-primary2,
+.btn-secondary {
+    color: #000000;
+    box-shadow: inset 0 0 0 50px transparent;
+}
+
+.btn-primary2:hover {
+    box-shadow: inset 0 0 0 0 var(--primary);
+}
+
+.btn-secondary2:hover {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+}
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
@@ -894,6 +907,7 @@ h6,
 .blog-item:hover .blog-img img {
     transform: scale(1.15);
 }
+
 
 /*** Miscellaneous ***/
 @media (min-width: 991.98px) {
