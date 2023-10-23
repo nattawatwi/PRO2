@@ -28,7 +28,6 @@ class OrganizationController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('OgnID', __('OgnID'));
-        $grid->column('Password', __('Password'));
         $grid->column('type', __('Type'));
         $grid->column('Ogn_name', __('Ogn name'));
         $grid->column('Ong_type', __('Ong type'));
