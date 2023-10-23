@@ -50,6 +50,22 @@
     </div>
     </div>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var promotionCards = document.querySelectorAll(".promotion-card");
+
+        promotionCards.forEach(function (card) {
+            var content = card.querySelector(".content p");
+            var maxLength = 70; // ปรับความยาวที่ต้องการแสดง
+
+            if (content.textContent.length > maxLength) {
+                var shortenedText = content.textContent.substring(0, maxLength) + "...";
+                content.textContent = shortenedText;
+            }
+        });
+    });
+    </script>
+
     </section>
 
 
