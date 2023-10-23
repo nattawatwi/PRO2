@@ -38,7 +38,7 @@
                                 <label for="PersonID">Person ID</label>
                                 <input type="text" name="PersonID" class="form-control" required>
                             </div>
-
+                            <br>
                             <button type="submit" class="btn btn-primary">Search</button>
                         </form>
 

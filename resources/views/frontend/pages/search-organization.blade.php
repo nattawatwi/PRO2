@@ -38,7 +38,7 @@
                                 <label for="OgnID">Organization ID</label>
                                 <input type="text" name="OgnID" class="form-control" required>
                             </div>
-
+                            <br>
                             <button type="submit" class="btn btn-primary">Search</button>
                         </form>
 
@@ -81,6 +81,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
