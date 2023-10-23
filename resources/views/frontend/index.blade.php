@@ -115,11 +115,12 @@
 
 
     <!-- Promotion Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #444444; border-radius: 0 200px 0 0;" >
+
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Special Promotions For You</h5>
-                <h2 class="mb-0">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
+                <h2 class="mb-0" style="color: #FFFFFF;">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
             </div>
             @if(isset($promotions) && count($promotions) > 0)
                 <div class="row g-5">
