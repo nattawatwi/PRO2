@@ -119,7 +119,7 @@
 
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Special Promotions For You</h5>
+                <h5 class="fw-bold text-uppercase " style="color: #FFFFFF;">Special Promotions For You</h5>
                 <h2 class="mb-0" style="color: #FFFFFF;">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
             </div>
             @if(isset($promotions) && count($promotions) > 0)
@@ -135,7 +135,7 @@
                                     <div class="blog-img position-relative overflow-hidden">
                                         <img class="img-fluid" src="{{ asset('uploads/' . $promotion->Pm_Image) }}" alt="">
                                     </div>
-                                    <div class="p-4">
+                                    <div class="p-4" style="background-color: #FFFFFF">
                                         <div class="d-flex mb-3">
                                             <small><i class="far fa-calendar-alt text-primary me-2"></i>{{ $promotion->Pm_St_date }} - {{ $promotion->Pm_EP_date }}</small>
                                         </div>
