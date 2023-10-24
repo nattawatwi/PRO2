@@ -10,6 +10,7 @@ use App\Models\Trend;
 use App\Models\Contact;
 use App\Models\Person;
 use App\Models\Organization;
+use App\Models\ServiceCT;
 
 class FrontendController extends Controller
 {
@@ -168,6 +169,8 @@ class FrontendController extends Controller
             return view('frontend.pages.search-Organization', ['error' => 'Organization not found']);
         }
     }
+
+    
 
 
 

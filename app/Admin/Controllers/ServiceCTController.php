@@ -34,9 +34,8 @@ class ServiceCTController extends AdminController
         $grid->column('Sc_address', __('address'));
         $grid->column('Sc_phone', __('phone'));
         $grid->column('Sc_email', __('email'));
-        $grid->column('MapID', __('MapID'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        $grid->column('lat', __('latitude'));
+        $grid->column('lng', __('longitude'));
 
         return $grid;
     }
@@ -56,12 +55,52 @@ class ServiceCTController extends AdminController
         $show->field('Sc_address', __('address'));
         $show->field('Sc_phone', __('phone'));
         $show->field('Sc_email', __('email'));
-        $show->field('MapID', __('MapID'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
+        $show->field('lat', __('latitude'));
+        $show->field('lng', __('longitude'));
+
+        // ส่วนที่แสดงแผนที่
+        $show->field('map')->as(function ($show) {
+            if ($show) {
+                // สร้าง HTML element สำหรับแสดงแผนที่
+                $mapElement = '<div id="map" style="width: 100%; height: 400px;"></div>';
+
+                // JavaScript เพื่อสร้างแผนที่
+                // JavaScript เพื่อสร้างแผนที่
+                $script = '
+                    <script>
+                        function initMap() {
+                            var lat = ' . $show->lat . ';
+                            var lng = ' . $show->lng . ';
+                            var myLatLng = {lat: lat, lng: lng};
+                            var map = new google.maps.Map(document.getElementById("map"), {
+                                center: myLatLng,
+                                zoom: 15
+                            });
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                title: "Service Center Location"
+                            });
+                        }
+                        setTimeout(initMap, 1000);
+                    </script>
+                ';
+
+
+                // ใส่สคริปต์การโหลด API ของ Google Maps และ jQuery หน้านี้
+                $apiScript = '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>';
+                    
+                // HTML element และ JavaScript
+                return $mapElement . $script . $apiScript;
+            } else {
+                return 'No location data available.';
+            }
+        });
 
         return $show;
     }
+
+
 
     /**
      * Make a form builder.
@@ -77,7 +116,8 @@ class ServiceCTController extends AdminController
         $form->text('Sc_address', __('address'));
         $form->text('Sc_phone', __('phone'));
         $form->text('Sc_email', __('email'));
-        $form->text('MapID', __('Map(URL)'));
+        $form->text('lat', __('latitude'));
+        $form->text('lng', __('longitude'));
 
         //$form->select('MapID', __('MapID'))->options(
         //    \DB::table('maps') // แทนที่ your_table_name ด้วยชื่อตารางของคุณ

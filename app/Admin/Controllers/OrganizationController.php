@@ -34,7 +34,8 @@ class OrganizationController extends AdminController
         $grid->column('Ong_phone', __('Ong phone'));
         $grid->column('Ong_email', __('Ong email'));
         $grid->column('Ong_address', __('Ong address'));
-        $grid->column('MapURL', __('MapURL'));
+        $grid->column('lat', __('latitude'));
+        $grid->column('lng', __('longitude'));
         $grid->column('ServiceID', __('ServiceID'));
         $grid->column('ServiceCenterID', __('ServiceCenterID'));
         $grid->column('PromotionID', __('PromotionID'));
@@ -63,7 +64,8 @@ class OrganizationController extends AdminController
         $show->field('Ong_phone', __('Ong phone'));
         $show->field('Ong_email', __('Ong email'));
         $show->field('Ong_address', __('Ong address'));
-        $show->field('MapURL', __('MapURL'));
+        $show->field('lat', __('latitude'));
+        $show->field('lng', __('longitude'));
         $show->field('ServiceID', __('ServiceID'));
         $show->field('ServiceCenterID', __('ServiceCenterID'));
         $show->field('PromotionID', __('PromotionID'));
@@ -101,7 +103,8 @@ class OrganizationController extends AdminController
         $form->text('Ong_phone', __('Ong phone'));
         $form->text('Ong_email', __('Ong email'));
         $form->text('Ong_address', __('Ong address'));
-        $form->text('MapURL', __('MapURL'));
+        $form->text('lat', __('latitude'));
+        $form->text('lng', __('longitude'));
         $form->select('ServiceID', __('Service'))->options(
             \DB::table('service')->pluck('Sv_name', 'Sv_name')
         );
