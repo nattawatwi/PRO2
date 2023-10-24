@@ -25,6 +25,8 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="frontend/css/bootstrap.min.css" rel="stylesheet">
     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Template Stylesheet -->
     <link href="frontend/css/style.css" rel="stylesheet">
 </head>
@@ -55,6 +57,8 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Template Stylesheet -->
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
 </head>

@@ -58,13 +58,13 @@
                                 <br>
                                 <strong>Promotion:</strong> {{ $organization->PromotionID }}
                                 <br>
-                                <strong>Map:</strong> {{ $organization->MapURL }}
+                                <strong>latitude:</strong> {{ $organization->lat }}
+                                <br>
+                                <strong>longitude:</strong> {{ $organization->lng }}
 
                                 <!-- Maps Start -->
-                                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                    <div id="map" style="height: 400px; border-radius: 10px; margin-top: 20px;"></div>
-                                </div>
+                                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                    <div id="map" style="height: 500px;  border-radius: 10px; margin-top: 20px;"></div>
                                 <!-- Maps End -->
                                 
                                 <!-- Display other organization information as needed -->
@@ -93,25 +93,36 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>
 
     <!-- Add this just before </body> tag -->
-    <script>
-        function initMap() {
-            // Specify the coordinates for your map
-            var myLatLng = {lat: 17.87700446513725, lng: 102.73855200847159}; // Example coordinates
-                
-            // Create a map object and specify the DOM element for display
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                zoom: 15 // Adjust the zoom level as needed
-            });
-        
-            // Add a marker to the map
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Your Location'
-            });
-        }
-    </script>
+    <!-- Add this just before </body> tag -->
+    @if (isset($organization))
+        <script>
+            function initMap() {
+                // ดึงค่า lat และ lng จากข้อมูล Laravel และสร้างตำแหน่ง
+                var lat = {{ $organization->lat }};
+                var lng = {{ $organization->lng }};
+                var myLatLng = {lat: lat, lng: lng};
+
+                // Create a map object and specify the DOM element for display
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    zoom: 15 // Adjust the zoom level as needed
+                });
+
+                // Add a marker to the map
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Your Location'
+                });
+            }
+
+            // Call the initMap function after a short delay
+            setTimeout(initMap, 1000); // You can adjust the delay as needed
+        </script>
+    @endif
+
+
+
 </body>
 </html>
 @endsection

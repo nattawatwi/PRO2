@@ -58,9 +58,15 @@
                                 <br>
                                 <strong>Promotion:</strong> {{ $person->PromotionID }}
                                 <br>
-                                <strong>Map:</strong> {{ $person->MapURL }}
+                                <strong>latitude:</strong> {{ $person->lat }}
+                                <br>
+                                <strong>longitude:</strong> {{ $person->lng }}
+
+                                 <!-- Maps Start -->
+                                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                    <div id="map" style="height: 500px;  border-radius: 10px; margin-top: 20px;"></div>
+                                <!-- Maps End -->
                                 
-                                <!-- Display other person information as needed -->
                             </div>
                         @endif
 
@@ -79,6 +85,38 @@
     
     <!-- Template Javascript -->
     <script src="{{asset('frontend/js/main.js')}}"></script>
+
+    <!-- Add this to the head section of your Blade file -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>
+
+    <!-- Add this just before </body> tag -->
+    @if (isset($person))
+        <script>
+            function initMap() {
+                // ดึงค่า lat และ lng จากข้อมูล Laravel และสร้างตำแหน่ง
+                var lat = {{ $person->lat }};
+                var lng = {{ $person->lng }};
+                var myLatLng = {lat: lat, lng: lng};
+
+                // Create a map object and specify the DOM element for display
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    zoom: 15 // Adjust the zoom level as needed
+                });
+
+                // Add a marker to the map
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Your Location'
+                });
+            }
+
+            // Call the initMap function after a short delay
+            setTimeout(initMap, 1000); // You can adjust the delay as needed
+        </script>
+    @endif
+
 </body>
 </html>
 @endsection

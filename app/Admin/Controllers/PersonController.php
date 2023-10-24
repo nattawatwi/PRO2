@@ -33,7 +33,8 @@ class PersonController extends AdminController
         $grid->column('Ps_phone', __('Ps phone'));
         $grid->column('Ps_email', __('Ps email'));
         $grid->column('Ps_address', __('Ps address'));
-        $grid->column('MapURL', __('MapURL'));
+        $grid->column('lat', __('latitude'));
+        $grid->column('lng', __('longitude'));
         $grid->column('ServiceID', __('ServiceID'));
         $grid->column('ServiceCenterID', __('ServiceCenterID'));
         $grid->column('PromotionID', __('PromotionID'));
@@ -62,7 +63,8 @@ class PersonController extends AdminController
         $show->field('Ps_phone', __('Ps phone'));
         $show->field('Ps_email', __('Ps email'));
         $show->field('Ps_address', __('Ps address'));
-        $show->field('MapURL', __('MapURL'));
+        $show->field('lat', __('latitude'));
+        $show->field('lng', __('longitude'));
         $show->field('ServiceID', __('ServiceID'));
         $show->field('ServiceCenterID', __('ServiceCenterID'));
         $show->field('PromotionID', __('PromotionID'));
@@ -93,7 +95,8 @@ class PersonController extends AdminController
         $form->text('Ps_phone', __('Ps phone'));
         $form->text('Ps_email', __('Ps email'));
         $form->text('Ps_address', __('Ps address'));
-        $form->text('MapURL', __('MapURL'));
+        $form->text('lat', __('latitude'));
+        $form->text('lng', __('longitude'));
         $form->select('ServiceID', __('Service'))->options(
             \DB::table('service')->pluck('Sv_name', 'Sv_name')
         );
