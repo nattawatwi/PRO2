@@ -14,12 +14,15 @@ use App\Models\ServiceCT;
 
 class FrontendController extends Controller
 {
-    //
-    public function index(Request $request){
     
+    public function index(Request $request){
         $promotions = Promotion::all(); // ดึงข้อมูลโปรโมชั่น
-        return view('frontend.index', compact('promotions'));
+        $services = Service::all(); // ดึงข้อมูลบริการ
+    
+        return view('frontend.index', compact('promotions', 'services'));
     }
+    
+
     public function home(){
         return view('frontend.index');
     }   
