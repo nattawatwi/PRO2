@@ -24,32 +24,30 @@
     </div>
     <!-- Full Screen Search End -->
     
-<section class="page-section section-bg-light section-right" style="margin-bottom: 100px;">
-    <div class="section-content">   
-        <div class="section-fiber-services-content">
-            <div class="container ">
-                <a href="/pages/service" class="back-button"><i class="bi bi-chevron-left"></i><span>ย้อนกลับ</span></a>
-                <ul>
-                    <div class="row floating-content-wrapper">
-                        <div class="col-xs-12 col-sm-6">
-                            <img src="{{ asset('uploads/' . $service->Sv_Image) }}">
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="floating-content">
-                                <ul><li>{!! $service->Sv_detail !!}</li></ul>
+    <section class="page-section section-bg-light section-right" style="margin-bottom: 100px;">
+        <div class="section-content">   
+            <div class="section-fiber-services-content">
+                <div class="container ">
+                    <a href="/pages/service" class="back-button"><i class="bi bi-chevron-left"></i><span>ย้อนกลับ</span></a>
+                    <ul>
+                        <div class="row floating-content-wrapper">
+                            <div class="col-xs-12 col-sm-6">
+                                <img src="{{ asset('uploads/' . $service->Sv_Image) }}">
                             </div>
-                        </div>
-                        <div class="fiber-services">
-                            <div class="deco deco-signal" style="transform: translateX(0px) translateY(2.47372px);">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="floating-content">
+                                    <ul><li>{!! $service->Sv_detail !!}</li></ul>
+                                </div>
+                            </div>
+                            <div class="fiber-services">
+                                <div class="deco deco-signal" style="transform: translateX(0px) translateY(2.47372px);">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-
+    </section>
 
 </body>
 </html>
