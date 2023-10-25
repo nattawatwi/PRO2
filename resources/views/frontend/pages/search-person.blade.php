@@ -52,8 +52,6 @@
                                 <br>
                                 <strong>Adress:</strong> {{ $person->Ps_address }}
                                 <br>
-                                <strong>Service:</strong> {{ $person->ServiceID }}
-                                <br>
                                 <strong>Service Center:</strong> {{ $person->ServiceCenterID }}
                                 <br>
                                 <strong>Promotion:</strong> {{ $person->PromotionID }}

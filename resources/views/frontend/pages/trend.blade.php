@@ -44,8 +44,6 @@
                                     <small class="me-3"><i class="far fa-user text-primary me-2"></i>Admin</small>
                                     <small><i class="far fa-calendar-alt text-primary me-2"></i>{{ $trend->Tn_date }}</small>
                                 </div>
-                                <h4 class="mb-3">{{ $trend->Tn_title }}</h4>
-                                <p>{{ Str::limit($trend->Tn_content, 50) }}</p>
                                 <a class="text-uppercase" href="{{ route('trend-detail', ['id' => $trend->TrendID]) }}">Read More <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>

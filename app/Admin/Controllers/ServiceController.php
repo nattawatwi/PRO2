@@ -28,7 +28,8 @@ class ServiceController extends AdminController
 
         $grid->column('ServiceID', __('ServiceID'));
         $grid->column('Sv_name', __('name'));
-        $grid->column('Sv_detail', __('detail'));
+        $grid->column('Sv_detail1', __('detail-1'));
+        $grid->column('Sv_detail2', __('detail-2'));
         $grid->column('Sv_date', __('date'));
         $grid->column('Sv_Image', __('Image'));
         $grid->column('Sv_price', __('price'));
@@ -49,7 +50,8 @@ class ServiceController extends AdminController
 
         $show->field('ServiceID', __('ServiceID'));
         $show->field('Sv_name', __('name'));
-        $show->field('Sv_detail', __('detail'));
+        $show->field('Sv_detail1', __('detail-1'));
+        $show->field('Sv_detail2', __('detail-2'));
         $show->field('Sv_date', __('date'));
         $show->field('Sv_Image', __('Image'));
         $show->field('Sv_price', __('price'));
@@ -70,7 +72,8 @@ class ServiceController extends AdminController
         $form = new Form(new Service());
 
         $form->text('Sv_name', __('name'));
-        $form->textarea('Sv_detail', __('detail'));
+        $form->textarea('Sv_detail1', __('detail-1'));
+        $form->textarea('Sv_detail2', __('detail-2'));
         $form->date('Sv_date', __('date'));
         $form->image('Sv_Image', __('Image'));
         $form->text('Sv_price', __('price'));

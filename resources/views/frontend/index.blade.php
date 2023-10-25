@@ -115,7 +115,7 @@
 
 
     <!-- Promotion Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #444444; border-radius: 0 200px 0 0;" >
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #55595A; border-radius: 0 200px 0 0;" >
 
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
@@ -252,7 +252,7 @@
                 <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
                     <h3 class="text-white mb-3">สอบถามเพิ่มเติม</h3>
                     <p class="text-white mb-3">สอบถามข้อมูลเพิ่มเติมได้ที่ 1888 หรือ</p>
-                    <h2 class="text-white mb-0">042-411 500</h2>
+                    <h2 class="text-white mb-0">042-411-500</h2>
                 </div>
             </div>
             </div>

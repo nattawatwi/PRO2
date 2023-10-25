@@ -35,7 +35,6 @@ class PersonController extends AdminController
         $grid->column('Ps_address', __('Ps address'));
         $grid->column('lat', __('latitude'));
         $grid->column('lng', __('longitude'));
-        $grid->column('ServiceID', __('ServiceID'));
         $grid->column('ServiceCenterID', __('ServiceCenterID'));
         $grid->column('PromotionID', __('PromotionID'));
         $grid->column('created_at', __('Created at'));
@@ -65,7 +64,6 @@ class PersonController extends AdminController
         $show->field('Ps_address', __('Ps address'));
         $show->field('lat', __('latitude'));
         $show->field('lng', __('longitude'));
-        $show->field('ServiceID', __('ServiceID'));
         $show->field('ServiceCenterID', __('ServiceCenterID'));
         $show->field('PromotionID', __('PromotionID'));
         $show->field('created_at', __('Created at'));
@@ -97,9 +95,6 @@ class PersonController extends AdminController
         $form->text('Ps_address', __('Ps address'));
         $form->text('lat', __('latitude'));
         $form->text('lng', __('longitude'));
-        $form->select('ServiceID', __('Service'))->options(
-            \DB::table('service')->pluck('Sv_name', 'Sv_name')
-        );
         $form->select('ServiceCenterID', __('Service Center'))->options(
             \DB::table('servicect')->pluck('Sc_name', 'Sc_name')
         );
