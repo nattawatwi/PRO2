@@ -36,8 +36,8 @@
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="floating-content">
-                                    <ul><li>{!! $service->Sv_detail !!}</li></ul>
-                                    
+                                    <ul><li>{!!$service->Sv_detail1!!}</li></ul>
+
                                 </div>
                             </div>
                             <div class="fiber-services">
