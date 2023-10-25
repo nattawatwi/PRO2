@@ -52,7 +52,7 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
                                         <p><b><u>ระยะเวลาส่งเสริมการขาย</u></b><b> </b><b>: {{ $promotion->Pm_St_date }}</b></p><p><b>เงื่อนไขรายการส่งเสริมการขาย&nbsp;</b>
-                                        <br></p><ol dir="ltr"><li>{{ $promotion->Pm_terms }}
+                                        <br></p><li>{{ $promotion->Pm_terms }}</li>
                                     </div>
                                 </div>
                             </div>
