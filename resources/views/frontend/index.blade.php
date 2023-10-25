@@ -113,53 +113,6 @@
     </div>
     <!-- About End -->
 
-
-    <!-- Promotion Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #55595A; border-radius: 0 200px 0 0;" >
-
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-uppercase " style="color: #FFFFFF;">Special Promotions For You</h5>
-                <h2 class="mb-0" style="color: #FFFFFF;">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
-            </div>
-            @if(isset($promotions) && count($promotions) > 0)
-                <div class="row g-5">
-                    @php
-                        $count = 0;
-                    @endphp
-            
-                    @foreach ($promotions as $promotion)
-                        @if ($count < 3)
-                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                                <div class="blog-item bg-light rounded overflow-hidden">
-                                    <div class="blog-img position-relative overflow-hidden">
-                                        <img class="img-fluid" src="{{ asset('uploads/' . $promotion->Pm_Image) }}" alt="">
-                                    </div>
-                                    <div class="p-4" style="background-color: #FFFFFF">
-                                        <div class="d-flex mb-3">
-                                            <small><i class="far fa-calendar-alt text-primary me-2"></i>{{ $promotion->Pm_St_date }} - {{ $promotion->Pm_EP_date }}</small>
-                                        </div>
-                                        <h4 class="mb-3">{{ $promotion->Pm_name }}</h4>
-                                        <p>{{ Str::limit($promotion->Pm_detail, 80) }}</p>
-                                        <a class="text-uppercase" href="{{ route('detail-promotion', ['id' => $promotion->PromotionID]) }}">Read More <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            @php
-                                $count++;
-                            @endphp
-                        @endif
-                    @endforeach
-                </div>
-            @else
-                <p>No promotions available.</p>
-            @endif
-        </div>
-    </div>
-    <!-- Promotion End -->
-
-
     <!-- Features Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -214,6 +167,50 @@
     </div>
     <!-- Features Start -->
 
+
+    <!-- Promotion Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #444444; border-radius: 0 200px 0 0; box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4);">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-uppercase " style="color: #FFFFFF;">Special Promotions For You</h5>
+                <h2 class="mb-0" style="color: #FFFFFF;">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
+            </div>
+            @if(isset($promotions) && count($promotions) > 0)
+                <div class="row g-5">
+                    @php
+                        $count = 0;
+                    @endphp
+            
+                    @foreach ($promotions as $promotion)
+                        @if ($count < 3)
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                                <div class="blog-item bg-light rounded overflow-hidden">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="{{ asset('uploads/' . $promotion->Pm_Image) }}" alt="">
+                                    </div>
+                                    <div class="p-4" style="background-color: #FFFFFF">
+                                        <div class="d-flex mb-3">
+                                            <small><i class="far fa-calendar-alt text-primary me-2"></i>{{ $promotion->Pm_St_date }} - {{ $promotion->Pm_EP_date }}</small>
+                                        </div>
+                                        <h4 class="mb-3">{{ $promotion->Pm_name }}</h4>
+                                        <p>{{ Str::limit($promotion->Pm_detail, 80) }}</p>
+                                        <a class="text-uppercase" href="{{ route('detail-promotion', ['id' => $promotion->PromotionID]) }}">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            @php
+                                $count++;
+                            @endphp
+                        @endif
+                    @endforeach
+                </div>
+            @else
+                <p>No promotions available.</p>
+            @endif
+        </div>
+    </div>
+    <!-- Promotion End -->
 
     <!-- Service Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">

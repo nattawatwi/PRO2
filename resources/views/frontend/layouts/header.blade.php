@@ -44,7 +44,7 @@
                     <a href="{{ url('/') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">หน้าแรก</a>
                     <a href="{{ url('pages/customer') }}" class="nav-item nav-link {{ Request::is('pages/customer') ? 'active' : '' }}">ลูกค้า</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle {{ Request::is('pages/news*') ? 'active' : '' }}" data-bs-toggle="dropdown">ข่าวสาร</a>
+                    <a href="#" class="nav-link dropdown-toggle {{ Request::is('pages/news*') || Request::is('pages/trend*') ? 'active' : '' }}" data-bs-toggle="dropdown">ข่าวสาร</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{ url('pages/news') }}" class="dropdown-item {{ Request::is('pages/news') ? 'active' : '' }}">ข่าวสารอัปเดต</a>
                             <a href="{{ url('pages/trend') }}" class="dropdown-item {{ Request::is('pages/trend') ? 'active' : '' }}">เทรนด์ดิจิทัล</a>
