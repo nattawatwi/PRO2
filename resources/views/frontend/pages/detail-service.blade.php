@@ -36,7 +36,8 @@
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="floating-content">
-                                    <ul><li>{!!$service->Sv_detail1!!}</li></ul>
+                                    <ul>{!!$service->Sv_detail1!!}</ul>
+                                    <ul>{!!$service->Sv_detail2!!}</ul>
 
                                 </div>
                             </div>
