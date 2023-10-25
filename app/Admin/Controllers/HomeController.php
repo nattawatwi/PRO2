@@ -11,6 +11,9 @@ use OpenAdmin\Admin\Layout\Row;
 
 use App\Models\Person;
 use App\Models\Organization;
+use App\Models\Promotion;
+use App\Models\Service;
+use App\Models\ServiceCT;
 
 class HomeController extends Controller
 {
@@ -34,18 +37,15 @@ class HomeController extends Controller
                                 </div>
                                 <div class='col-auto'>
                                     <div class='stat text-primary'>
-                                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-users align-middle'>
-                                            <path d='M0 0h24v24H0z' stroke='none'/>
-                                            <circle cx='9' cy='7' r='4'/>
-                                            <path d='M9 13.8a7.5 7.5 0 0 1 0-9.6'/>
-                                            <path d='M12 21.4a7.5 7.5 0 0 1 0-9.6'/>
-                                        </svg>
+                                        <!-- เปลี่ยนไอคอนเป็นข้อความหรือไอคอน Unicode -->
+                                        <span class='align-middle'>&#x1F464;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                     </div>
                                 </div>
                             </div>
                             <h1 class='mt-1 mb-3'>$personCount</h1>
                         </div>
-                    </div>                   
+                    </div>
+                   
                 ");
                 }); 
 
@@ -101,13 +101,13 @@ class HomeController extends Controller
                 });
 
                 $row->column(4, function (Column $column) {
-                    $organizationCount = Organization::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
+                    $promotionCount = Promotion::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
                                     <div class='col mt-0'>
-                                        <h5 class='card-title'>ลูกค้าส่วนบุคคล</h5>
+                                        <h5 class='card-title'>โปรโมชัน</h5>
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
@@ -120,20 +120,20 @@ class HomeController extends Controller
                                         </div>
                                     </div>
                                 </div>
-                                <h1 class='mt-1 mb-3'>$organizationCount</h1>
+                                <h1 class='mt-1 mb-3'>$promotionCount</h1>
                             </div>
                         </div>
                     ");
                 });
 
                 $row->column(4, function (Column $column) {
-                    $organizationCount = Organization::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
+                    $serviceCount = Service::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
                                     <div class='col mt-0'>
-                                        <h5 class='card-title'>ลูกค้าส่วนบุคคล</h5>
+                                        <h5 class='card-title'>บริการ</h5>
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
@@ -146,20 +146,20 @@ class HomeController extends Controller
                                         </div>
                                     </div>
                                 </div>
-                                <h1 class='mt-1 mb-3'>$organizationCount</h1>
+                                <h1 class='mt-1 mb-3'>$serviceCount</h1>
                             </div>
                         </div>
                     ");
                 });
 
                 $row->column(4, function (Column $column) {
-                    $organizationCount = Organization::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
+                    $serviceCTCount = ServiceCT::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
                                     <div class='col mt-0'>
-                                        <h5 class='card-title'>ลูกค้าส่วนบุคคล</h5>
+                                        <h5 class='card-title'>ศูนย์ให้บริการ</h5>
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
@@ -172,7 +172,7 @@ class HomeController extends Controller
                                         </div>
                                     </div>
                                 </div>
-                                <h1 class='mt-1 mb-3'>$organizationCount</h1>
+                                <h1 class='mt-1 mb-3'>$serviceCTCount</h1>
                             </div>
                         </div>
                     ");

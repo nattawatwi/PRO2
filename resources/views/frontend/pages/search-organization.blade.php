@@ -44,6 +44,8 @@
 
                         @if (isset($organization))
                             <div class="mt-4">
+                                <strong>Organization ID:</strong> {{ $organization->OgnID }}
+                                <br>
                                 <strong>Organization Name:</strong> {{ $organization->Ogn_name }}
                                 <br>
                                 <strong>Type:</strong> {{ $organization->type }}

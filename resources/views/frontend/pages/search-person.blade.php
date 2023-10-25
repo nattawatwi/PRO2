@@ -44,6 +44,8 @@
 
                         @if (isset($person))
                             <div class="mt-4">
+                                <strong>Person ID:</strong> {{ $person->PersonID }}
+                                <br>
                                 <strong>Person Name:</strong> {{ $person->Ps_name }}
                                 <br>
                                 <strong>Type:</strong> {{ $person->type }}
