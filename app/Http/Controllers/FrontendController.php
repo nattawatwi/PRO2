@@ -18,8 +18,9 @@ class FrontendController extends Controller
     public function index(Request $request){
         $promotions = Promotion::all(); // ดึงข้อมูลโปรโมชั่น
         $services = Service::all(); // ดึงข้อมูลบริการ
+        $news = News::all(); // 
     
-        return view('frontend.index', compact('promotions', 'services'));
+        return view('frontend.index', compact('promotions', 'services', 'news'));
     }
     
 
