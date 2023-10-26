@@ -245,7 +245,7 @@
                                 <h1 class="display-4 text-white animated zoomIn">Promotion</h1>
                                 <a href="" class="h5 text-white">Home</a>
                                 <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Promotion</a>
+                                <a href="" class="h5 text-white">Details</a>
                             </div>
                         </div>
                     </div>
@@ -272,7 +272,7 @@
                                 <h1 class="display-4 text-white animated zoomIn">Service</h1>
                                 <a href="" class="h5 text-white">Home</a>
                                 <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Service</a>
+                                <a href="" class="h5 text-white">Details</a>
                             </div>
                         </div>
                     </div>
