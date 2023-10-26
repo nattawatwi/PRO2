@@ -927,7 +927,7 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(3, 14, 30, 0.7), rgba(3, 14, 30, 0.7)), url(https://scontent.fkkc1-1.fna.fbcdn.net/v/t1.6435-9/194238350_277562860774729_1193704142719738603_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=300f58&_nc_eui2=AeEl4c3kLJMORXYPfPrCvHeBHpg8bXrxxYEemDxtevHFgf6M-0YrrPQmvAPL9sBFHBXtrMg9IUWeEKS-VmtuSr4Q&_nc_ohc=Dar7-9dHNNcAX_1iU9f&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfChP_QxHYa28e1NOrpcEZ7Ec124prdRXTtdHDugJJaLTg&oe=6561E939) center center no-repeat;
     background-size: cover;
 }
 

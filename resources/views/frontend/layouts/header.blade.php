@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{ url('/') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">หน้าแรก</a>
-                    <a href="{{ url('pages/customer') }}" class="nav-item nav-link {{ Request::is('pages/customer') ? 'active' : '' }}">ลูกค้า</a>
+                    <a href="{{ url('pages/customer') }}" class="nav-item nav-link {{ Request::is('pages/customer') || Request::is('pages/search-person*') || Request::is('pages/detail-person*') || Request::is('pages/search-organization*') || Request::is('pages/detail-organization*')? 'active' : '' }}">ลูกค้า</a>
                     <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle {{ Request::is('pages/news*') || Request::is('pages/trend*') ? 'active' : '' }}" data-bs-toggle="dropdown">ข่าวสาร</a>
                         <div class="dropdown-menu m-0">
@@ -63,7 +63,29 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="frontend/img/carousel-1.jpg" alt="Image">
+                        <img class="auto" src="https://shorturl.asia/oMOg6" alt="Image" width="1680" height="600">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
+                                <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">ศูนย์การขาย & ศูนย์วิศวกรรมบริการ</h5>
+                                <a href="https://www.ntplc.co.th/home" class="btn btn-primary2 py-md-3 px-md-5 me-3 animated slideInLeft">เกี่ยวกับ NT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
+                        <img class="auto" src="https://shorturl.asia/lkh6s" alt="Image" width="1680" height="600">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
+                                <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">ศูนย์การขาย & ศูนย์วิศวกรรมบริการ</h5>
+                                <a href="https://www.ntplc.co.th/home" class="btn btn-primary2 py-md-3 px-md-5 me-3 animated slideInLeft">เกี่ยวกับ NT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
+                        <img class="auto" src="https://shorturl.asia/MXyB0" alt="Image" width="1480" height="700">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -245,7 +267,7 @@
                                 <h1 class="display-4 text-white animated zoomIn">Promotion</h1>
                                 <a href="" class="h5 text-white">Home</a>
                                 <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Details</a>
+                                <a href="" class="h5 text-white">Promotion</a>
                             </div>
                         </div>
                     </div>
@@ -272,7 +294,7 @@
                                 <h1 class="display-4 text-white animated zoomIn">Service</h1>
                                 <a href="" class="h5 text-white">Home</a>
                                 <i class="far fa-circle text-white px-2"></i>
-                                <a href="" class="h5 text-white">Details</a>
+                                <a href="" class="h5 text-white">Service</a>
                             </div>
                         </div>
                     </div>
