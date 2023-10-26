@@ -90,6 +90,14 @@
                                     <i class="bi bi-arrow-right text-primary me-2"></i>ติดต่อ
                                 </a>
                             </div>
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">ศูนย์ให้บริการ</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a href="https://www.ntplc.co.th/servicecenter" class="text-light mb-2 ">
+                                    <i class="bi bi-arrow-right text-primary me-2"></i>ศูนย์บริการ
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
