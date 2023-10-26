@@ -46,7 +46,7 @@
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
+                                <h3 class="text-light mb-0">ลิงค์ด่วน</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
                                 <a href="/" class="text-light mb-2 {{ Request::is('/') ? 'active' : '' }}">
@@ -58,7 +58,7 @@
                                 <a href="{{ url('pages/news') }}" class="text-light mb-2 {{ Request::is('pages/news') ? 'active' : '' }}">
                                     <i class="bi bi-arrow-right text-primary me-2"></i>ข่าวสาร
                                 </a>
-                                <a href="{{ url('pages/news-trend') }}" class="text-light mb-2 {{ Request::is('pages/news-trend') ? 'active' : '' }}">
+                                <a href="{{ url('pages/trend') }}" class="text-light mb-2 {{ Request::is('pages/trend') ? 'active' : '' }}">
                                     <i class="bi bi-arrow-right text-primary me-2"></i>ข่าวเทรนด์
                                 </a>
                                 <a href="{{ url('pages/promotion') }}" class="text-light mb-2 {{ Request::is('pages/promotion') ? 'active' : '' }}">
@@ -74,13 +74,13 @@
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
+                                <h3 class="text-light mb-0">ลิงค์ยอดนิยม</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
                                 <a href="{{ url('pages/customer') }}" class="text-light mb-2 {{ Request::is('pages/customer') ? 'active' : '' }}">
                                     <i class="bi bi-arrow-right text-primary me-2"></i>ลูกค้า
                                 </a>
-                                <a href="{{ url('pages/news-trend') }}" class="text-light mb-2 {{ Request::is('pages/news-trend') ? 'active' : '' }}">
+                                <a href="{{ url('pages/trend') }}" class="text-light mb-2 {{ Request::is('pages/trend') ? 'active' : '' }}">
                                     <i class="bi bi-arrow-right text-primary me-2"></i>ข่าวเทรนด์
                                 </a>
                                 <a href="{{ url('pages/promotion') }}" class="text-light mb-2 {{ Request::is('pages/promotion') ? 'active' : '' }}">
