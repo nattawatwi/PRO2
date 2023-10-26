@@ -37,8 +37,6 @@ class PersonController extends AdminController
         $grid->column('lng', __('longitude'));
         $grid->column('ServiceCenterID', __('ServiceCenterID'));
         $grid->column('PromotionID', __('PromotionID'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }
@@ -66,8 +64,7 @@ class PersonController extends AdminController
         $show->field('lng', __('longitude'));
         $show->field('ServiceCenterID', __('ServiceCenterID'));
         $show->field('PromotionID', __('PromotionID'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
+
 
         return $show;
     }
