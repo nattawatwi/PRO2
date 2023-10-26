@@ -263,11 +263,11 @@
     <!-- Service End -->
 
     <!-- News Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #444444; border-radius: 0 200px 0 0; box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4);">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #f8d247; border-radius: 200px 0 0 0; box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4);">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-uppercase " style="color: #FFFFFF;">Special Promotions For You</h5>
-                <h2 class="mb-0" style="color: #FFFFFF;">กำลังมองหาโปรโมชั่นอยู่หรือเปล่า?</h2>
+                <h5 class="fw-bold text-uppercase " style="color: #3B3B3B;">News NT</h5>
+                <h2 class="mb-0" style="color: #282828;">ข่าวสารอับเดตจาก NT</h2>
             </div>
             @if(isset($news) && count($news) > 0)
                 <div class="row g-5">
