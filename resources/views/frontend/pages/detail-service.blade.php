@@ -24,7 +24,8 @@
     </div>
     <!-- Full Screen Search End -->
     
-    <section class="page-section section-bg-light section-right" style="margin-bottom: 100px;">
+    <!-- Detail Service Start -->
+    <section class="page-section section-bg-light section-right" style="margin-bottom: -75px;">
         <div class="section-content">   
             <div class="section-fiber-services-content">
                 <div class="container ">
@@ -50,6 +51,39 @@
             </div>
         </div>
     </section>
+    <!-- Detail Service End -->
+
+    <!-- Carousel Start -->
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        @foreach ($carouselImages as $index => $image)
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}" aria-label="Slide {{ $index + 1 }}"></button>
+                        @endforeach
+                    </div>
+                    <div class="carousel-inner">
+                        @foreach ($carouselImages as $index => $image)
+                            <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                                <img src="{{ asset($image->url) }}" class="d-block w-100" alt="Image {{ $index + 1 }}">
+                            </div>
+                        @endforeach
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Carousel End -->
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
 
 </body>
 </html>
