@@ -60,12 +60,7 @@ class HomeController extends Controller
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
-                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-users align-middle'>
-                                                <path d='M0 0h24v24H0z' stroke='none'/>
-                                                <circle cx='9' cy='7' r='4'/>
-                                                <path d='M9 13.8a7.5 7.5 0 0 1 0-9.6'/>
-                                                <path d='M12 21.4a7.5 7.5 0 0 1 0-9.6'/>
-                                            </svg>
+                                        <span class='align-middle'>&#x1F464;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                         </div>
                                     </div>
                                 </div>
@@ -85,12 +80,7 @@ class HomeController extends Controller
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
-                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-users align-middle'>
-                                                <path d='M0 0h24v24H0z' stroke='none'/>
-                                                <circle cx='9' cy='7' r='4'/>
-                                                <path d='M9 13.8a7.5 7.5 0 0 1 0-9.6'/>
-                                                <path d='M12 21.4a7.5 7.5 0 0 1 0-9.6'/>
-                                            </svg>
+                                            <span class='align-middle'>&#x1F464;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                         </div>
                                     </div>
                                 </div>
@@ -111,12 +101,7 @@ class HomeController extends Controller
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
-                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-users align-middle'>
-                                                <path d='M0 0h24v24H0z' stroke='none'/>
-                                                <circle cx='9' cy='7' r='4'/>
-                                                <path d='M9 13.8a7.5 7.5 0 0 1 0-9.6'/>
-                                                <path d='M12 21.4a7.5 7.5 0 0 1 0-9.6'/>
-                                            </svg>
+                                            <span class='align-middle'>&#x1F4F0;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                         </div>
                                     </div>
                                 </div>
@@ -137,12 +122,7 @@ class HomeController extends Controller
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
-                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-users align-middle'>
-                                                <path d='M0 0h24v24H0z' stroke='none'/>
-                                                <circle cx='9' cy='7' r='4'/>
-                                                <path d='M9 13.8a7.5 7.5 0 0 1 0-9.6'/>
-                                                <path d='M12 21.4a7.5 7.5 0 0 1 0-9.6'/>
-                                            </svg>
+                                            <span class='align-middle'>&#x1F4F0;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                         </div>
                                     </div>
                                 </div>
@@ -163,12 +143,7 @@ class HomeController extends Controller
                                     </div>
                                     <div class='col-auto'>
                                         <div class='stat text-primary'>
-                                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-users align-middle'>
-                                                <path d='M0 0h24v24H0z' stroke='none'/>
-                                                <circle cx='9' cy='7' r='4'/>
-                                                <path d='M9 13.8a7.5 7.5 0 0 1 0-9.6'/>
-                                                <path d='M12 21.4a7.5 7.5 0 0 1 0-9.6'/>
-                                            </svg>
+                                            <span class='align-middle'>&#x1F4CC;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                         </div>
                                     </div>
                                 </div>
