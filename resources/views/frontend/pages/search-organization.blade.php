@@ -58,8 +58,6 @@
                                 <br>
                                 <strong>Service:</strong> {{ $organization->ServiceID }}
                                 <br>
-                                <strong>Promotion:</strong> {{ $organization->PromotionID }}
-                                <br>
                                 <strong>latitude:</strong> {{ $organization->lat }}
                                 <br>
                                 <strong>longitude:</strong> {{ $organization->lng }}
