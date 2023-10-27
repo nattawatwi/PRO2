@@ -78,7 +78,7 @@
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
-                                <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">ศูนย์การขาย & ศูนย์วิศวกรรมบริการ</h5>
+                                <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">NT หนองคาย</h5>
                                 <a href="https://www.ntplc.co.th/servicecenter" class="btn btn-primary2 py-md-3 px-md-5 me-3 animated slideInLeft">ตรวจสอบศูนย์ให้บริการ</a>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
-                                <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">ศูนย์การขาย & ศูนย์วิศวกรรมบริการ</h5>
+                                <h5 class="display-5 text-white text-uppercase mb-3 animated zoomIn">NT หนองคาย</h5>
                                 <a href="https://www.ntplc.co.th/servicecenter" class="btn btn-primary2 py-md-3 px-md-5 me-3 animated slideInLeft">ตรวจสอบศูนย์ให้บริการ</a>
                             </div>
                         </div>
