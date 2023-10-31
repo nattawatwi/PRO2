@@ -66,7 +66,7 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="https://shorturl.asia/oMOg6" alt="Image" width="1680" height="600">
+                        <img class="auto" src="https://shorturl.asia/lkh6s" alt="Image" width="1680" height="600">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="carousel-item">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="https://shorturl.asia/MXyB0" alt="Image" width="1480" height="700">
+                        <img class="auto" src="https://shorturl.asia/lkh6s" alt="Image" width="1680" height="600">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
