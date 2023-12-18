@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/357410152_754474596685177_5401665352238113114_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGUca2Fe6lI4MDpI2RdsafBBP_ioZRdKWUE_-KhlF0pZfc_J1J2-V1vIh6r72sTzJ6vooPtKjXX3sza6ImOFohg&_nc_ohc=mG60IK8WxkUAX_sNovr&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfCMzQV22DFuMZz2N_KlNXP7-7Rd3xBRzo3UjRoWNl7i8Q&oe=65466E8D" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/357410152_754474596685177_5401665352238113114_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEFQvw90yb3L1Ukhb0k5qdLBP_ioZRdKWUE_-KhlF0pZdzVQbrfotFSg72393vbmQxkhV57yMg6NlcUrNLGXzo-&_nc_ohc=XB9u_AaGQ7wAX9fOc3r&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfA385KCtR0HEMIEZJ-DxYvkd5730BauocuI8RWSSvIMZQ&oe=6575E48D" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/324410926_700762531674623_7334447022226793565_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGxr0TfCGlbksSSgcuQ-dgsOrP0DLF1C1c6s_QMsXULV5vwIfj-a4bzKozIu4K0cKPRqBoODdJYYa7195c0gbXJ&_nc_ohc=jVCgCPfNSCsAX9f-TGx&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfAQaPUE-sd70CxxmgiCvCRaAWHTUFPAKaU1AExO498Low&oe=65458EEF" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/324410926_700762531674623_7334447022226793565_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGAft3LEh6U5wTWRYkT88GEOrP0DLF1C1c6s_QMsXULV9nw4I3N8FEoYuFpGhBF6niYl8WETXu6fujoUXhGI6G7&_nc_ohc=0L_9JvKGEQMAX-VKiGs&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfB2h0Afqo_hVHs2zsMmWHg64UbS-2k9uV-026yrVb66aw&oe=657504EF" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4">

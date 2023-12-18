@@ -152,6 +152,45 @@ class HomeController extends Controller
                         </div>
                     ");
                 });
-        });
+
+                $row->column(12, function (Column $column) {
+                    // Add a dropdown button and additional cards
+                    $column->append("
+                       <h4 class='card-title'>ServiceCenter</h4>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <div class='row'>
+                                    <div class='col'>
+                                        <h5 class='card-title'>ศูนย์บริการ NT หนองคาย 1</h5>
+                                    </div>
+                                    <div class='col-auto'>
+                                        <button class='btn btn-primary btn-sm' data-toggle='collapse' data-target='#additional-info'>
+                                            เพิ่มเติม
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id='additional-info' class='collapse'>
+                                    <div class='mt-3'>
+                                        <!-- Additional cards go here -->
+                                        <div class='card'>
+                                            <div class='card-body'>
+                                                <h5 class='card-title'>Additional Card 1</h5>
+                                                <!-- Additional content goes here -->
+                                            </div>
+                                        </div>
+                                        <div class='card'>
+                                            <div class='card-body'>
+                                                <h5 class='card-title'>Additional Card 2</h5>
+                                                <!-- Additional content goes here -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ");
+                });
+            });
+        
     }
 }
