@@ -66,7 +66,11 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
+<<<<<<< Updated upstream
                         <img class="auto" src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/373562390_795598002566808_7246747085225416543_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeGeVDaZYo64Tczs5N3h5Zt1DY6285nn_bQNjrbzmef9tKWziLBFrVjq0x04fSBTadjguIMvrapYIzYHo8wBm1Ts&_nc_ohc=UB6t2or98qYAX8DxpXR&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfAwzAZWGeCidclDllhgTxM4wke1QZzSoYF8fy8hJvxvqw&oe=657456CA" alt="Image" width="1680" height="600">
+=======
+                        <img class="auto" src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/373562390_795598002566808_7246747085225416543_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9534ce&_nc_eui2=AeGeVDaZYo64Tczs5N3h5Zt1DY6285nn_bQNjrbzmef9tKWziLBFrVjq0x04fSBTadjguIMvrapYIzYHo8wBm1Ts&_nc_ohc=tYj3MvdDHUEAX8197Zb&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfBeUEukL_xbaFCqC0QCgErXOya99Bzy1erb01yBuSIH0Q&oe=65881D4A" alt="Image" width="1680" height="600">
+>>>>>>> Stashed changes
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -88,7 +92,11 @@
                     </div>
                     <div class="carousel-item">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
+<<<<<<< Updated upstream
                         <img class="auto" src="https://www.theeleader.com/wp-content/uploads/2021/07/NT-NBTC-DES.png" alt="Image" width="1680" height="600">
+=======
+                        <img class="auto" src="https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/409773125_867098575416750_9030726866313821675_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeE5QcC_kt1ppe2YNACcUJ1ey7ruJYTcDa_Luu4lhNwNr6p8zlfN1fdCCCMuS0bcb9UwCo0_kJLInNsJwwj5PWyF&_nc_ohc=D9jnYtxZGxoAX_RYUxH&_nc_ht=scontent.fbkk5-3.fna&oh=00_AfANVXQxpHe2PaUf-I86oGP7JaL7yU4KBqiaQNr01mH_-w&oe=658668DD" alt="Image" width="1680" height="600">
+>>>>>>> Stashed changes
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
