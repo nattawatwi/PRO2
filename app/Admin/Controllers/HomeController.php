@@ -157,37 +157,64 @@ class HomeController extends Controller
                     // Add a dropdown button and additional cards
                     $column->append("
                        <h4 class='card-title'>ServiceCenter</h4>
-                        <div class='card'>
-                            <div class='card-body'>
-                                <div class='row'>
-                                    <div class='col'>
-                                        <h5 class='card-title'>ศูนย์บริการ NT หนองคาย 1</h5>
-                                    </div>
-                                    <div class='col-auto'>
-                                        <button class='btn btn-primary btn-sm' data-toggle='collapse' data-target='#additional-info'>
-                                            เพิ่มเติม
-                                        </button>
-                                    </div>
-                                </div>
-                                <div id='additional-info' class='collapse'>
-                                    <div class='mt-3'>
-                                        <!-- Additional cards go here -->
-                                        <div class='card'>
-                                            <div class='card-body'>
-                                                <h5 class='card-title'>Additional Card 1</h5>
-                                                <!-- Additional content goes here -->
-                                            </div>
-                                        </div>
-                                        <div class='card'>
-                                            <div class='card-body'>
-                                                <h5 class='card-title'>Additional Card 2</h5>
-                                                <!-- Additional content goes here -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                       <div class='accordion' id='accordionExample'>
+                        <div class='accordion-item'>
+                          <h2 class='accordion-header'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne' fdprocessedid='hv3bxm'>
+                              ศูนย์บริการ NT หนองคาย 1
+                            </button>
+                          </h2>
+                          <div id='collapseOne' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
                             </div>
+                          </div>
                         </div>
+                        <div class='accordion-item'>
+                          <h2 class='accordion-header'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo' fdprocessedid='hv3bxm'>
+                              ศูนย์บริการ NT ท่าบ่อ
+                            </button>
+                          </h2>
+                          <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='accordion-item'>
+                          <h2 class='accordion-header'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree' fdprocessedid='hv3bxm'>
+                              ศูนย์บริการ NT หนองคาย 1
+                            </button>
+                          </h2>
+                          <div id='collapseThree' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseThree' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseThree' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
                     ");
                 });
             });

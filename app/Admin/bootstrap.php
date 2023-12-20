@@ -22,3 +22,4 @@ OpenAdmin\Admin\Form::forget(['editor']);
 
 Admin::js('/vendor/chartjs/dist/Chart.min.js');
 
+

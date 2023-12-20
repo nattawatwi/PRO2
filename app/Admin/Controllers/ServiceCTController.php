@@ -62,33 +62,33 @@ class ServiceCTController extends AdminController
         $show->field('map')->as(function ($show) {
             if ($show) {
                 // สร้าง HTML element สำหรับแสดงแผนที่
-                $mapElement = '<div id="map" style="width: 100%; height: 400px;"></div>';
+                $mapElement = "<div id='map' style='width: 100%; height: 400px;'></div>";
 
                 // JavaScript เพื่อสร้างแผนที่
                 // JavaScript เพื่อสร้างแผนที่
-                $script = '
+                $script = "
                     <script>
                         function initMap() {
                             var lat = ' . $show->lat . ';
                             var lng = ' . $show->lng . ';
                             var myLatLng = {lat: lat, lng: lng};
-                            var map = new google.maps.Map(document.getElementById("map"), {
+                            var map = new google.maps.Map(document.getElementById('map'), {
                                 center: myLatLng,
                                 zoom: 15
                             });
                             var marker = new google.maps.Marker({
                                 position: myLatLng,
                                 map: map,
-                                title: "Service Center Location"
+                                title: 'Service Center Location'
                             });
                         }
                         setTimeout(initMap, 1000);
                     </script>
-                ';
+                ";
 
 
                 // ใส่สคริปต์การโหลด API ของ Google Maps และ jQuery หน้านี้
-                $apiScript = '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap" async defer></script>';
+                $apiScript = "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap' async defer></script>";
                     
                 // HTML element และ JavaScript
                 return $mapElement . $script . $apiScript;
