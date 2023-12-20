@@ -15,7 +15,6 @@ use App\Models\Promotion;
 use App\Models\Service;
 use App\Models\ServiceCT;
 
-
 class HomeController extends Controller
 {
     public function index(Content $content)
@@ -154,70 +153,70 @@ class HomeController extends Controller
                     ");
                 });
 
-                
-                // $row->column(12, function (Column $column) {
-                //     $organizations = Organization::all()->groupBy('ServiceCenterID');
-                
-                //     $html = '<h4 class="card-title">ServiceCenter</h4><div class="accordion" id="accordionExample">';
-                
-                //     foreach ($organizations as $serviceCenterID => $orgs) {
-                //         $html .= '<div class="accordion-item">';
-                //         $html .= '<h2 class="accordion-header">';
-                //         $html .= '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-' . str_replace(' ', '-', $serviceCenterID) . '" aria-expanded="false" aria-controls="collapse-' . str_replace(' ', '-', $serviceCenterID) . '">' . $serviceCenterID . '</button>';
-                //         $html .= '</h2>';
-                //         $html .= '<div id="collapse-' . str_replace(' ', '-', $serviceCenterID) . '" class="accordion-collapse collapse" data-bs-parent="#accordionExample">';
-                //         $html .= '<div class="accordion-body">';
-                
-                //         $html .= '<ul class="list-group">'; // เริ่มต้นการแสดงข้อมูลเป็น List Group
-                
-                //         foreach ($orgs as $organization) {
-                //             $html .= '<li class="list-group-item">' . $organization->Ogn_name . '</li>';
-                //         }
-                
-                //         $html .= '</ul>'; // สิ้นสุด List Group
-                
-                //         $html .= '</div></div></div>';
-                //     }
-                
-                //     $html .= '</div>';
-                //     $column->append($html);
-                // });
-
                 $row->column(12, function (Column $column) {
-                    $organizations = Organization::all()->groupBy('ServiceCenterID');
-                
-                    $html = '<h4 class="card-title">ServiceCenter</h4><div class="accordion" id="accordionExample">';
-                
-                    foreach ($organizations as $serviceCenterID => $orgs) {
-                        $html .= '<div class="accordion-item">';
-                        $html .= '<h2 class="accordion-header">';
-                        $html .= '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-' . str_replace(' ', '-', $serviceCenterID) . '" aria-expanded="false" aria-controls="collapse-' . str_replace(' ', '-', $serviceCenterID) . '">' . $serviceCenterID . '</button>';
-                        $html .= '</h2>';
-                        $html .= '<div id="collapse-' . str_replace(' ', '-', $serviceCenterID) . '" class="accordion-collapse collapse" data-bs-parent="#accordionExample">';
-                        $html .= '<div class="accordion-body">';
-                
-                        $html .= '<ul class="list-group">'; // เริ่มต้นการแสดงข้อมูลเป็น List Group
-                
-                        foreach ($orgs as $organization) {
-                            $detailPageLink = url('/admin/organizations/' . $organization->id); // URL สำหรับลิงก์ไปยังหน้ารายละเอียดของ Service Center
-                            $html .= '<li class="list-group-item"><a href="' . $detailPageLink . '">' . $organization->Ogn_name . '</a></li>';
-                        }
-                
-                        $html .= '</ul>'; // สิ้นสุด List Group
-                
-                        $html .= '</div></div></div>';
-                    }
-                
-                    $html .= '</div>';
-                    $column->append($html);
+                    // Add a dropdown button and additional cards
+                    $column->append("
+                       <h4 class='card-title'>ServiceCenter</h4>
+                       <div class='accordion' id='accordionExample'>
+                        <div class='accordion-item'>
+                          <h2 class='accordion-header'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne' fdprocessedid='hv3bxm'>
+                              ศูนย์บริการ NT หนองคาย 1
+                            </button>
+                          </h2>
+                          <div id='collapseOne' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='accordion-item'>
+                          <h2 class='accordion-header'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo' fdprocessedid='hv3bxm'>
+                              ศูนย์บริการ NT ท่าบ่อ
+                            </button>
+                          </h2>
+                          <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='accordion-item'>
+                          <h2 class='accordion-header'>
+                            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree' fdprocessedid='hv3bxm'>
+                              ศูนย์บริการ NT หนองคาย 1
+                            </button>
+                          </h2>
+                          <div id='collapseThree' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseThree' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                          <div id='collapseThree' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>
+                            <div class='accordion-body'>
+                              <strong><h6>&nbsp;&nbsp;&nbsp;&nbsp;สภ.หนองคาย	Police	042412710 NT Broadband</h6>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                    ");
                 });
-                
-                
-                
-                
-                
-                
-                
             });
         
     }
