@@ -37,6 +37,7 @@
     </div>
     <!-- Full Screen Search End -->
 
+
     <!-- Facts Start -->
     <div class="container-fluid facts py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
@@ -48,7 +49,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">ศูนย์บริการ NT ทั่วประเทศ</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">500</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">500</h1>
                         </div>
                     </div>
                 </div>
