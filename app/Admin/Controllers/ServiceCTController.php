@@ -48,6 +48,9 @@ class ServiceCTController extends AdminController
      */
     protected function detail($id)
     {
+        $serviceCT = ServiceCT::findOrFail($id);
+        $show = new Show($serviceCT);
+
         $show = new Show(ServiceCT::findOrFail($id));
 
         $show->field('ServiceCenterID', __('ServiceCenterID'));
@@ -59,43 +62,46 @@ class ServiceCTController extends AdminController
         $show->field('lng', __('longitude'));
 
         // ส่วนที่แสดงแผนที่
-        $show->field('map')->as(function ($show) {
-            if ($show) {
-                // สร้าง HTML element สำหรับแสดงแผนที่
-                $mapElement = "<div id='map' style='width: 100%; height: 400px;'></div>";
+        $latitudeField = $show->field('lat', __('latitude'));   
+        $longitudeField = $show->field('lng', __('longitude'));  
 
-                // JavaScript เพื่อสร้างแผนที่
-                // JavaScript เพื่อสร้างแผนที่
-                $script = "
-                    <script>
-                        function initMap() {
-                            var lat = ' . $show->lat . ';
-                            var lng = ' . $show->lng . ';
-                            var myLatLng = {lat: lat, lng: lng};
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                center: myLatLng,
-                                zoom: 15
-                            });
-                            var marker = new google.maps.Marker({
-                                position: myLatLng,
-                                map: map,
-                                title: 'Service Center Location'
-                            });
-                        }
-                        setTimeout(initMap, 1000);
-                    </script>
-                ";
+        $show->field('map', __('Map'))->unescape()->as(function () use ($serviceCT) {
+        $lat = $serviceCT->lat;
+        $lng = $serviceCT->lng;
 
+        if ($lat && $lng) {
+            $api_key = 'AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU'; // Replace with your API key
 
-                // ใส่สคริปต์การโหลด API ของ Google Maps และ jQuery หน้านี้
-                $apiScript = "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU&callback=initMap' async defer></script>";
-                    
-                // HTML element และ JavaScript
-                return $mapElement . $script . $apiScript;
-            } else {
-                return 'No location data available.';
-            }
-        });
+            $mapElement = "<div id='map' style='height: 500px; border-radius: 10px; margin-top: 20px;'></div>";
+
+            $script = "
+                <script>
+                    function initMap() {
+                        var lat = {$lat};
+                        var lng = {$lng};
+                        var myLatLng = {lat: parseFloat(lat), lng: parseFloat(lng)};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: myLatLng,
+                            zoom: 15
+                        });
+                        var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: 'Service Center Location'
+                        });
+                    }
+                    setTimeout(initMap, 1000);
+                </script>
+            ";
+
+            $apiScript = "<script src='https://maps.googleapis.com/maps/api/js?key={$api_key}&callback=initMap' async defer></script>";
+
+            return $mapElement . $script . $apiScript;
+        } else {
+            return 'No location data available.';
+        }
+    });
+        
 
         return $show;
     }

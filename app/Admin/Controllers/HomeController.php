@@ -184,6 +184,33 @@ class HomeController extends Controller
                 // });
 
                 $row->column(12, function (Column $column) {
+                    $serviceCTCount = ServiceCT::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
+                    $column->append("
+                        <div class='card text-center'>
+                        <div class='card-header'>
+                          <ul class='nav nav-tabs card-header-tabs'>
+                            <li class='nav-item'>
+                              <a class='nav-link active' aria-current='true' href='#'>Active</a>
+                            </li>
+                            <li class='nav-item'>
+                              <a class='nav-link' href='#'>Link</a>
+                            </li>
+                            <li class='nav-item'>
+                              <a class='nav-link disabled' aria-disabled='true'>Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class='card-body'>
+                          <h5 class='card-title'>Special title treatment</h5>
+                          <p class='card-text'>With supporting text below as a natural lead-in to additional content.</p>
+                          <a href='#' class='btn btn-primary'>Go somewhere</a>
+                        </div>
+                      </div>
+                    ");
+                });
+                
+
+                $row->column(12, function (Column $column) {
                     $organizations = Organization::all()->groupBy('ServiceCenterID');
                 
                     $html = '<h4 class="card-title">ServiceCenter</h4><div class="accordion" id="accordionExample">';
@@ -211,13 +238,7 @@ class HomeController extends Controller
                     $html .= '</div>';
                     $column->append($html);
                 });
-                
-                
-                
-                
-                
-                
-                
+       
             });
         
     }
