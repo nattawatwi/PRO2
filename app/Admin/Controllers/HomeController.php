@@ -183,7 +183,7 @@ class HomeController extends Controller
                 //     $column->append($html);
                 // });
 
-                $row->column(12, function (Column $column) {
+               /* $row->column(12, function (Column $column) {
                     $organizations = Organization::all()->groupBy('ServiceCenterID');
                 
                     $html = '<h4 class="card-title">ServiceCenter</h4><div class="accordion" id="accordionExample">';
@@ -214,7 +214,7 @@ class HomeController extends Controller
                 
                 
                 
-                
+                */
                 
                 
                 
