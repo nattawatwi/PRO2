@@ -49,6 +49,10 @@ class PersonController extends AdminController
      */
     protected function detail($id)
     {
+
+        $person = person::findOrFail($id);
+        $show = new Show($person); 
+
         $show = new Show(Person::findOrFail($id));
 
         $show->field('id', __('Id'));
@@ -64,6 +68,46 @@ class PersonController extends AdminController
         $show->field('lng', __('longitude'));
         $show->field('ServiceCenterID', __('ServiceCenterID'));
         $show->field('PromotionID', __('PromotionID'));
+
+        $latitudeField = $show->field('lat', __('latitude'));   //  
+        $longitudeField = $show->field('lng', __('longitude'));  //
+ 
+        $show->field('map', __('Map'))->unescape()->as(function () use ($person) {
+        $lat = $person->lat;
+        $lng = $person->lng;
+
+        if ($lat && $lng) {
+            $api_key = 'AIzaSyCgvAxV1oTM6A53Uy8NIBp-euQNo-GzwOU'; // Replace with your API key
+
+            $mapElement = "<div id='map' style='height: 500px; border-radius: 10px; margin-top: 20px;'></div>";
+
+            $script = "
+                <script>
+                    function initMap() {
+                        var lat = {$lat};
+                        var lng = {$lng};
+                        var myLatLng = {lat: parseFloat(lat), lng: parseFloat(lng)};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: myLatLng,
+                            zoom: 15
+                        });
+                        var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: 'Service Center Location'
+                        });
+                    }
+                    setTimeout(initMap, 1000);
+                </script>
+            ";
+
+            $apiScript = "<script src='https://maps.googleapis.com/maps/api/js?key={$api_key}&callback=initMap' async defer></script>";
+
+            return $mapElement . $script . $apiScript;
+        } else {
+            return 'No location data available.';
+        }
+    });
 
 
         return $show;

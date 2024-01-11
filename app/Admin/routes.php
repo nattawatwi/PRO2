@@ -11,7 +11,11 @@ Route::group([
     'as'            => config('admin.route.prefix') . '.',
 ], function (Router $router) {
 
-    $router->get('/', 'HomeController@index')->name('home');
+    $router->get('/', 'HomeController@index')->name('home');        //*TJ
+    $router->get('/showCT/{id}', 'HomeController@showCT');        //*TJ
+
+    $router->get('/showPromotion', 'HomeController@showPromotion');        //*TJ
+
     
     $router->resource('person', PersonController::class);
     $router->resource('organizations', OrganizationController::class);
