@@ -49,8 +49,9 @@ class PersonController extends AdminController
      */
     protected function detail($id)
     {
-        $person = Person::findOrFail($id);
-        $show = new show($person);
+
+        $person = person::findOrFail($id);
+        $show = new Show($person); 
 
         $show = new Show(Person::findOrFail($id));
 
@@ -68,9 +69,9 @@ class PersonController extends AdminController
         $show->field('ServiceCenterID', __('ServiceCenterID'));
         $show->field('PromotionID', __('PromotionID'));
 
-        $latitudeField = $show->field('lat', __('latitude'));   
-        $longitudeField = $show->field('lng', __('longitude'));  
-
+        $latitudeField = $show->field('lat', __('latitude'));   //  
+        $longitudeField = $show->field('lng', __('longitude'));  //
+ 
         $show->field('map', __('Map'))->unescape()->as(function () use ($person) {
         $lat = $person->lat;
         $lng = $person->lng;
