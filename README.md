@@ -64,16 +64,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-
-
-
-[php.ini]
-extension=curl
-extension=fileinfo
-extension=mbstring
-extension=exif      ; Must be after mbstring as it depends on it
-extension=mysqli
-extension=openssl
-extension=pdo_mysql
-
