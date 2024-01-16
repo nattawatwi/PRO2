@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
     <div class="position-relative h-100">
-        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{asset('frontend/img/about.jpg')}}" alt="About Image" style="object-fit: cover;">
+        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{asset('frontend/img/ntnk.jpg')}}" alt="About Image" style="object-fit: cover;">
     </div>
 </div>
 
@@ -142,7 +142,7 @@
                 </div>
                 <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/324410926_700762531674623_7334447022226793565_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGAft3LEh6U5wTWRYkT88GEOrP0DLF1C1c6s_QMsXULV9nw4I3N8FEoYuFpGhBF6niYl8WETXu6fujoUXhGI6G7&_nc_ohc=S2sN2Sa3Gr4AX9F8Eay&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfCD-qSauCacc75HtlT1FYnttJ06XNIUiZizIJFOj0Ie-Q&oe=6588CB6F" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="{{asset('frontend\img\ntnongkhai.jpg')}}" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4">

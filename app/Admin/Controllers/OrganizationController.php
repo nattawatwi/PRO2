@@ -133,9 +133,9 @@ class OrganizationController extends AdminController
 
         // เปลี่ยนฟิลด์ Ong_type เป็นแบบเลือก (dropdown)
         $form->select('Ong_type', __('Ong type'))->options([
-            'Police' => 'Police',
-            'Hospital' => 'Hospital',
-            'Bank' => 'Bank',
+            'ตำรวจ' => 'ตำรวจ',
+            'โรงพยาบาล' => 'โรงพยาบาล',
+            'ธนาคาร' => 'ธนาคาร',
             // เพิ่มตัวเลือกตามที่คุณต้องการ
         ]);
         $form->text('Ong_phone', __('Ong phone'));

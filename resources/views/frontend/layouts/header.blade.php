@@ -66,7 +66,7 @@
                     @if(Request::is('/'))
                     <div class="carousel-item active">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.6435-9/194238350_277562860774729_1193704142719738603_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=300f58&_nc_eui2=AeEl4c3kLJMORXYPfPrCvHeBHpg8bXrxxYEemDxtevHFgf6M-0YrrPQmvAPL9sBFHBXtrMg9IUWeEKS-VmtuSr4Q&_nc_ohc=-hP6aB4_kKUAX_XEL9p&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfDNo6KvAhO_nGOIGsuQRi85HD4wmSn9gigXc6A0A-Ge-Q&oe=6596A539" alt="Image" width="1680" height="600">
+                        <img class="auto" src="{{asset('frontend\img\121.jpg')}}" alt="Image" width="1700" height="600">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="carousel-item">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t1.6435-9/194238350_277562860774729_1193704142719738603_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=300f58&_nc_eui2=AeEl4c3kLJMORXYPfPrCvHeBHpg8bXrxxYEemDxtevHFgf6M-0YrrPQmvAPL9sBFHBXtrMg9IUWeEKS-VmtuSr4Q&_nc_ohc=-hP6aB4_kKUAX_XEL9p&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfDNo6KvAhO_nGOIGsuQRi85HD4wmSn9gigXc6A0A-Ge-Q&oe=6596A539" alt="Image" width="1680" height="600">
+                        <img class="auto" src="{{asset('frontend\img\122.jpg')}}" alt="Image" width="1680" height="600">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="carousel-item">
                         <!-- เนื้อหาของ Carousel Item ที่จะแสดงบนหน้า Home -->
-                        <img class="auto" src="https://www.theeleader.com/wp-content/uploads/2021/07/NT-NBTC-DES.png" alt="Image" width="1680" height="600">
+                        <img class="auto" src="{{asset('frontend\img\NT-NBTC-DES.png')}}" alt="Image" width="1480" height="600">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome ยินดีต้อนรับ</h5>

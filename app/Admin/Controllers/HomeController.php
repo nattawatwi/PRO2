@@ -266,10 +266,10 @@ function haversineGreatCircleDistance(
                         <div class='card m-0' style='background-color:#adb5bd'>
                             <div class='card-body'>
                                 <div class='row'>
-                                    <div class='col h5 card-title'>ลูกค้าส่วนองค์กร</div>
-                                    <div class='col h5 card-title'>ประเภทองค์กร</div>
-                                    <div class='col h5 card-title'>ชื่อองค์กร</div>
-                                    <div class='col h5 card-title'>เบอร์โทร</div>
+                                    <div class='col h4 card-title'>ลูกค้าส่วนองค์กร</div>
+                                    <div class='col h4 card-title'>ประเภทองค์กร</div>
+                                    <div class='col h4 card-title'>ชื่อองค์กร</div>
+                                    <div class='col h4 card-title'>เบอร์โทร</div>
                                     <div class='col h5 text-end'>ระยะห่างจากศูนย์ให้บริการ </div>
                                 </div>
                             </div>
@@ -350,7 +350,7 @@ function haversineGreatCircleDistance(
                                     <div class='col h4 card-title'>ลูกค้าส่วนบุคคล</div>
                                     <div class='col h4 card-title'>ชื่อ-นามสกุล</div>
                                     <div class='col h4 card-title'>เบอร์โทร</div>
-                                    <div class='col h4 text-end'>ระยะห่างจากศูนย์ให้บริการ $personCount</div>
+                                    <div class='col h5 text-end'>ระยะห่างจากศูนย์ให้บริการ </div>
                                 </div>
                             </div>
                         </div>
@@ -372,10 +372,10 @@ function haversineGreatCircleDistance(
                             <div class='card m-0'>
                                 <div class='card-body'>
                                     <div class='row'>
-                                        <div class='col h5'>$cnt</div>
-                                        <div class='col h5'>{$org->Ps_name}</div>
-                                        <div class='col h5'>{$org->Ps_phone}</div>
-                                        <div class='col h5 text-end' onclick='toggleMap(\"map_$idx\")'>ระยะห่าง $diff กิโลเมตร &nbsp;&nbsp;&nbsp; <svg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z'/></svg></div>
+                                        <div class='col h6'>$cnt</div>
+                                        <div class='col h6'>{$org->Ps_name}</div>
+                                        <div class='col h6'>{$org->Ps_phone}</div>
+                                        <div class='col h6 text-end' onclick='toggleMap(\"map_$idx\")'>ระยะห่าง $diff กิโลเมตร &nbsp;&nbsp;&nbsp; <svg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z'/></svg></div>
                                     </div>
                                 </div>
                             </div>
