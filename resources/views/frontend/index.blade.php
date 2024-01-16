@@ -104,10 +104,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/273809718_443004860897194_1021293759620190854_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFGMYovMhG8-f4BApQBo7yIHyb1aTmivZgfJvVpOaK9mPXZx0HF1kGnHp-TgaNQ-X_eubG4MApM_hqgb_AgxQki&_nc_ohc=DWXxTzzcg_MAX-iBgWI&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfCHyKP12K-FnRBqI9oUvfE3w_kdCsUbPa-SZ5ZDkcEoDQ&oe=6588DF78" style="object-fit: cover;">
-                    </div>
-                </div>
+    <div class="position-relative h-100">
+        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{{asset('frontend/img/about.jpg')}}" alt="About Image" style="object-fit: cover;">
+    </div>
+</div>
+
             </div>
         </div>
     </div>

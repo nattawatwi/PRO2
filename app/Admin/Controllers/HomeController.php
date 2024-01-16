@@ -60,7 +60,6 @@ function haversineGreatCircleDistance(
                 $row->column(4, function (Column $column) {
                     $personCount = Person::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
-                    <a style='text-decoration:none;' class='text-body' href='/admin/person'>
                     <div class='card'>
                         <div class='card-body'>
                             <div class='row'>
@@ -84,7 +83,6 @@ function haversineGreatCircleDistance(
                 $row->column(4, function (Column $column) {
                     $organizationCount = Organization::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
-                    <a style='text-decoration:none;' class='text-body' href='/admin/organizations'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -105,7 +103,6 @@ function haversineGreatCircleDistance(
 
                 $row->column(4, function (Column $column) {
                     $column->append("
-                    <a style='text-decoration:none;' class='text-body' href='/admin/auth/users'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -124,34 +121,30 @@ function haversineGreatCircleDistance(
                     ");
                 });
 
-                //link
                 $row->column(4, function (Column $column) {
                     $promotionCount = Promotion::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
-                        <a style='text-decoration:none;' class='text-body' href='/admin/promotions'> 
-                            <div class='card'>
-                                <div class='card-body'>
-                                    <div class='row'>
-                                        <div class='col mt-0'>
-                                            <h5 class='card-title'>โปรโมชัน</h5>
-                                        </div>
-                                        <div class='col-auto'>
-                                            <div class='stat text-primary'>
-                                                <span class='align-middle'>&#x1F4F0;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
-                                            </div>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <div class='row'>
+                                    <div class='col mt-0'>
+                                        <h5 class='card-title'>โปรโมชัน</h5>
+                                    </div>
+                                    <div class='col-auto'>
+                                        <div class='stat text-primary'>
+                                            <span class='align-middle'>&#x1F4F0;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
                                         </div>
                                     </div>
-                                    <h1 class='mt-1 mb-3'>$promotionCount</h1>
                                 </div>
+                                <h1 class='mt-1 mb-3'>$promotionCount</h1>
                             </div>
-                        </a>
+                        </div>
                     ");
                 });
 
                 $row->column(4, function (Column $column) {
                     $serviceCount = Service::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
-                    <a style='text-decoration:none;' class='text-body' href='/admin/services'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -173,7 +166,6 @@ function haversineGreatCircleDistance(
                 $row->column(4, function (Column $column) {
                     $serviceCTCount = ServiceCT::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
-                    <a style='text-decoration:none;' class='text-body' href='/admin/service-c-ts'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -227,11 +219,6 @@ function haversineGreatCircleDistance(
         
     }
 
-    
-    //*TJ
-    public function showPromotion(Content $content) {
-    }
-
 
     //*TJ
     public function showCT(Content $content) {
@@ -249,6 +236,7 @@ function haversineGreatCircleDistance(
                         <div class='card'>
                             <div class='card-body'>
                                 <h3 class='mt-3 mb-3 text-center'>จำนวนลูกค้า $sum</h3>
+                                <div class='text-center text-danger'>ลูกค้าส่วนองค์กร $orgCount ราย &nbsp;&nbsp;&nbsp; ลูกค้าส่วนบุคคล $personCount ราย</div>
                             </div>
                         </div>
                     ");
@@ -278,8 +266,11 @@ function haversineGreatCircleDistance(
                         <div class='card m-0' style='background-color:#adb5bd'>
                             <div class='card-body'>
                                 <div class='row'>
-                                    <div class='col h4 card-title'>ลูกค้าส่วนองค์กร</div>
-                                    <div class='col h4 text-end'>$orgCount</div>
+                                    <div class='col h5 card-title'>ลูกค้าส่วนองค์กร</div>
+                                    <div class='col h5 card-title'>ประเภทองค์กร</div>
+                                    <div class='col h5 card-title'>ชื่อองค์กร</div>
+                                    <div class='col h5 card-title'>เบอร์โทร</div>
+                                    <div class='col h5 text-end'>ระยะห่างจากศูนย์ให้บริการ </div>
                                 </div>
                             </div>
                         </div>
@@ -303,11 +294,11 @@ function haversineGreatCircleDistance(
                             <div class='card m-0'>
                                 <div class='card-body'>
                                     <div class='row'>
-                                        <div class='col h5'>$cnt</div>
-                                        <div class='col h5'>{$org->Ong_type}</div>
-                                        <div class='col h5'>{$org->Ogn_name}</div>
-                                        <div class='col h5'>{$org->Ong_phone}</div>
-                                        <div class='col h5 text-end' onclick='toggleMap(\"map_$idx\")'>ระยะห่าง $diff กิโลเมตร &nbsp;&nbsp;&nbsp; <svg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z'/></svg></div>
+                                        <div class='col h6'>$cnt</div>
+                                        <div class='col h6'>{$org->Ong_type}</div>
+                                        <div class='col h6'>{$org->Ogn_name}</div>
+                                        <div class='col h6'>{$org->Ong_phone}</div>
+                                        <div class='col h6 text-end' onclick='toggleMap(\"map_$idx\")'> $diff กิโลเมตร &nbsp;&nbsp;&nbsp; <svg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z'/></svg></div>
                                     </div>
                                 </div>
                             </div>
@@ -357,7 +348,9 @@ function haversineGreatCircleDistance(
                             <div class='card-body'>
                                 <div class='row'>
                                     <div class='col h4 card-title'>ลูกค้าส่วนบุคคล</div>
-                                    <div class='col h4 text-end'>$personCount</div>
+                                    <div class='col h4 card-title'>ชื่อ-นามสกุล</div>
+                                    <div class='col h4 card-title'>เบอร์โทร</div>
+                                    <div class='col h4 text-end'>ระยะห่างจากศูนย์ให้บริการ $personCount</div>
                                 </div>
                             </div>
                         </div>

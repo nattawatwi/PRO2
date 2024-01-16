@@ -13,9 +13,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');        //*TJ
     $router->get('/showCT/{id}', 'HomeController@showCT');        //*TJ
-
-    $router->get('/showPromotion', 'HomeController@showPromotion');        //*TJ
-
     
     $router->resource('person', PersonController::class);
     $router->resource('organizations', OrganizationController::class);
