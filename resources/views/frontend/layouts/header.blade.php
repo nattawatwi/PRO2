@@ -55,7 +55,7 @@
                     </div>
                         <a href="{{ url('pages/promotion') }}" class="nav-item nav-link {{ Request::is('pages/promotion') ? 'active' : '' }}">โปรโมชั่น</a>
                         <a href="{{ url('pages/service') }}" class="nav-item nav-link {{ Request::is('pages/service') ? 'active' : '' }}">บริการ</a>
-                        <a href="{{ url('pages/service') }}" class="nav-item nav-link {{ Request::is('pages/service') ? 'active' : '' }}">ศูนย์ให้บริการ</a>
+                        <a href="{{ url('pages/servicect') }}" class="nav-item nav-link {{ Request::is('pages/servicect') ? 'active' : '' }}">ศูนย์ให้บริการ</a>
                         <a href="{{ url('pages/contact') }}" class="nav-item nav-link {{ Request::is('pages/contact') ? 'active' : '' }}">ติดต่อ</a>
                     </div>
                 <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
@@ -299,6 +299,18 @@
                                 <a href="" class="h5 text-white">Home</a>
                                 <i class="far fa-circle text-white px-2"></i>
                                 <a href="" class="h5 text-white">Service</a>
+                            </div>
+                        </div>
+                    </div>
+                    @elseif(Request::is('pages/servicect'))
+                    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+                        <!-- เนื้อหาของ Container ที่จะแสดงบนหน้า Service -->
+                        <div class="row py-5">
+                            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                                <h1 class="display-4 text-white animated zoomIn">Service Center</h1>
+                                <a href="" class="h5 text-white">Home</a>
+                                <i class="far fa-circle text-white px-2"></i>
+                                <a href="" class="h5 text-white">Service Center</a>
                             </div>
                         </div>
                     </div>

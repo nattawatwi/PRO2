@@ -33,6 +33,9 @@ Route::get('/pages/promotion', function () {
 Route::get('/pages/service', function () {
     return view('frontend.pages.service');
 });
+Route::get('/pages/servicect', function () {
+    return view('frontend.pages.servicect');
+});
 Route::get('/pages/contact', function () {
     return view('frontend.pages.contact');
 });
