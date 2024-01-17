@@ -40,10 +40,10 @@
                     </a>
                 </div>
     <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    <a href="{{ url('pages/search-organization') }}" class="text-decoration-none text-dark">
+                    <a href="{{ url('pages/search-organization') }}" class="text-decoration-none text-dark"> 
                         <div class="team-item bg-light rounded overflow-hidden">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="https://lh5.googleusercontent.com/wZymo9NpgmNC9HaFY12OZQiAkaPIOXgZLUxcBNZ_B4aHcEqWyVzNQ5Tabw_qd_gSL6DR_IYbCDkGGPLHg38ydL6K2JAKwJmzaEKaZIoPzKOXXJAYPqqb34fJH8XZrMEyeIwZrSoh" alt="">
+                                <img class="img-fluid w-100" src="{{asset('frontend\img\gtg-business-solutions.jpg')}}" alt="">
                             </div>
                             <div class="text-center py-4">
                                 <h2 class="text-primary">Organization</h2>

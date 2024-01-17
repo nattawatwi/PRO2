@@ -55,6 +55,7 @@
                     </div>
                         <a href="{{ url('pages/promotion') }}" class="nav-item nav-link {{ Request::is('pages/promotion') ? 'active' : '' }}">โปรโมชั่น</a>
                         <a href="{{ url('pages/service') }}" class="nav-item nav-link {{ Request::is('pages/service') ? 'active' : '' }}">บริการ</a>
+                        <a href="{{ url('pages/service') }}" class="nav-item nav-link {{ Request::is('pages/service') ? 'active' : '' }}">ศูนย์ให้บริการ</a>
                         <a href="{{ url('pages/contact') }}" class="nav-item nav-link {{ Request::is('pages/contact') ? 'active' : '' }}">ติดต่อ</a>
                     </div>
                 <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>

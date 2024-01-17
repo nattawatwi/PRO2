@@ -60,6 +60,7 @@ function haversineGreatCircleDistance(
                 $row->column(4, function (Column $column) {
                     $personCount = Person::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/person'>
                     <div class='card'>
                         <div class='card-body'>
                             <div class='row'>
@@ -76,6 +77,7 @@ function haversineGreatCircleDistance(
                             <h1 class='mt-1 mb-3'>$personCount</h1>
                         </div>
                     </div>
+                    </a>
                    
                 ");
                 }); 
@@ -83,6 +85,7 @@ function haversineGreatCircleDistance(
                 $row->column(4, function (Column $column) {
                     $organizationCount = Organization::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/organizations'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -98,11 +101,13 @@ function haversineGreatCircleDistance(
                                 <h1 class='mt-1 mb-3'>$organizationCount</h1>
                             </div>
                         </div>
+                    </a>
                     ");
                 }); 
 
                 $row->column(4, function (Column $column) {
                     $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/auth/users'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -118,12 +123,14 @@ function haversineGreatCircleDistance(
                                 <h1 class='mt-1 mb-3'>1</h1>
                             </div>
                         </div>
+                    </a>
                     ");
                 });
 
                 $row->column(4, function (Column $column) {
                     $promotionCount = Promotion::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/promotions'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -139,12 +146,14 @@ function haversineGreatCircleDistance(
                                 <h1 class='mt-1 mb-3'>$promotionCount</h1>
                             </div>
                         </div>
+                    </a>
                     ");
                 });
 
                 $row->column(4, function (Column $column) {
                     $serviceCount = Service::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/services'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -160,12 +169,14 @@ function haversineGreatCircleDistance(
                                 <h1 class='mt-1 mb-3'>$serviceCount</h1>
                             </div>
                         </div>
+                    </a>
                     ");
                 });
 
                 $row->column(4, function (Column $column) {
                     $serviceCTCount = ServiceCT::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
                     $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/service-c-ts'>
                         <div class='card'>
                             <div class='card-body'>
                                 <div class='row'>
@@ -181,14 +192,16 @@ function haversineGreatCircleDistance(
                                 <h1 class='mt-1 mb-3'>$serviceCTCount</h1>
                             </div>
                         </div>
+                    </a>
                     ");
                 });
 
                 
                 //*TJ
                 $row->column(12, function (Column $column) {
-                    $column->append("<h4 class='pt-4'>Service Center</h4>");
-                });
+                    $column->append("<h4 class='pt-4' style='margin-bottom: 10px;'>Service Center<span style='font-size: medium; color: grey; margin-left: 10px;'>ศูนย์ให้บริการ</span></h4><br>");
+                }); 
+                
 
                 $ServiceCT = ServiceCT::all();
                 foreach($ServiceCT as $CT) {

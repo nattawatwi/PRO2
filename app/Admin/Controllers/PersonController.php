@@ -49,6 +49,9 @@ class PersonController extends AdminController
      */
     protected function detail($id)
     {
+        $person = person::findOrFail($id);
+        $show = new Show($person);
+
         $show = new Show(Person::findOrFail($id));
 
         $show->field('id', __('Id'));
