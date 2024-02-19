@@ -14,6 +14,7 @@ use App\Models\Organization;
 use App\Models\Promotion;
 use App\Models\Service;
 use App\Models\ServiceCT;
+use App\Models\Contact;
 
 
 class HomeController extends Controller
@@ -55,7 +56,7 @@ function haversineGreatCircleDistance(
         //*TJ
         return $content
             ->title('Dashboard')
-            ->description('Welcome to your custom dashboard!')
+            ->description('ภาพรวม')
             ->row(function (Row $row) {
                 $row->column(4, function (Column $column) {
                     $personCount = Person::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
@@ -196,6 +197,29 @@ function haversineGreatCircleDistance(
                     ");
                 });
 
+                $row->column(4, function (Column $column) {
+                    $contactCount = Contact::count(); // ตั้งค่าให้ User เป็นชื่อโมเดลของคุณ
+                    $column->append("
+                    <a style='text-decoration:none;' class='text-body' href='/admin/contacts'>
+                        <div class='card'>
+                            <div class='card-body'>
+                                <div class='row'>
+                                    <div class='col mt-0'>
+                                        <h5 class='card-title'>การติดต่อ</h5>
+                                    </div>
+                                    <div class='col-auto'>
+                                        <div class='stat text-primary'>
+                                            <span class='align-middle'>&#x1F4F0;</span> <!-- ตัวอักษรหรือไอคอน Unicode ของคน -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1 class='mt-1 mb-3'>$contactCount</h1>
+                            </div>
+                        </div>
+                    </a>
+                    ");
+                });
+
                 
                 //*TJ
                 $row->column(12, function (Column $column) {
@@ -225,6 +249,8 @@ function haversineGreatCircleDistance(
                         ");
                     });
                 }
+
+                
 
 
 
