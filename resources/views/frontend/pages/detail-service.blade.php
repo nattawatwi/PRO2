@@ -33,13 +33,32 @@
                     <ul>
                         <div class="row floating-content-wrapper">
                             <div class="col-xs-12 col-sm-6">
-                                <img src="{{ asset('uploads/' . $service->Sv_Image) }}">
+                                @if($service->Sv_pic1 || $service->Sv_pic2 || $service->Sv_pic3 || $service->Sv_pic4 || $service->Sv_pic5)
+                                    <div class="owl-carousel">
+                                        @if($service->Sv_pic1)
+                                            <img class="rounded" src="{{$service->Sv_pic1}}" width=400 height=300>
+                                        @endif
+                                        @if($service->Sv_pic2)
+                                            <img class="rounded" src="{{$service->Sv_pic2}}" width=400 height=300>
+                                        @endif
+                                        @if($service->Sv_pic3)
+                                            <img class="rounded" src="{{$service->Sv_pic3}}" width=400 height=300>
+                                        @endif
+                                        @if($service->Sv_pic4)
+                                            <img class="rounded" src="{{$service->Sv_pic4}}" width=400 height=300>
+                                        @endif
+                                        @if($service->Sv_pic5)
+                                            <img class="rounded" src="{{$service->Sv_pic5}}" width=400 height=300>
+                                        @endif
+                                    </div>
+                                @else
+                                    IMAGE
+                                @endif
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="floating-content">
-                                    <ul>{!!$service->Sv_detail1!!}</ul>
-                                    <ul>{!!$service->Sv_detail2!!}</ul>
-
+                                    <ul class="">{!!$service->Sv_detail1!!}</ul>
+                                    <ul class="pt-3">{!!$service->Sv_detail2!!}</ul>
                                 </div>
                             </div>
                             <div class="fiber-services">
@@ -53,6 +72,29 @@
     </section>
     <!-- Detail Service End -->
 
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    // margin:0,
+    autoWidth:false,
+    autoHeight:false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    dots: false,
+    nav: false,
+});
+
+$('a.fancybox').fancybox({
+    type: "iframe",
+    'width': 1000,
+    'height': 800,
+});
+</script>
 </body>
 </html>
 @endsection

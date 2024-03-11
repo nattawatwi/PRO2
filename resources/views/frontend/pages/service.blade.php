@@ -41,7 +41,6 @@
                                 <i class="fa fa-shield-alt text-white"></i>
                             </div>
                             <h4 class="mb-3">{{ $service->Sv_name }}</h4>
-                            <p class="m-0">{{ $service->Sv_detail }}</p>
                             <a class="btn btn-lg btn-primary rounded" href="{{ route('service-detail', ['id' => $service->ServiceID]) }}">
                                 <i class="bi bi-arrow-right"></i>
                             </a>

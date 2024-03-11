@@ -49,7 +49,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">ศูนย์บริการ NT ทั่วประเทศ</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">500</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($services) }}</h1>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-primary mb-0">ลูกค้ารวมทั้งหมด</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">123</h1>
+                            <h1 class="mb-0" data-toggle="counter-up">{{ count($person) + count($org) }}</h1>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">โปรโมชั่นและบริการรวม</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($promotions) }}</h1>
                         </div>
                     </div>
                 </div>

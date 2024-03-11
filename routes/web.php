@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Models\Service;
+use App\Models\ServiceCT;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +36,7 @@ Route::get('/pages/service', function () {
     return view('frontend.pages.service');
 });
 Route::get('/pages/servicect', function () {
-    return view('frontend.pages.servicect');
+    return view('frontend.pages.servicect', ['data'=>ServiceCT::all()]);
 });
 Route::get('/pages/contact', function () {
     return view('frontend.pages.contact');

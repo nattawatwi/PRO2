@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Promotion;
 use App\Models\News;
-use App\Models\Service;
 use App\Models\Trend;
 use App\Models\Contact;
 use App\Models\Person;
 use App\Models\Organization;
+use App\Models\Service;
 use App\Models\ServiceCT;
 
 class FrontendController extends Controller
@@ -19,8 +19,10 @@ class FrontendController extends Controller
         $promotions = Promotion::all(); // ดึงข้อมูลโปรโมชั่น
         $services = Service::all(); // ดึงข้อมูลบริการ
         $news = News::all(); // 
+        $person = Person::all();
+        $org = Organization::all();
     
-        return view('frontend.index', compact('promotions', 'services', 'news'));
+        return view('frontend.index', compact('promotions', 'services', 'news', 'person', 'org'));
     }
     
 
