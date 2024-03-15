@@ -48,7 +48,7 @@
                             <i class="fa fa-users text-primary"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white mb-0">ศูนย์บริการ NT ทั่วประเทศ</h5>
+                            <h5 class="text-white mb-0">ศูนย์บริการ NT หนองคาย</h5>
                             <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($services) }}</h1>
                         </div>
                     </div>
