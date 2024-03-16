@@ -32,29 +32,31 @@
                     <a href="/pages/service" class="back-button"><i class="bi bi-chevron-left"></i><span>ย้อนกลับ</span></a>
                     <ul>
                         <div class="row floating-content-wrapper">
-                            <div class="col-xs-12 col-sm-6">
-                                @if($service->Sv_pic1 || $service->Sv_pic2 || $service->Sv_pic3 || $service->Sv_pic4 || $service->Sv_pic5)
-                                    <div class="owl-carousel">
-                                        @if($service->Sv_pic1)
-                                            <img class="rounded" src="{{$service->Sv_pic1}}" width=400 height=300>
-                                        @endif
-                                        @if($service->Sv_pic2)
-                                            <img class="rounded" src="{{$service->Sv_pic2}}" width=400 height=300>
-                                        @endif
-                                        @if($service->Sv_pic3)
-                                            <img class="rounded" src="{{$service->Sv_pic3}}" width=400 height=300>
-                                        @endif
-                                        @if($service->Sv_pic4)
-                                            <img class="rounded" src="{{$service->Sv_pic4}}" width=400 height=300>
-                                        @endif
-                                        @if($service->Sv_pic5)
-                                            <img class="rounded" src="{{$service->Sv_pic5}}" width=400 height=300>
-                                        @endif
-                                    </div>
-                                @else
-                                    IMAGE
-                                @endif
-                            </div>
+                    
+
+<div class="col-xs-12 col-sm-6">
+    @if($service->Sv_pic1 || $service->Sv_pic2 || $service->Sv_pic3 || $service->Sv_pic4 || $service->Sv_pic5)
+        <div class="owl-carousel">
+            @if($service->Sv_pic1)
+                <img class="rounded" src="{{$service->Sv_pic1}}" >
+            @endif
+            @if($service->Sv_pic2)
+                <img class="rounded" src="{{$service->Sv_pic2}}" >
+            @endif
+            @if($service->Sv_pic3)
+                <img class="rounded" src="{{$service->Sv_pic3}}" >
+            @endif
+            @if($service->Sv_pic4)
+                <img class="rounded" src="{{$service->Sv_pic4}}" >
+            @endif
+            @if($service->Sv_pic5)
+                <img class="rounded" src="{{$service->Sv_pic5}}" >
+            @endif
+        </div>
+    @else
+        IMAGE
+    @endif
+</div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="floating-content">
                                     <ul class="">{!!$service->Sv_detail1!!}</ul>

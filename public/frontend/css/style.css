@@ -1010,3 +1010,21 @@ promotion-cards-container {
 .promotion-card a:hover {
     background-color: #00796b; /* Darker color on hover */
 }
+
+/* ขอบรูป */
+img.rounded {
+    border-radius: 10px; /* ส่วนโค้งของขอบรูป */
+}
+
+/* การจัดวางรูปใน carousel */
+.owl-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ขนาดของรูป */
+.owl-carousel img {
+    max-width: 100%; /* ให้รูปมีขนาดไม่เกินขนาดของ container */
+    height: auto; /* ปรับสัดส่วนของรูป */
+}
