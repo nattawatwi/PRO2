@@ -33,6 +33,7 @@ class ServiceCTController extends AdminController
         $grid->column('Sc_name', __('name'));
         $grid->column('Sc_address', __('address'));
         $grid->column('Sc_phone', __('phone'));
+        $grid->column('Sc_fax', __('fax'));
         $grid->column('Sc_email', __('email'));
         $grid->column('lat', __('latitude'));
         $grid->column('lng', __('longitude'));
@@ -57,6 +58,7 @@ class ServiceCTController extends AdminController
         $show->field('Sc_name', __('name'));
         $show->field('Sc_address', __('address'));
         $show->field('Sc_phone', __('phone'));
+        $show->field('Sc_fax', __('fax'));
         $show->field('Sc_email', __('email'));
         $show->field('lat', __('latitude'));
         $show->field('lng', __('longitude'));
@@ -121,6 +123,7 @@ class ServiceCTController extends AdminController
         $form->text('Sc_name', __('name'));
         $form->text('Sc_address', __('address'));
         $form->text('Sc_phone', __('phone'));
+        $form->text('Sc_fax', __('fax'));
         $form->text('Sc_email', __('email'));
         $form->text('lat', __('latitude'));
         $form->text('lng', __('longitude'));

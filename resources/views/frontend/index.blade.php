@@ -71,7 +71,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">โปรโมชั่นและบริการรวม</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($promotions) }}</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($promotions) + count($services) }}</h1>
                         </div>
                     </div>
                 </div>
