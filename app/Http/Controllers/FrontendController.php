@@ -176,6 +176,24 @@ class FrontendController extends Controller
         }
     }
 
+    public function searchOrganization_id($id)
+    {
+        $OgnID = $id;
+        $organization = Organization::where('OgnID', $OgnID)->first();
+    
+        if ($organization) {
+            return view('frontend.pages.search-Organization', ['organization' => $organization]);
+        } else {
+            return view('frontend.pages.search-Organization', ['error' => 'Organization not found']);
+        }
+    }
+
+    
+    public function detailCCTV()
+    {
+        return view('frontend.pages.detail-cctv');
+    }
+
     
 
 

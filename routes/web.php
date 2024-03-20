@@ -83,4 +83,7 @@ Route::post('/contact', [FrontendController::class, 'submitForm']);
 Route::post('/pages/detail-person', [FrontendController::class, 'searchPerson'])->name('searchPerson');
 Route::post('/pages/detail-organization', [FrontendController::class, 'searchOrganization'])->name('searchOrganization');
 
+Route::get('/pages/detail-organization/{id}', [FrontendController::class, 'searchOrganization_id'])->name('searchOrganization_id');
+Route::get('/pages/cctv-detail', [FrontendController::class, 'detailCCTV'])->name('detailCCTV');
+
 Route::get('/', [FrontendController::class, 'index']);
