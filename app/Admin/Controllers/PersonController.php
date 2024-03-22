@@ -29,7 +29,18 @@ class PersonController extends AdminController
         $grid->column('PersonID', __('PersonID'));
         $grid->column('type', __('Type'));
         $grid->column('Ps_name', __('Ps name'));
-        $grid->column('Ps_IDnumber', __('Ps IDnumber'));
+        $grid->column('Ps_IDnumber', __('Ps IDnumber'))->display(function ($psIdNumber) {
+            // ตรวจสอบว่ามีอักขระมากกว่า 3 ตัวหรือไม่
+            if (strlen($psIdNumber) > 9) {
+                // หากมีมากกว่า 3 ตัว ให้ดึง 3 ตัวแรก
+                $firstThreeChars = substr($psIdNumber, 0, 9);
+                // เติม 'xxxx' เข้าไปในส่วนที่เหลือ
+                return $firstThreeChars . str_repeat('x', strlen($psIdNumber) - 9);
+            } else {
+                // หากมี 3 ตัวหรือน้อยกว่า ให้แสดงค่าเดิม
+                return $psIdNumber;
+            }
+        });
         $grid->column('Ps_phone', __('Ps phone'));
         $grid->column('Ps_email', __('Ps email'));
         $grid->column('Ps_address', __('Ps address'));
@@ -129,8 +140,8 @@ class PersonController extends AdminController
             // เพิ่มตัวเลือกตามที่คุณต้องการ
         ]);
         $form->text('Ps_name', __('Ps name'));
-        $form->text('Ps_IDnumber', __('Ps IDnumber'));
-        $form->text('Ps_phone', __('Ps phone'));
+        $form->text('Ps_IDnumber', __('Ps IDnumber'))->attribute('maxlength', 13)->attribute('pattern', '[0-9]{13}')->attribute('title', 'โปรดกรอกหมายเลขโทรศัพท์ให้ถูกต้อง (ต้องเป็นตัวเลข 13 หลัก)');
+        $form->text('Ps_phone', __('Ps phone'))->attribute('maxlength', 10)->attribute('pattern', '[0-9]{10}')->attribute('title', 'โปรดกรอกหมายเลขโทรศัพท์ให้ถูกต้อง (ต้องเป็นตัวเลข 10 หลัก)');
         $form->text('Ps_email', __('Ps email'));
         $form->text('Ps_address', __('Ps address'));
         $form->text('lat', __('latitude'));

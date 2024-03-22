@@ -41,7 +41,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
                     <p>&nbsp;</p>
                     <div style="text-align: justify">
                     <p style="text-indent: 5%"><b>&nbsp;</b></p>
-                    <h1 class="promotion-heading">รูปแบบบริการ CCTV<span style='font-size: 30px; color: grey; margin-left: 10px;'>ศูนย์ให้บริการ</span></h1>
+                    <h1 class="promotion-heading">รูปแบบบริการ CCTV<span style='font-size: 30px; color: grey; margin-left: 10px;'></span></h1>
                     <small class="news-detail-date">เผยแพร่ | 1 มีนาคม</small>
                     <p></p>
                     <h5 class="promotion-heading">อบต.อุกมพร<span style='font-size: 30px; color: grey; margin-left: 10px;'>8 ตัว</span></h5>
