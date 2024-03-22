@@ -86,4 +86,13 @@ Route::post('/pages/detail-organization', [FrontendController::class, 'searchOrg
 Route::get('/pages/detail-organization/{id}', [FrontendController::class, 'searchOrganization_id'])->name('searchOrganization_id');
 Route::get('/pages/cctv-detail', [FrontendController::class, 'detailCCTV'])->name('detailCCTV');
 
+Route::get('/pages/detail-organization/{id}', [FrontendController::class, 'searchOrganization_id'])->name('searchOrganization_id');
+Route::get('/pages/cctv2-detail', [FrontendController::class, 'detailCCTV2'])->name('detailCCTV2');
+
+Route::get('/pages/detail-organization/{id}', [FrontendController::class, 'searchOrganization_id'])->name('searchOrganization_id');
+Route::get('/pages/cctv3-detail', [FrontendController::class, 'detailCCTV3'])->name('detailCCTV3');
+
+Route::get('/pages/detail-organization/{id}', [FrontendController::class, 'searchOrganization_id'])->name('searchOrganization_id');
+Route::get('/pages/cctv4-detail', [FrontendController::class, 'detailCCTV4'])->name('detailCCTV4');
+
 Route::get('/', [FrontendController::class, 'index']);

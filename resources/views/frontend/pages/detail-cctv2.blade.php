@@ -44,7 +44,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
                     <h1 class="promotion-heading">รูปแบบบริการ CCTV<span style='font-size: 30px; color: grey; margin-left: 10px;'>ศูนย์ให้บริการ</span></h1>
                     <small class="news-detail-date">เผยแพร่ | 1 มีนาคม</small>
                     <p></p>
-                    <h5 class="promotion-heading">อบต.อุกมพร<span style='font-size: 30px; color: grey; margin-left: 10px;'>8 ตัว</span></h5>
+                    <h5 class="promotion-heading">เทศบาลตำบลบ้านถ่อน<span style='font-size: 30px; color: grey; margin-left: 10px;'>7 ตัว</span></h5>
                     
                     <!-- Add Back Button -->
                 </div>
@@ -59,12 +59,12 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
             <div>
                 <div class="containerimgcctv text-center">
                    <h5 class="cctv-heading">ภาพตัวอย่างการใช้งาน</h5>
-                  <a href="{{ asset('frontend/img/1.2.png') }}" data-lightbox="image" data-title="ตัวอย่างงาน อบต.อุกมพร"><img src="{{ asset('frontend/img/1.2.png') }}" class="col-3 ps-3 pt-3"></a>
-                  <a href="{{ asset('frontend/img/1.3.png') }}" data-lightbox="image" data-title="ตัวอย่างงาน อบต.อุกมพร"><img src="{{ asset('frontend/img/1.3.png') }}" class="col-3 ps-3 pt-3"></a>
-                  <a href="{{ asset('frontend/img/1.4.png') }}" data-lightbox="image" data-title="ตัวอย่างงาน อบต.อุกมพร"><img src="{{ asset('frontend/img/1.4.png') }}" class="col-3 ps-3 pt-3"></a>
-                  <a href="{{ asset('frontend/img/1.5.png') }}" data-lightbox="image" data-title="ตัวอย่างงาน อบต.อุกมพร"><img src="{{ asset('frontend/img/1.5.png') }}" class="col-3 ps-3 pt-3"></a>
-                  <a href="{{ asset('frontend/img/1.6.png') }}" data-lightbox="image" data-title="Line แจ้งเตือน"><img src="{{ asset('frontend/img/1.6.png') }}" class="col-3 ps-3 pt-3"></a>
-                  <a href="{{ asset('frontend/img/1.8.png') }}" data-lightbox="image" data-title="ภาพย้อนหลัง"><img src="{{ asset('frontend/img/1.8.png') }}" class="col-3 ps-3 pt-3"></a>
+                  <a href="{{ asset('frontend/img/1.jpg') }}" data-lightbox="image" data-title="My caption"><img src="{{ asset('frontend/img/1.jpg') }}" class="col-3 ps-3 pt-3"></a>
+                  <a href="{{ asset('frontend/img/2.jpg') }}" data-lightbox="image" data-title="My caption"><img src="{{ asset('frontend/img/2.jpg') }}" class="col-3 ps-3 pt-3"></a>
+                  <a href="{{ asset('frontend/img/1.jpg') }}" data-lightbox="image" data-title="My caption"><img src="{{ asset('frontend/img/1.jpg') }}" class="col-3 ps-3 pt-3"></a>
+                  <a href="{{ asset('frontend/img/2.jpg') }}" data-lightbox="image" data-title="My caption"><img src="{{ asset('frontend/img/2.jpg') }}" class="col-3 ps-3 pt-3"></a>
+                  <a href="{{ asset('frontend/img/1.jpg') }}" data-lightbox="image" data-title="My caption"><img src="{{ asset('frontend/img/1.jpg') }}" class="col-3 ps-3 pt-3"></a>
+                  <a href="{{ asset('frontend/img/2.jpg') }}" data-lightbox="image" data-title="My caption"><img src="{{ asset('frontend/img/2.jpg') }}" class="col-3 ps-3 pt-3"></a>
                 </div>
             </div>
         </div>

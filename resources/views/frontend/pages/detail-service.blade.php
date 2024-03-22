@@ -36,19 +36,19 @@
                                 @if($service->Sv_pic1 || $service->Sv_pic2 || $service->Sv_pic3 || $service->Sv_pic4 || $service->Sv_pic5)
                                     <div class="owl-carousel">
                                         @if($service->Sv_pic1)
-                                            <img class="rounded" src="{{$service->Sv_pic1}}" width=400 height=300>
+                                            <img class="rounded" src="{{$service->Sv_pic1}}" >
                                         @endif
                                         @if($service->Sv_pic2)
-                                            <img class="rounded" src="{{$service->Sv_pic2}}" width=400 height=300>
+                                            <img class="rounded" src="{{$service->Sv_pic2}}" >
                                         @endif
                                         @if($service->Sv_pic3)
-                                            <img class="rounded" src="{{$service->Sv_pic3}}" width=400 height=300>
+                                            <img class="rounded" src="{{$service->Sv_pic3}}" >
                                         @endif
                                         @if($service->Sv_pic4)
-                                            <img class="rounded" src="{{$service->Sv_pic4}}" width=400 height=300>
+                                            <img class="rounded" src="{{$service->Sv_pic4}}" >
                                         @endif
                                         @if($service->Sv_pic5)
-                                            <img class="rounded" src="{{$service->Sv_pic5}}" width=400 height=300>
+                                            <img class="rounded" src="{{$service->Sv_pic5}}" >
                                         @endif
                                     </div>
                                 @else

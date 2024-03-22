@@ -18,11 +18,12 @@ class FrontendController extends Controller
     public function index(Request $request){
         $promotions = Promotion::all(); // ดึงข้อมูลโปรโมชั่น
         $services = Service::all(); // ดึงข้อมูลบริการ
+        $servicect = ServiceCT::all();
         $news = News::all(); // 
         $person = Person::all();
         $org = Organization::all();
     
-        return view('frontend.index', compact('promotions', 'services', 'news', 'person', 'org'));
+        return view('frontend.index', compact('promotions', 'services', 'news', 'person', 'org', 'servicect'));
     }
     
 
@@ -192,6 +193,21 @@ class FrontendController extends Controller
     public function detailCCTV()
     {
         return view('frontend.pages.detail-cctv');
+    }
+
+    public function detailCCTV2()
+    {
+        return view('frontend.pages.detail-cctv2');
+    }
+
+    public function detailCCTV3()
+    {
+        return view('frontend.pages.detail-cctv3');
+    }
+
+    public function detailCCTV4()
+    {
+        return view('frontend.pages.detail-cctv4');
     }
 
     

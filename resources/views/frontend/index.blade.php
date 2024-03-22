@@ -49,7 +49,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">ศูนย์บริการ NT ทั่วประเทศ</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($services) }}</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($servicect) }}</h1>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">โปรโมชั่นและบริการรวม</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($promotions) }}</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">{{ count($promotions) + count($services) }}</h1>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
     <!-- resources/views/horizontal-card.blade.php -->
 
     <div class="card-photo">
-        <img src="https://scontent.fkkc1-1.fna.fbcdn.net/v/t39.30808-6/357757415_754474733351830_7906854616099992940_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHO6-TG-UpmArUJS2cj_oi4x28xQ5Vp6C7HbzFDlWnoLo7Y09l6nyYnW5eZtjI4KC2tMMZv-K9sbyqShbG-U3A7&_nc_ohc=zEQmHbtnj04AX88d8jh&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfB2o-FBzzLTmj2iivk_CeiqnMRK3lvPdWoTrg7YwKHbAA&oe=65458FA3" alt="Image" class="card-img-top">
+        <img src="https://www.ntplc.co.th/ResourcePackages/ntplc/assets/dist/images/home/service-areas.png" alt="Image" class="card-img-top">
         <div class="card-body">
         </div>
     </div>

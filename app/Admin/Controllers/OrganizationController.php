@@ -136,6 +136,7 @@ class OrganizationController extends AdminController
             'ตำรวจ' => 'ตำรวจ',
             'โรงพยาบาล' => 'โรงพยาบาล',
             'ธนาคาร' => 'ธนาคาร',
+            'อบต.' => 'อบต.',
             // เพิ่มตัวเลือกตามที่คุณต้องการ
         ]);
         $form->text('Ong_phone', __('Ong phone'));

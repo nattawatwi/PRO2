@@ -1011,3 +1011,13 @@ promotion-cards-container {
     background-color: #00796b; /* Darker color on hover */
 }
 
+.cctv-heading {
+    text-align: center; /* จัดให้ตัวหนังสืออยู่ตรงกลาง */
+}
+
+/* ถ้าต้องการให้ตัวหนังสือขนาดใหญ่ขึ้น เพิ่มเติมตรงนี้ */
+.promotion-heading span {
+    font-size: 30px;
+    color: grey;
+    margin-left: 10px;
+}
