@@ -29,18 +29,7 @@ class PersonController extends AdminController
         $grid->column('PersonID', __('PersonID'));
         $grid->column('type', __('Type'));
         $grid->column('Ps_name', __('Ps name'));
-        $grid->column('Ps_IDnumber', __('Ps IDnumber'))->display(function ($psIdNumber) {
-            // ตรวจสอบว่ามีอักขระมากกว่า 3 ตัวหรือไม่
-            if (strlen($psIdNumber) > 9) {
-                // หากมีมากกว่า 3 ตัว ให้ดึง 3 ตัวแรก
-                $firstThreeChars = substr($psIdNumber, 0, 9);
-                // เติม 'xxxx' เข้าไปในส่วนที่เหลือ
-                return $firstThreeChars . str_repeat('x', strlen($psIdNumber) - 9);
-            } else {
-                // หากมี 3 ตัวหรือน้อยกว่า ให้แสดงค่าเดิม
-                return $psIdNumber;
-            }
-        });
+        $grid->column('Ps_IDnumber', __('Ps IDnumber'));
         $grid->column('Ps_phone', __('Ps phone'));
         $grid->column('Ps_email', __('Ps email'));
         $grid->column('Ps_address', __('Ps address'));
